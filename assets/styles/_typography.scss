@@ -1,0 +1,29 @@
+@layer components {
+    .text-h1 {
+        @apply desktop:text-[60px] desktop:leading-[72px] tablet:font-bold tablet:text-[48px] tablet:leading-[48px] font-semibold text-[36px] leading-[40px];
+    };
+
+    .text-h2 {
+        @apply desktop:text-[36px] desktop:leading-[40px] text-[18px] leading-[28px] font-semibold;
+    }
+    
+    .text-h3 {
+        @apply desktop:text-[30px] desktop:leading-[36px] text-[24px] leading-[32px] font-semibold;
+    }
+
+    .text-subtitle {
+        @apply desktop:text-[20px] desktop:leading-[28px] text-[18px] leading-[28px];
+    }
+
+    .text-body1 {
+        @apply desktop:text-[18px] desktop:leading-[28px] text-[16px] leading-[24px];
+    }
+
+    .text-body2 {
+        @apply text-[16px] leading-[24px];
+    }
+
+    .text-body3 {
+        @apply text-[14px] leading-[20px]; 
+    }
+}

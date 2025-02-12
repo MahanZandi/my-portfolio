@@ -1,0 +1,10 @@
+@use "typography";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+      @apply font-vazir;
+    }
+  }

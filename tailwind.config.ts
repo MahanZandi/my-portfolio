@@ -8,10 +8,17 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      container:{
+        center: true
       },
+      fontFamily: {
+        vazir: ['Vazirmatn']
+      },
+      screens: {
+        tablet: "768px", // معادل md
+        desktop: "1024px", // معادل lg
+      },
+      
     },
   },
   plugins: [],
