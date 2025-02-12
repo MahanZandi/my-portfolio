@@ -6,6 +6,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       container:{
@@ -18,7 +19,6 @@ export default {
         tablet: "768px", // معادل md
         desktop: "1024px", // معادل lg
       },
-      
     },
   },
   plugins: [],

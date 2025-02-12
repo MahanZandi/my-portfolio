@@ -1,7 +1,9 @@
+import ThemeToggle from "@/components/ThemeToggele/ThemeTogle";
+
 const App = () => {
   return (
-    <div dir="rtl" className="text-h3 ">
-      آیا آن شریکان انتخابی شما بهترند یا آنکه شما را در تاریکی های خشکی و دریا به وسیله ستارگان و
+    <div dir="rtl" className="bg-gray-200 text-gray-600 dark:bg-gray-900 h-[100vh] dark:text-gray-400 transition-all">
+      <ThemeToggle/>
     </div>
   )
 }
