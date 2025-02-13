@@ -11,6 +11,9 @@ const App = () => {
         <button className="button-tags">
             Tag button
         </button>
+        <button className="button">
+          button
+        </button>
       </div>
     </div>
   )

@@ -1,9 +1,13 @@
 @layer components {
+    .button {
+        @apply text-gray-50 bg-gray-900 hover:bg-gray-700 active:bg-gray-800 dark:bg-gray-100 dark:hover:bg-gray-300 dark:active:bg-gray-200 dark:text-gray-950 px-4 h-[36px] flex items-center rounded-xl;
+    }
+
     .button-theme {
         @apply text-[36px];
     }
 
     .button-tags {
-        @apply bg-gray-200 text-gray-600 dark:bg-gray-800 dark:text-gray-400 rounded-xl px-5 py-1 ;
+        @apply bg-gray-200 text-gray-600 dark:bg-gray-800 dark:text-gray-400 rounded-xl px-5 h-[28px] ;
     }
 }
