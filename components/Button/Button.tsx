@@ -1,15 +1,12 @@
 interface ButtonProps {
-  onClick: () => void;
-  children: React.ReactNode;
+  onClick?: () => void;
+  text: string;
 }
 
-const Button: React.FC<ButtonProps> = ({
-  onClick,
-  children,
-}) => {
+const Button: React.FC<ButtonProps> = ({onClick, text}) => {
   return (
     <button onClick={onClick} className="button">
-      {children}
+        {text}
     </button>
   );
 };
