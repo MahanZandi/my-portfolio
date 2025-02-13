@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 type Theme = "light" | "dark" | null;
 
-export default function ThemeToggle() {
+const ThemeToggle:React.FC = () => {
   const [theme, setTheme] = useState<Theme>(null);
 
   useEffect(() => {
@@ -31,3 +31,5 @@ export default function ThemeToggle() {
     </button>
   );
 }
+
+export default ThemeToggle;
