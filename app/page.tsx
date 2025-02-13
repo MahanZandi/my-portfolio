@@ -8,6 +8,9 @@ const App = () => {
         <p className="p-10 text-2xl link link-underline">
           test
         </p>
+        <button className="button-tags">
+            Tag button
+        </button>
       </div>
     </div>
   )
