@@ -3,20 +3,29 @@ import { IoSunnyOutline } from "react-icons/io5";
 import { PiMoonStars } from "react-icons/pi";
 import { useEffect, useState } from "react";
 
+type Theme = "light" | "dark" | null;
+
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState(
-    typeof window !== "undefined" && localStorage.theme === "dark" ? "dark" : "light"
-  );
+  const [theme, setTheme] = useState<Theme>(null);
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
+    const storedTheme = (localStorage.getItem("theme") as Theme) || "light";
+    setTheme(storedTheme);
+  }, []);
+
+  useEffect(() => {
+    if (!theme) return;
+    document.documentElement.classList[theme === "dark" ? "add" : "remove"]("dark");
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  if (!theme) return null; 
 
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       className="button-theme"
+      aria-label="تغییر تم"
     >
       {theme === "light" ? <PiMoonStars/> : <IoSunnyOutline/>}
     </button>
