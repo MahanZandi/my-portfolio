@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ReactNode } from "react";
+import Providers from "@/components/translate/Providers";
 import "@/assets/fonts/vazir/Vazirmatn-font-face.css";
 import "@/assets/styles/globals.scss";
 
@@ -16,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="fa">
       <body>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );
