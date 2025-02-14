@@ -7,7 +7,7 @@ const NavBar: React.FC = () => {
   return (
     <div className="">
       <div className="container px-10 xl:px-0 pt-4 flex">
-        <div className="text-[24px] md:hidden flex items-center dark:text-gray-100 text-gray-900">
+        <div className="text-[24px] md:hidden flex items-center dark:text-gray-100 text-gray-900 dark:hover:bg-gray-800 hover:bg-gray-300 transition-all p-2 rounded-xl">
           <RxHamburgerMenu />
         </div>
         <div className="flex flex-1">
