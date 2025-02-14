@@ -10,7 +10,10 @@ export default {
   theme: {
     extend: {
       container:{
-        center: true
+        center: true,
+        screens: {
+          'xl': '1280px', 
+        },
       },
       fontFamily: {
         vazir: ['Vazirmatn']

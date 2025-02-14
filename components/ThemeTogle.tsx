@@ -24,7 +24,7 @@ const ThemeToggle:React.FC = () => {
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="button-theme"
+      className="button-theme link"
       aria-label="تغییر تم"
     >
       {theme === "light" ? <PiMoonStars/> : <IoSunnyOutline/>}
