@@ -5,21 +5,21 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 const NavBar: React.FC = () => {
   return (
-    <div className="">
-      <div className="container px-10 xl:px-0 pt-4 flex">
-        <div className="text-[24px] md:hidden flex items-center dark:text-gray-100 text-gray-900 dark:hover:bg-gray-800 hover:bg-gray-300 transition-all p-2 rounded-xl">
+    <nav className="">
+      <div className="nav-container">
+        <div className="nav-hamburger-menu">
           <RxHamburgerMenu />
         </div>
-        <div className="flex flex-1">
-          <div className="hidden md:flex gap-6">
-            <div className="flex gap-[18px]">
+        <div className="nav-flex-space">
+          <div className="nav-items-parents">
+            <div className="nav-buttons-container">
               <Button text="دانلود رزومه" />
               <ThemeToggle />
             </div>
-            <div className="flex justify-center items-center">
-              <div className="border-l-[1px] h-7 flex justify-center items-center dark:border-gray-200/50 border-gray-400/50"></div>
+            <div className="nav-vertical-line-container">
+              <div className="nav-vertical-line"></div>
             </div>
-            <div className="flex items-center gap-6 text-body2 ">
+            <div className="nav-items-container">
               <a href="#" className="link">
                 درباره من
               </a>
@@ -34,12 +34,12 @@ const NavBar: React.FC = () => {
         </div>
         <Link
           href="#"
-          className="flex items-center dark:text-gray-100 text-gray-900 text-h3 "
+          className="nav-logo"
         >
           {"</ M>"}
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 
