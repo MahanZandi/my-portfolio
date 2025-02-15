@@ -5,7 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 const NavBar: React.FC = () => {
   return (
-    <nav className="">
+    <nav className="nav-parents">
       <div className="nav-container">
         <div className="nav-hamburger-menu">
           <RxHamburgerMenu />
