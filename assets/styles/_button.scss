@@ -1,7 +1,13 @@
 @layer components {
+
     .button {
-        @apply text-gray-50 bg-gray-900 hover:bg-gray-700 active:bg-gray-800 dark:bg-gray-100 dark:hover:bg-gray-300 dark:active:bg-gray-200 dark:text-gray-950 px-4 h-[36px] flex items-center rounded-xl;
+        @apply text-gray-50 bg-gray-900 hover:bg-gray-700 active:bg-gray-800 dark:bg-gray-100 dark:hover:bg-gray-300 dark:active:bg-gray-200 dark:text-gray-950 px-4 h-[36px] flex items-center transition-all rounded-xl justify-center;
     }
+
+    .button-sidebar {
+        @apply text-gray-50 bg-gray-900 hover:bg-gray-700 active:bg-gray-800 dark:bg-gray-100 dark:hover:bg-gray-300 dark:active:bg-gray-200 dark:text-gray-950 px-4 h-[36px] flex items-center transition-all rounded-xl w-full justify-center;
+    }
+
 
     .button-theme {
         @apply text-[28px];

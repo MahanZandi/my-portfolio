@@ -5,7 +5,11 @@ import { useEffect, useState } from "react";
 
 type Theme = "light" | "dark" | null;
 
-const ThemeToggle:React.FC = () => {
+interface ThemeToggle{
+  className?: string;
+}
+
+const ThemeToggle:React.FC<ThemeToggle> = ({className}) => {
   const [theme, setTheme] = useState<Theme>(null);
 
   useEffect(() => {
@@ -24,7 +28,7 @@ const ThemeToggle:React.FC = () => {
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="button-theme link"
+      className={className}
       aria-label="تغییر تم"
     >
       {theme === "light" ? <PiMoonStars/> : <IoSunnyOutline/>}
