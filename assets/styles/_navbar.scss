@@ -1,7 +1,7 @@
 @layer components {
 
     .nav-parents {
-        @apply fixed top-0 left-0 w-full h-[68px] bg-transparent z-50;
+        @apply fixed backdrop-blur-md top-0 left-0 w-full h-[68px] bg-transparent z-50;
     }
 
     .nav-container {

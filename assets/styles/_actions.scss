@@ -1,0 +1,5 @@
+@layer components {
+    .actions {
+        @apply text-[24px] flex items-center dark:text-gray-400 text-gray-900 dark:hover:bg-gray-800 hover:bg-gray-100 transition-all p-2 rounded-xl;
+    }
+}
