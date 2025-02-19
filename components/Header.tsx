@@ -20,13 +20,13 @@ const Header: React.FC = () => {
             <div className="absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 dark:bg-gray-800 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px]"></div>
           </div>
 
-          <div className="pt-[10px] dark:text-gray-400 text-gray-600">
+          <div className="px-[16px] pt-[48px] lg:px-0 lg:pt-[10px] dark:text-gray-400 text-gray-600">
               <h1 className="text-gray-900 dark:text-gray-100 text-h1">
                   سلام من ماهانم 👋
               </h1>
               <p className=" pt-4 text-body2 pb-[48px]">
                     من یک توسعه‌دهنده فرانت‌اند با بیش از یک سال تجربه در ساخت رابط‌های کاربری مدرن و بهینه هستم. <br/>
-                    با استفاده از تکنولوژی‌هایی مانند React، Next.js و TailwindCSS و... تجربه‌ای سریع، جذاب و کاربرپسند خلق می‌کنم <br/>
+                    با استفاده از تکنولوژی‌هایی مانند React، Next.js و TailwindCSS و... تجربه‌ای سریع، جذاب و کاربرپسند خلق می‌کنم <br className="md:block hidden"/>
                     همیشه به دنبال یادگیری و بهبود مهارت‌هایم هستم تا بهترین تجربه را برای کاربران فراهم کنم. <br/>
               </p>
               <div className="flex flex-col gap-2">
