@@ -1,10 +1,12 @@
 @use "typography";
 @use "button";
+@use "tags";
 @use "links";
 @use "navbar";
 @use "sidebar";
 @use "animations";
 @use "actions";
+@use "header";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
