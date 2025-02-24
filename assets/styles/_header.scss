@@ -4,7 +4,7 @@
     }
 
     .header-container {
-        @apply container flex flex-col items-center lg:items-start lg:flex-row  gap-x-[128px] md:pt-[164px] md:pb-[96px] pt-[132px] pb-[64px];
+        @apply container flex flex-col items-center lg:items-start lg:flex-row  gap-x-[128px] md:pt-[164px] md:pb-[96px] pt-[132px] pb-[64px] px-[18px];
     }
 
     .header-image-container {
@@ -12,7 +12,7 @@
     }
 
     .header-image {
-        @apply absolute contrast-125 brightness-125 z-10 h-[280px] w-[240px] border-8 border-transparent border-r-gray-200 border-b-gray-200 border-l-gray-200 md:border-l-0 dark:border-r-gray-950 dark:border-b-gray-950 dark:border-l-gray-950 md:dark:border-l-0 max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px];
+        @apply absolute contrast-125 brightness-125 z-10 h-[280px] w-[240px] border-8 border-transparent border-r-gray-50 border-b-gray-50 border-l-gray-50 md:border-l-0 dark:border-r-gray-950 dark:border-b-gray-950 dark:border-l-gray-950 md:dark:border-l-0 max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px];
     }
 
     .header-shape {
@@ -28,7 +28,7 @@
     }
 
     .header-discription {
-        @apply pt-4 text-body2 pb-[48px];
+        @apply pt-4 text-body2 pb-[48px] ;
     }
 
     .header-next-line {

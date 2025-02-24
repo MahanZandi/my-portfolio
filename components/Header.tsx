@@ -10,6 +10,7 @@ const Header: React.FC = () => {
   return (
     <div className="header">
       <div className="header-container">
+        {/* Image */}
         <div className="header-image-container">
             <Image
               src={MahanImae}
@@ -19,15 +20,15 @@ const Header: React.FC = () => {
             />
             <div className="header-shape"></div>
           </div>
-
+          {/* content */}
           <div className="header-content">
               <h1 className="header-title">
                   سلام من ماهانم 👋
               </h1>
               <p className="header-discription">
-                    من یک توسعه‌دهنده فرانت‌اند با بیش از یک سال تجربه در ساخت رابط‌های کاربری مدرن و بهینه هستم. <br/>
+                    من یک توسعه‌دهنده فرانت‌اند با بیش از یک سال تجربه در ساخت رابط‌های کاربری مدرن و بهینه هستم. <br className="header-next-line"/>
                     با استفاده از تکنولوژی‌هایی مانند React، Next.js و TailwindCSS و... تجربه‌ای سریع، جذاب و کاربرپسند خلق می‌کنم <br className="header-next-line"/>
-                    همیشه به دنبال یادگیری و بهبود مهارت‌هایم هستم تا بهترین تجربه را برای کاربران فراهم کنم. <br/>
+                    همیشه به دنبال یادگیری و بهبود مهارت‌هایم هستم تا بهترین تجربه را برای کاربران فراهم کنم. <br className="header-next-line"/>
               </p>
               <div className="header-adress-space">
                     <div className="header-adress-container">

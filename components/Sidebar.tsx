@@ -37,7 +37,7 @@ const Sidebar = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (open: boo
               <a className="link" href="#">ارتباط با من</a>
             </span>
             <span>
-              <a className="link" href="#">نمونه کار هایم</a>
+              <a className="link" href="#">نمونه کارام</a>
             </span>
           </nav>
           <div className="sidebar-button-hr-parents">
