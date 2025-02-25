@@ -3,30 +3,30 @@ import Image from "next/image";
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="bg-gray-50 dark:bg-gray-900">
-      <div className="container px-[18px] py-[64px] md:py-[96px]">
-        <div className="flex justify-center pb-[24px] md:pb-[48px]">
-          <p className="tags w-[105px]">درباره من</p>
+    <div className="about">
+      <div className="about-container">
+        <div className="about-tag-container">
+          <p className="about-tag">درباره من</p>
         </div>
-        <div className="flex flex-col lg:flex-row-reverse lg:gap-x-[48px]">
+        <div className="about-space">
           {/* Image */}
-          <div className="flex justify-center md:order-first md:justify-end lg:pr-[144px] pb-[48px]">
-            <div className="relative h-[380px] w-[320px] md:h-[460px] md:w-[380px] lg:h-[520px] lg:w-[440px]">
+          <div className="about-image-flex">
+            <div className="about-image-position">
               <Image
                 src={MahanImage}
                 alt="Mahan Image"
-                className="absolute z-10 h-[360px] w-[280px] border-8 contrast-125 border-gray-50 dark:border-gray-800 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"
+                className="about-image"
                 style={{ objectFit: "cover" }}
               ></Image>
-              <div className="absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 dark:bg-gray-800 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"></div>
+              <div className="about-shape"></div>
             </div>
           </div>
           {/* content */}
           <span>
-            <h3 className="text-h3 pb-[24px]">
+            <h3 className="about-title">
               اگر می‌خواهید بیشتر با من آشنا شوید، این بخش را از دست ندهید!
             </h3>
-            <p className="text-body2">
+            <p className="about-caption">
                 درباره من من یک توسعه‌دهنده فرانت‌اند هستم که عاشق خلق کردن و حل
                 چالش‌های برنامه‌نویسی‌ام. بیش از یک سال است که در دنیای توسعه وب
                 فعالیت می‌کنم و در این مدت، روی پروژه‌های مختلفی کار کرده‌ام که
@@ -50,7 +50,7 @@ const AboutMe: React.FC = () => {
                 و Next.js هستم. هدف من این است که نمونه کارهای قوی‌تری بسازم و
                 مهارت‌های خود را در پروژه‌هایی مانند وبسایت‌های فروشگاهی و پنل‌های
                 ادمین توسعه دهم. در حال حاضر، ترجیح می‌دهم به عنوان توسعه‌دهنده
-                فرانت‌اند در یک شرکت کار کنم تا تجربه بیشتری کسب کنم و به سطح
+                فرانت‌اند در یک شرکت کار کنم تا تجربهdiscription بیشتری کسب کنم و به سطح
                 بالاتری در این حوزه برسم. سبک زندگی و علایق علاوه بر برنامه‌نویسی،
                 به ورزش کردن علاقه دارم و همیشه سعی می‌کنم بین کار و زندگی تعادل
                 برقرار کنم. انگیزه اصلی من در پروژه‌های شخصی، یادگیری چیزهای جدید و
