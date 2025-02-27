@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="about">
+    <section id="about" className="about">
       <div className="about-container">
         <div className="about-tag-container">
           <p className="about-tag">درباره من</p>
@@ -60,7 +60,7 @@ const AboutMe: React.FC = () => {
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

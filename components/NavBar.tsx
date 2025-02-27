@@ -11,9 +11,9 @@ const NavBar: React.FC = () => {
 
   return (
     <div>
-      <nav className="nav-parents">
+      <nav id="header" className="nav-parents">
         <div className="nav-container">
-          <div 
+          <div
               className="nav-hamburger-menu" 
               onClick={() => setIsOpen(true)}
               >
@@ -30,14 +30,14 @@ const NavBar: React.FC = () => {
                 <div className="nav-vertical-line"></div>
               </div>
               <div className="nav-items-container">
-                <a href="#" className="link">درباره من</a>
-                <a href="#" className="link">ارتباط با من</a>
-                <a href="#" className="link">نمونه کارام</a>
+                <Link href="#about" className="link">درباره من</Link>
+                <Link href="#" className="link">ارتباط با من</Link>
+                <Link href="#" className="link">نمونه کارام</Link>
               </div>
             </div>
           </div>
 
-          <Link href="/" className="nav-logo">{"</ M>"}</Link>
+          <Link href="#header" className="nav-logo">{"</ M>"}</Link>
         </div>
       </nav>
 
