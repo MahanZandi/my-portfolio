@@ -12,78 +12,124 @@ import Image from "next/image";
 
 const Skills: React.FC = () => {
   return (
-    <div className="bg-gray-950">
-      <div className="container py-[64px] desktop:py-[96px] px-[16px] xl:px-0">
+    <div className="skills">
+      <div className="skills-container">
         <div>
           {/* titles */}
-          <div className="grid place-items-center">
-            <span className="tags w-[150px]">مهارت های من :</span>
-            <span className="pt-[16px] pb-[24px] desktop:pb-[48px] text-subtitle text-center">
+          <div className="skills-titles">
+            <span className="skills-tag">مهارت های من :</span>
+            <span className="skills-title-span">
               ابزار ها و فناوری هایی که من واقعا در آنها خوب هستم :
             </span>
           </div>
           {/* content */}
-          <div className="grid grid-cols-3 gap-y-[16px] tablet:grid-cols-5 desktop:grid-cols-9">
+          <div className="skills-content-container">
             <div>
-              <div className="grid place-items-center">
-                <Image className="size-[64px]" src={HtmlIcon} alt="html icon" />
-                <p className="pt-2 text-body1">HTML</p>
+              <div className="skills-item">
+                <a href="https://www.w3schools.com/html/">
+                    <Image 
+                      className="skills-item-image" 
+                      src={HtmlIcon} 
+                      alt="html icon" 
+                    />
+                </a>
+                <p className="skills-item-text">HTML</p>
               </div>
             </div>
             <div>
-              <div className="grid place-items-center">
-                <Image className="size-[64px]" src={CssIcon} alt="css icon" />
-                <p className="pt-2 text-body1">CSS</p>
+              <div className="skills-item">
+                <a href="https://www.w3schools.com/css/">
+                    <Image 
+                      className="skills-item-image" 
+                      src={CssIcon} 
+                      alt="css icon" 
+                    />
+                </a>
+                <p className="skills-item-text">CSS</p>
               </div>
             </div>
             <div>
-              <div className="grid place-items-center">
-                <Image
-                  className="size-[64px]"
-                  src={TailwindIcon}
-                  alt="Tailwind css icon"
-                />
-                <p className="pt-2 text-body1">Tailwind css</p>
+              <div className="skills-item">
+                <a href="https://tailwindcss.com/">
+                    <Image
+                      className="skills-item-image"
+                      src={TailwindIcon}
+                      alt="Tailwind css icon"
+                    />
+                </a>
+                <p className="skills-item-text">Tailwind css</p>
               </div>
             </div>
             <div>
-              <div className="grid place-items-center">
-                <Image className="size-[64px]" src={ScssIcon} alt="sass/scss icon" />
-                <p className="pt-2 text-body1">Sass/Scss</p>
+              <div className="skills-item">
+                <a href="https://sass-lang.com/">
+                    <Image 
+                      className="skills-item-image" 
+                      src={ScssIcon} 
+                      alt="sass/scss icon" 
+                    />
+                </a>
+                <p className="skills-item-text">Sass/Scss</p>
               </div>
             </div>
             <div>
-              <div className="grid place-items-center">
-                <Image
-                  className="size-[64px]"
-                  src={JsIcon}
-                  alt="Javascript icon"
-                />
-                <p className="pt-2 text-body1">Javascript</p>
+              <div className="skills-item">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                    <Image
+                      className="skills-item-image"
+                      src={JsIcon}
+                      alt="Javascript icon"
+                    />
+                </a>
+                <p className="skills-item-text">Javascript</p>
               </div>
             </div>
             <div>
-              <div className="grid place-items-center">
-                <Image className="size-[64px]" src={TsIcon} alt="Typescript icon" />
-                <p className="pt-2 text-body1">Typescript</p>
+              <div className="skills-item">
+                <a href="https://www.typescriptlang.org/">
+                    <Image 
+                      className="skills-item-image" 
+                      src={TsIcon} 
+                      alt="Typescript icon" 
+                    />
+                </a>
+                <p className="skills-item-text">Typescript</p>
               </div>
             </div>
             <div>
-              <div className="grid place-items-center">
-                <Image className="size-[64px]" src={ReactIcon} alt="react icon" />
-                <p className="pt-2 text-body1">React</p>
+              <div className="skills-item">
+                <a href="https://react.dev/">
+                    <Image 
+                    className="skills-item-image" 
+                    src={ReactIcon} 
+                    alt="react icon" 
+                    />
+                </a>
+                <p className="skills-item-text">React</p>
               </div>
             </div>
             <div>
-              <div className="grid place-items-center">
-                <Image className="size-[64px]" src={NextJsIcon} alt="Next js icon" />
-                <p className="pt-2 text-body1">Next Js</p>
+              <div className="skills-item">
+                <a href="https://nextjs.org/">
+                    <Image 
+                      className="skills-item-image" 
+                      src={NextJsIcon} 
+                      alt="Next js icon" 
+                    />
+                </a>
+                <p className="skills-item-text">Next Js</p>
               </div>
             </div>
             <div>
-              <div className="grid place-items-center">
-                <Image className="size-[64px]" src={GitIcon} alt="git icon" />
-                <p className="pt-2 text-body1">Git</p>
+              <div className="skills-item">
+                <a href="https://git-scm.com/">
+                    <Image 
+                      className="skills-item-image" 
+                      src={GitIcon} 
+                      alt="git icon" 
+                    />
+                </a>
+                <p className="skills-item-text">Git</p>
               </div>
             </div>
           </div>

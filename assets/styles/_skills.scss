@@ -1,0 +1,37 @@
+@layer components {
+    .skills {
+        @apply bg-gray-50 dark:bg-gray-950;
+    }
+
+    .skills-container {
+        @apply container py-[64px] desktop:py-[96px] px-[16px] xl:px-0;
+    }
+
+    .skills-titles {
+        @apply grid place-items-center;
+    }
+
+    .skills-tag {
+        @apply tags w-[150px];
+    }
+
+    .skills-title-span {
+        @apply pt-[16px] pb-[24px] desktop:pb-[48px] text-subtitle text-center;
+    }
+
+    .skills-content-container {
+        @apply grid grid-cols-3 gap-y-[16px] tablet:grid-cols-5 desktop:grid-cols-9;
+    }
+
+    .skills-item {
+        @apply grid place-items-center;
+    }
+
+    .skills-item-image {
+        @apply size-[64px] hover:scale-110 transition-transform duration-200;
+    }
+
+    .skills-item-text {
+        @apply pt-2 text-body1;
+    }
+}

@@ -1,6 +1,6 @@
 @layer components {
     .header {
-        @apply bg-white text-gray-600 dark:bg-gray-950 transition-all;
+        @apply bg-white dark:bg-gray-950 transition-all;
     }
 
     .header-container {
@@ -28,7 +28,7 @@
     }
 
     .header-discription {
-        @apply pt-4 text-body2 pb-[48px] ;
+        @apply pt-4 text-body2 pb-[48px] text-start;
     }
 
     .header-next-line {
