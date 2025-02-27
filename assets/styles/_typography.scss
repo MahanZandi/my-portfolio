@@ -26,4 +26,8 @@
     .text-body3 {
         @apply text-[14px] leading-[20px];
     }
+
+    .text-subtitle {
+        @apply desktop:text-[20px] text-[18px] leading-[28px];
+    }
 }

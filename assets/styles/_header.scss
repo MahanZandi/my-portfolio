@@ -4,7 +4,7 @@
     }
 
     .header-container {
-        @apply container flex flex-col items-center lg:items-start lg:flex-row  gap-x-[128px] md:pt-[164px] md:pb-[96px] pt-[132px] pb-[64px] px-[18px];
+        @apply container flex flex-col items-center desktop:items-start desktop:flex-row  gap-x-[128px] md:pt-[164px] md:pb-[96px] pt-[132px] pb-[64px] px-[18px];
     }
 
     .header-image-container {
@@ -20,7 +20,7 @@
     }
 
     .header-content {
-        @apply px-[16px] pt-[48px] lg:px-0 lg:pt-[10px] dark:text-gray-400 text-gray-600;
+        @apply px-[16px] pt-[48px] desktop:px-0 desktop:pt-[10px] dark:text-gray-400 text-gray-600 text-center desktop:text-start;
     }
 
     .header-title {
@@ -36,11 +36,11 @@
     }
 
     .header-adress-space {
-        @apply flex flex-col gap-2;
+        @apply flex flex-col gap-2 ;
     }
 
     .header-adress-container {
-        @apply flex gap-2 items-center;
+        @apply flex gap-2 items-center ;
     }
 
     .header-adress-icon {
