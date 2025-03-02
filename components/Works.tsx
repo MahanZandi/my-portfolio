@@ -39,12 +39,12 @@ const Works: React.FC = () => {
   ];
 
   return (
-    <div className="container xl:py-[96px] bg-white dark:bg-gray-950 transition-all">
+    <div id="works" className="works">
       <div>
-        <span className="flex justify-center items-center">
+        <span className="works-tags-container">
           <p className="tags">نمونه کارهام</p>
         </span>
-        <span className="flex text-subtitle justify-center items-center pt-[16px] pb-[24px] desktop:pb-[48px]">
+        <span className="works-discription">
           <p>در این بخش میتوانید نمونه کارهایم را مشاهده کنید :</p>
         </span>
       </div>

@@ -32,7 +32,7 @@ const NavBar: React.FC = () => {
               <div className="nav-items-container">
                 <Link href="#about" className="link">درباره من</Link>
                 <Link href="#" className="link">ارتباط با من</Link>
-                <Link href="#" className="link">نمونه کارهام</Link>
+                <Link href="#works" className="link">نمونه کارهام</Link>
               </div>
             </div>
           </div>

@@ -1,0 +1,13 @@
+@layer components {
+    .works {
+        @apply container xl:py-[96px] bg-white dark:bg-gray-950 transition-all;
+    }
+
+    .works-tags-container {
+        @apply flex justify-center items-center;
+    }
+
+    .works-discription {
+        @apply flex text-subtitle justify-center items-center pt-[16px] pb-[24px] desktop:pb-[48px];
+    }
+}

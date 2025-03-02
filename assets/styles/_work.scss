@@ -1,0 +1,45 @@
+@layer components {
+    .work {
+        @apply container desktop:px-[64px] desktop:pb-[48px] pb-[24px];
+    }
+
+    .work-container {
+        @apply flex justify-center desktop:flex-row flex-col-reverse shadow-md rounded-xl;
+    }
+
+    .work-content {
+        @apply dark:bg-gray-800 bg-white w-full desktop:px-[48px] desktop:pt-[48px] px-[32px] pt-[32px] pb-[32px] desktop:rounded-r-xl desktop:rounded-bl-none rounded-b-xl;
+    }
+
+    .work-title {
+        @apply text-subtitle;
+    }
+
+    .work-discription {
+        @apply pt-[24px];
+    }
+
+    .work-techs {
+        @apply grid py-[24px] desktop:grid-cols-4 grid-cols-2 gap-2;
+    }
+
+    .work-link-container {
+        @apply grid place-items-end;
+    }
+
+    .work-link {
+        @apply p-1 hover:dark:bg-gray-950 hover:bg-gray-200 rounded-lg transition-all;
+    }
+
+    .work-image-outline {
+        @apply dark:bg-gray-700 bg-gray-50 w-full desktop:rounded-l-xl desktop:rounded-tr-none rounded-t-xl;
+    }
+
+    .work-image-space {
+        @apply p-[32px] desktop:p-[48px];
+    }
+
+    .work-image {
+        @apply rounded-xl bg-contain;
+    }
+}

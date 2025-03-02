@@ -12,13 +12,13 @@ interface WorkProps {
 
 const Work = ({ title, description, link, picture, techs}:WorkProps) => {
   return (
-    <div className="container desktop:px-[64px] desktop:pb-[48px] pb-[24px]">
-      <div className="flex justify-center desktop:flex-row flex-col-reverse shadow-md rounded-xl">
+    <div className="work">
+      <div className="work-container">
         {/* content */}
-        <div className="dark:bg-gray-800 bg-white w-full desktop:px-[48px] desktop:pt-[48px] px-[32px] pt-[32px] pb-[32px] desktop:rounded-r-xl desktop:rounded-bl-none rounded-b-xl">
-          <p className="text-subtitle">{title}</p>
-          <p className="pt-[24px]">{description}</p>
-          <div className="grid py-[24px] desktop:grid-cols-4 grid-cols-2 gap-2">
+        <div className="work-content">
+          <p className="work-title">{title}</p>
+          <p className="work-discription">{description}</p>
+          <div className="work-techs">
             {
               techs.map((data, index) => (
                 <span 
@@ -30,20 +30,20 @@ const Work = ({ title, description, link, picture, techs}:WorkProps) => {
               ))
             }
           </div>
-          <div className="grid place-items-end">
+          <div className="work-link-container">
             <Link
               href={link}
-              className="p-1 hover:dark:bg-gray-950 hover:bg-gray-200 rounded-lg transition-all"
+              className="work-link"
             >
               <RiExternalLinkLine size={24} />
             </Link>
           </div>
         </div>
         {/* image */}
-        <div className="dark:bg-gray-700 bg-gray-50 w-full desktop:rounded-l-xl desktop:rounded-tr-none rounded-t-xl">
-          <div className="p-[32px] desktop:p-[48px] ">
+        <div className="work-image-outline">
+          <div className="work-image-space">
             <Image
-              className="rounded-xl bg-contain"
+              className="work-image"
               src={picture}
               alt="arya website image"
             />
