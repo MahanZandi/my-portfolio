@@ -2,4 +2,8 @@
     .tags {
         @apply flex text-body3 justify-center items-center bg-gray-200 text-gray-600 dark:bg-gray-800 dark:text-gray-400 rounded-xl px-5 h-[28px];
     }
+
+    .tags-tech {
+        @apply flex text-body3 justify-center items-center bg-gray-200 text-gray-600 dark:bg-gray-700 dark:text-gray-300 rounded-xl px-5 h-[28px];
+    }
 }

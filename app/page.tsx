@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import Header from "@/components/Header";
 import AboutMe from "@/components/AboutMe";
 import Skills from "@/components/Skills";
+import Works from "@/components/Works";
 
 const App:React.FC = () => {
 
@@ -12,6 +13,7 @@ const App:React.FC = () => {
       <Header/>
       <AboutMe/>
       <Skills/>
+      <Works/>
     </div>
   )
 }
