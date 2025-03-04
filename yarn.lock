@@ -2912,6 +2912,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"keen-slider@npm:^6.8.6":
+  version: 6.8.6
+  resolution: "keen-slider@npm:6.8.6"
+  checksum: 10c0/612553f15c5af61bf23f5defe414e7d314406a109e2d944c4253f7862e3666f2ab9bae0e43bf84f41678878ca1d90d38831845bb496dfd747ed84efc7d34efdd
+  languageName: node
+  linkType: hard
+
 "keyv@npm:^4.5.4":
   version: 4.5.4
   resolution: "keyv@npm:4.5.4"
@@ -3170,6 +3177,7 @@ __metadata:
     i18next: "npm:^24.2.2"
     i18next-browser-languagedetector: "npm:^8.0.2"
     i18next-http-backend: "npm:^3.0.2"
+    keen-slider: "npm:^6.8.6"
     next: "npm:15.1.7"
     next-i18next: "npm:^15.4.2"
     postcss: "npm:^8"

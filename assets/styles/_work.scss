@@ -1,6 +1,6 @@
 @layer components {
     .work {
-        @apply container desktop:px-[64px] desktop:pb-[48px] pb-[24px];
+        @apply container desktop:pb-[48px] pb-[24px];
     }
 
     .work-container {

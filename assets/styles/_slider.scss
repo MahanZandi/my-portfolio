@@ -1,0 +1,29 @@
+@layer components {
+    .slider {
+        @apply bg-gray-100 dark:bg-gray-900;
+    }
+
+    .slider-container {
+        @apply container py-[64px] xl:py-[96px];
+    }
+
+    .slider-tags-container {
+        @apply flex justify-center items-center;
+    }
+
+    .slider-text {
+        @apply text-center text-subtitle pt-[16px] pb-[24px] xl:pb-[48px];
+    }
+
+    .slider-outline {
+        @apply p-2 rounded-3xl bg-gray-200 dark:bg-gray-800;
+    }
+
+    .slider-item {
+        @apply flex items-center justify-center bg-contain p-1 tablet:p-2 rounded-2xl max-h-[600px];
+    }
+
+    .slider-item-down {
+        @apply flex items-center justify-center bg-contain p-0.5 tablet:p-1 brightness-75 rounded-md desktop:rounded-2xl;
+    }
+}
