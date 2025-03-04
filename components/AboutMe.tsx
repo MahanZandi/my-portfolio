@@ -16,7 +16,6 @@ const AboutMe: React.FC = () => {
                 src={MahanImage}
                 alt="Mahan Image"
                 className="about-image"
-                style={{ objectFit: "cover" }}
               ></Image>
               <div className="about-shape"></div>
             </div>

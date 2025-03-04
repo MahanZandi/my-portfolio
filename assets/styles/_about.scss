@@ -28,7 +28,7 @@
     }
 
     .about-image {
-        @apply absolute z-10 h-[360px] w-[280px] border-8 contrast-125 border-gray-50 dark:border-gray-800 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] desktop:h-[480px] desktop:w-[400px];
+        @apply absolute z-10 h-[360px] bg-cover w-[280px] border-8 contrast-125 border-gray-50 dark:border-gray-800 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] desktop:h-[480px] desktop:w-[400px];
     }
 
     .about-shape {
