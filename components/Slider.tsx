@@ -81,7 +81,7 @@ export default function Slider() {
               <Image src={wallpaper3} alt="siliconValley wallpaper" className="keen-slider__slide number-slide1 slider-item"/>
               <Image src={wallpaper4} alt="microsoft wallpaper" className="keen-slider__slide number-slide1 slider-item"/>
               <Image src={wallpaper5} alt="react wallpaper" className="keen-slider__slide number-slide1 slider-item"/>
-              <Image src={wallpaper6} alt="next js wallpaper" className="keen-slider__slide number-slide1 slyder-item"/>
+              <Image src={wallpaper6} alt="next js wallpaper" className="keen-slider__slide number-slide1 slider-item"/>
           </div>
 
           <div ref={thumbnailRef} className="keen-slider thumbnail">
