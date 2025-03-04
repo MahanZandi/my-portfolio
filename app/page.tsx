@@ -4,16 +4,20 @@ import Header from "@/components/Header";
 import AboutMe from "@/components/AboutMe";
 import Skills from "@/components/Skills";
 import Works from "@/components/Works";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const App:React.FC = () => {
 
   return (
-    <div dir="rtl" className="bg-white text-gray-600 dark:bg-gray-950  dark:text-gray-400 transition-all">
+    <div dir="rtl" className="bg-white text-gray-600 dark:bg-gray-950  dark:text-gray-300 transition-all">
       <NavBar/>
       <Header/>
       <AboutMe/>
       <Skills/>
       <Works/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

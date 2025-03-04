@@ -1,5 +1,6 @@
 import Image from "next/image";
 import MahanImae from "@/public/images/mahanImage01.jpg";
+import Link from "next/link";
 import { SlLocationPin } from "react-icons/sl";
 import { TbBrandGithub } from "react-icons/tb";
 import { LiaTelegramPlane } from "react-icons/lia";
@@ -26,7 +27,7 @@ const Header: React.FC = () => {
                   سلام من ماهانم 👋
               </h1>
               <p className="header-discription">
-                    من یک توسعه‌دهنده فرانت‌اند با بیش از یک سال تجربه در ساخت رابط‌های کاربری مدرن و بهینه هستم. <br className="header-next-line"/>
+                    من ماهان الوارزندی هستم توسعه‌دهنده فرانت‌اند با بیش از یک سال تجربه در ساخت رابط‌های کاربری مدرن و بهینه هستم. <br className="header-next-line"/>
                     با استفاده از تکنولوژی‌هایی مانند React، Next.js و TailwindCSS و... تجربه‌ای سریع، جذاب و کاربرپسند خلق می‌کنم <br className="header-next-line"/>
                     همیشه به دنبال یادگیری و بهبود مهارت‌هایم هستم تا بهترین تجربه را برای کاربران فراهم کنم. <br className="header-next-line"/>
               </p>
@@ -48,18 +49,18 @@ const Header: React.FC = () => {
                     </div>
 
                     <div className="header-social-icons">
-                        <a href="#" className="actions">
+                        <Link href="#" className="actions">
                             <TbBrandGithub/>
-                        </a>
-                        <a href="#" className="actions">
+                        </Link>
+                        <Link href="#" className="actions">
                             <LiaTelegramPlane/>
-                        </a>
-                        <a href="#" className="actions">
+                        </Link>
+                        <Link href="#" className="actions">
                             <FaInstagram/>
-                        </a>
-                        <a href="#" className="actions">
+                        </Link>
+                        <Link href="#" className="actions">
                             <PiLinkedinLogoBold/>
-                        </a>
+                        </Link>
                     </div>
               </div>
           </div>

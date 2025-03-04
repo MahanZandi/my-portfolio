@@ -1,0 +1,45 @@
+@layer components {
+    .contact {
+        @apply container xl:py-[96px] bg-white dark:bg-gray-950 transition-all;
+    }
+
+    .contact-tags-container {
+        @apply flex justify-center items-center;
+    }
+
+    .contact-text {
+        @apply text-center text-subtitle pt-[16px] pb-[24px] xl:pb-[48px];
+    }
+
+    .contact-content {
+        @apply flex flex-col gap-1 desktop:gap-[18px] pb-[24px] desktop:pb-[48px];
+    }
+
+    .contact-info {
+        @apply flex justify-center items-center gap-4 desktop:gap-5;
+    }
+
+    .contact-info-text {
+        @apply text-h2;
+    }
+
+    .contact-info-icon {
+        @apply text-[20px] desktop:text-[34px];
+    }
+
+    .contact-info-icon-copy {
+        @apply text-[20px] desktop:text-[30px];
+    }
+
+    .contact-social {
+        @apply flex items-center flex-col gap-2;
+    }
+
+    .contact-social-title {
+        @apply text-body2;
+    }
+
+    .contact-social-links {
+        @apply flex gap-1;
+    } 
+}
