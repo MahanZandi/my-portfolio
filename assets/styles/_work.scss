@@ -12,7 +12,7 @@
     }
 
     .work-title {
-        @apply text-subtitle;
+        @apply text-subtitle text-gray-900 dark:text-gray-100;
     }
 
     .work-discription {

@@ -36,7 +36,7 @@
     }
 
     .about-title {
-        @apply text-h3 pb-[24px];
+        @apply text-h3 pb-[24px] text-gray-900 dark:text-gray-100;
     }
 
     .about-caption {
