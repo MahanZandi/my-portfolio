@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" data-first-enter-image="true">
+    <div id="contact" className="contact" data-first-enter-image="true">
       {/* title */}
       <div className="contact-tags-container">
         <span className="tags">تماس بگیرید</span>

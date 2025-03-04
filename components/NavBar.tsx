@@ -31,8 +31,8 @@ const NavBar: React.FC = () => {
               </div>
               <div className="nav-items-container">
                 <Link href="#about" className="link">درباره من</Link>
-                <Link href="#" className="link">تماس با من</Link>
                 <Link href="#works" className="link">نمونه کارهام</Link>
+                <Link href="#contact" className="link">تماس با من</Link>
               </div>
             </div>
           </div>
