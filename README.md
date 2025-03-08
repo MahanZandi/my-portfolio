@@ -1,4 +1,4 @@
-<div style="display:flex">
+<div>
   <img src="/public/images/website-cover.png" width="600" alt="website image"/>
   <img src="/public/images/website-cover-mobile.png" width="200" alt="website image mobile"/>
 </div>
