@@ -1,3 +1,8 @@
+<div style="display:flex">
+  <img src="/public/images/website-cover.png" width="600" alt="website image"/>
+  <img src="/public/images/website-cover-mobile.png" width="200" alt="website image mobile"/>
+</div>
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
