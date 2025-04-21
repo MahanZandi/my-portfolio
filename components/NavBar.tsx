@@ -20,7 +20,9 @@ const NavBar: React.FC = () => {
           <div className="nav-flex-space">
             <div className="nav-items-parents">
               <div className="nav-buttons-container">
-                <Button className="button" text="دانلود رزومه" />
+                <a href="/files/Mahan-resume.pdf" target="_blank">
+                  <Button className="button" text="دانلود رزومه" />
+                </a>
                 <ThemeToggle className="button-theme link" />
               </div>
               <div className="nav-vertical-line-container">
