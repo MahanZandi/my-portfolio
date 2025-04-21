@@ -13,31 +13,36 @@ const NavBar: React.FC = () => {
     <div>
       <nav id="header" className="nav-parents">
         <div className="nav-container">
-          <div
-              className="nav-hamburger-menu" 
-              onClick={() => setIsOpen(true)}
-              >
-            <RxHamburgerMenu/>
+          <div className="nav-hamburger-menu" onClick={() => setIsOpen(true)}>
+            <RxHamburgerMenu />
           </div>
 
           <div className="nav-flex-space">
             <div className="nav-items-parents">
               <div className="nav-buttons-container">
                 <Button className="button" text="دانلود رزومه" />
-                <ThemeToggle className="button-theme link"/>
+                <ThemeToggle className="button-theme link" />
               </div>
               <div className="nav-vertical-line-container">
                 <div className="nav-vertical-line"></div>
               </div>
               <div className="nav-items-container">
-                <Link href="#about" className="link">درباره من</Link>
-                <Link href="#works" className="link">نمونه کارهام</Link>
-                <Link href="#contact" className="link">تماس با من</Link>
+                <Link href="#about" className="link">
+                  درباره من
+                </Link>
+                <Link href="#works" className="link">
+                  نمونه کارهام
+                </Link>
+                <Link href="#contact" className="link">
+                  تماس با من
+                </Link>
               </div>
             </div>
           </div>
 
-          <Link href="#header" className="nav-logo">{"</ M>"}</Link>
+          <Link href="#header" className="nav-logo">
+            {"</ M>"}
+          </Link>
         </div>
       </nav>
 
