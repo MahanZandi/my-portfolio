@@ -1,43 +1,7 @@
-import AryaImage from "@/public/images/aryawebsite.png";
+import { projects } from "@/data/projectsData";
 import Work from "./Work";
 
 const Works: React.FC = () => {
-  interface Projects {
-    id: number;
-    title: string;
-    description: string;
-    link: string;
-    picture: any;
-    techs: string[];
-  }
-
-  const projects: Projects[] = [
-    {
-      id: 1,
-      title: "وبسایت فرآوردانه آریا",
-      description: "من وبسایت آریا را با تکنولوژی‌های زیر ساخته‌ام",
-      link: "",
-      picture: AryaImage,
-      techs: ["React", "Next.js", "TypeScript", "Tailwind", "SCSS", "Git"],
-    },
-    {
-      id: 2,
-      title: "وبسایت فرآوردانه آریا",
-      description: "من وبسایت آریا را با تکنولوژی‌های زیر ساخته‌ام",
-      link: "",
-      picture: AryaImage,
-      techs: ["React", "Next.js", "TypeScript", "Tailwind", "SCSS", "Git"],
-    },
-    {
-      id: 3,
-      title: "وبسایت فرآوردانه آریا",
-      description: "من وبسایت آریا را با تکنولوژی‌های زیر ساخته‌ام",
-      link: "",
-      picture: AryaImage,
-      techs: ["React", "Next.js", "TypeScript", "Tailwind", "SCSS", "Git"],
-    },
-  ];
-
   return (
     <div id="works" className="works">
       <div>
@@ -56,6 +20,7 @@ const Works: React.FC = () => {
           link={data.link}
           picture={data.picture}
           techs={data.techs}
+          githubLink={data.githubLink}
         />
       ))}
     </div>
