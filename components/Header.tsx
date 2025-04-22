@@ -6,6 +6,7 @@ import { TbBrandGithub } from "react-icons/tb";
 import { LiaTelegramPlane } from "react-icons/lia";
 import { FaInstagram } from "react-icons/fa";
 import { PiLinkedinLogoBold } from "react-icons/pi";
+import { MdCall } from "react-icons/md";
 
 const Header: React.FC = () => {
   return (
@@ -35,7 +36,7 @@ const Header: React.FC = () => {
                     <div className="header-adress-container">
                         <SlLocationPin className="header-adress-icon"/>
                         <p>
-                            ایران , گلستان , کردکوی
+                            ایران , استان گلستان 
                         </p>
                     </div>
 
@@ -44,21 +45,24 @@ const Header: React.FC = () => {
                             <div className="header-open-to-work-icon"/>
                         </div>
                         <p>
-                            آماده برای استخدام در شرکت 
+                            آماده برای پروژه گرفتن 
                         </p>
                     </div>
 
                     <div className="header-social-icons">
-                        <Link href="#" className="actions">
+                        <Link href="tel:+98 939 552 6996" className="actions">
+                            <MdCall/>
+                        </Link>
+                        <Link href="https://github.com/MahanZandi" className="actions">
                             <TbBrandGithub/>
                         </Link>
-                        <Link href="#" className="actions">
+                        <Link href="https://t.me/+989395526996" className="actions">
                             <LiaTelegramPlane/>
                         </Link>
-                        <Link href="#" className="actions">
+                        <Link href="https://www.instagram.com/mahan.zandi.85" className="actions">
                             <FaInstagram/>
                         </Link>
-                        <Link href="#" className="actions">
+                        <Link href="https://www.linkedin.com/in/mahanzandi" className="actions">
                             <PiLinkedinLogoBold/>
                         </Link>
                     </div>
