@@ -6,7 +6,7 @@ import Skills from "@/components/Skills";
 import Works from "@/components/Works";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Slider from "@/components/Slider";
+import Scene3D from "@/components/Scene3D";
 
 const App:React.FC = () => {
 
@@ -17,7 +17,7 @@ const App:React.FC = () => {
       <AboutMe/>
       <Skills/>
       <Works/>
-      <Slider/>
+      <Scene3D/>
       <Contact/>
       <Footer/>
     </div>

@@ -4,12 +4,12 @@ import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { useEffect } from "react";
 
-const Monitor3D = () => {
+const Monitor3D: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
   const gltf = useLoader(GLTFLoader, "/ThreeJs/Models/monitor.glb");
 
   useEffect(() => {
     const video = document.createElement("video");
-    video.src = "/videos/video.mp4"; // مسیر ویدئو خود را وارد کنید
+    video.src = "/videos/video.mp4";
     video.crossOrigin = "anonymous";
     video.loop = true;
     video.muted = true;
@@ -35,7 +35,11 @@ const Monitor3D = () => {
 
   return (
     <>
-      <primitive object={gltf.scene} scale={0.6} position={[0, 1, 0]} />
+      <primitive
+        object={gltf.scene}
+        scale={isMobile ? 0.5 : 0.6}
+        position={[0, isMobile ? 1.6 : 1, 0]}
+      />
     </>
   );
 };
