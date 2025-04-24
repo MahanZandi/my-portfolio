@@ -1,0 +1,21 @@
+@layer components {
+    .scene3d  {
+        @apply dark:bg-gray-900 bg-gray-100;
+    }
+
+    .scene3d-container {
+        @apply container w-full h-screen py-[64px] md:py-[96px];
+    }
+
+    .scene3d-tag-container {
+        @apply flex justify-center items-center;
+    }
+
+    .scene3d-description {
+        @apply flex text-subtitle justify-center items-center pt-[16px] text-center;
+    }
+
+    .scene3d-bottom-text {
+        @apply py-[16px] flex justify-center items-center container gap-2;
+    }
+}
