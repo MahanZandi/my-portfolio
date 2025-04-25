@@ -2,14 +2,15 @@
 import { IoSunnyOutline } from "react-icons/io5";
 import { PiMoonStars } from "react-icons/pi";
 import { useEffect, useState } from "react";
+import { FaSpinner } from "react-icons/fa";
 
 type Theme = "light" | "dark" | null;
 
-interface ThemeToggle{
+interface ThemeToggle {
   className?: string;
 }
 
-const ThemeToggle:React.FC<ThemeToggle> = ({className}) => {
+const ThemeToggle: React.FC<ThemeToggle> = ({ className }) => {
   const [theme, setTheme] = useState<Theme>(null);
 
   useEffect(() => {
@@ -23,17 +24,23 @@ const ThemeToggle:React.FC<ThemeToggle> = ({className}) => {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  if (!theme) return null; 
+  if (!theme) {
+    return (
+      <button className={`${className} animate-spin`} aria-label="در حال لود تم">
+        <FaSpinner />
+      </button>
+    );
+  }
 
   return (
     <button
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className={className}
       aria-label="تغییر تم"
     >
-      {theme === "light" ? <PiMoonStars/> : <IoSunnyOutline/>}
+      {theme === "light" ? <PiMoonStars /> : <IoSunnyOutline />}
     </button>
   );
-}
+};
 
 export default ThemeToggle;
