@@ -39,4 +39,12 @@
     .nav-logo {
         @apply flex items-center dark:text-gray-100 text-gray-900 text-h3;
     }
+
+    .nav-lang {
+        @apply dark:bg-gray-800 bg-gray-200 dark:text-white p-2 rounded-xl flex justify-center items-center gap-2;
+    }
+
+    .nav-lang-image {
+        @apply w-6 rounded-full;
+    }
 }

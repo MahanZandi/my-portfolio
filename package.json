@@ -18,6 +18,7 @@
     "keen-slider": "^6.8.6",
     "next": "15.1.7",
     "next-i18next": "^15.4.2",
+    "next-intl": "^4.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.0",

@@ -5,9 +5,36 @@ import ThemeToggle from "./ThemeTogle";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
+import Image from "next/image";
+import enflag from "@/public/images/en-flag.png";
+import faflag from "@/public/images/fa-flag.png";
 
-const NavBar: React.FC = () => {
+interface NavbarProps {
+  locale: "en" | "fa";
+}
+
+const NavBar: React.FC<NavbarProps> = ({locale}) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const fa = () => {
+    return (
+      <Link href="/en" className="nav-lang">
+        <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image"/>
+        <span>FA</span>
+      </Link>
+    )
+  }
+
+  const en = () => {
+    return (
+      <Link href="/fa" className="nav-lang">
+        <Image src={enflag} alt="آیکون پرچم انگلیس" className="nav-lang-image"/>
+        <span>EN</span>
+      </Link>
+    )
+  }
+
+  const lang = locale === "fa" ? fa() : en();
 
   return (
     <div>
@@ -29,6 +56,9 @@ const NavBar: React.FC = () => {
                 <div className="nav-vertical-line"></div>
               </div>
               <div className="nav-items-container">
+                <div>
+                  {lang}
+                </div>
                 <Link href="#about" className="link">
                   درباره من
                 </Link>
@@ -41,7 +71,6 @@ const NavBar: React.FC = () => {
               </div>
             </div>
           </div>
-
           <Link href="#header" className="nav-logo">
             {"</ M>"}
           </Link>

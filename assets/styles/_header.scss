@@ -4,7 +4,7 @@
     }
 
     .header-container {
-        @apply container flex flex-col items-center desktop:items-start desktop:flex-row  gap-x-[128px] md:pt-[164px] md:pb-[96px] pt-[132px] pb-[64px] px-[18px];
+        @apply container flex flex-col items-center desktop:items-start desktop:flex-row lg:gap-x-[60px] md:pt-[164px] md:pb-[96px] pt-[132px] pb-[64px] px-[18px];
     }
 
     .header-image-container {
@@ -28,7 +28,7 @@
     }
 
     .header-discription {
-        @apply pt-4 text-body2 pb-[48px] text-start;
+        @apply pt-4 text-body2 pb-[48px] lg:w-[600px] xl:w-[800px];
     }
 
     .header-next-line {

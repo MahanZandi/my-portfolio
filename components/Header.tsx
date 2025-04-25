@@ -7,8 +7,11 @@ import { LiaTelegramPlane } from "react-icons/lia";
 import { FaInstagram } from "react-icons/fa";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { MdCall } from "react-icons/md";
+import {useTranslations} from 'next-intl';
 
 const Header: React.FC = () => {
+  const t = useTranslations('header')
+    
   return (
     <div className="header">
       <div className="header-container">
@@ -25,18 +28,16 @@ const Header: React.FC = () => {
           {/* content */}
           <div className="header-content">
               <h1 className="header-title">
-                  سلام من ماهانم 👋
+                  {t('title')}
               </h1>
               <p className="header-discription">
-                    من ماهان الوارزندی هستم توسعه‌دهنده فرانت‌اند با بیش از یک سال تجربه در ساخت رابط‌های کاربری مدرن و بهینه هستم. <br className="header-next-line"/>
-                    با استفاده از تکنولوژی‌هایی مانند React، Next.js و TailwindCSS و... تجربه‌ای سریع، جذاب و کاربرپسند خلق می‌کنم <br className="header-next-line"/>
-                    همیشه به دنبال یادگیری و بهبود مهارت‌هایم هستم تا بهترین تجربه را برای کاربران فراهم کنم. <br className="header-next-line"/>
+                  {t('description')}
               </p>
               <div className="header-adress-space">
                     <div className="header-adress-container">
                         <SlLocationPin className="header-adress-icon"/>
                         <p>
-                            ایران , استان گلستان 
+                            {t('address')}
                         </p>
                     </div>
 
@@ -45,7 +46,7 @@ const Header: React.FC = () => {
                             <div className="header-open-to-work-icon"/>
                         </div>
                         <p>
-                            آماده برای پروژه گرفتن 
+                            {t('work')}
                         </p>
                     </div>
 
