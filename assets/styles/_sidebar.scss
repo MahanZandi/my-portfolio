@@ -55,4 +55,12 @@
         @apply transition-all text-[24px] flex items-center dark:text-gray-100 text-gray-900 dark:hover:bg-gray-800 hover:bg-gray-100 p-2 rounded-xl;
     }
 
+    .sidebar-lang-container {
+        @apply flex gap-y-[16px] text-gray-600 dark:text-gray-400;
+    }
+
+    .sidebar-lang-text {
+        @apply flex flex-1 pt-2;
+    }
+
 }

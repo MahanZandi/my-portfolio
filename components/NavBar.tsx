@@ -52,13 +52,13 @@ const NavBar: React.FC<NavbarProps> = ({locale}) => {
                 </a>
                 <ThemeToggle className="button-theme link" />
               </div>
+                <div>
+                  {lang}
+                </div>
               <div className="nav-vertical-line-container">
                 <div className="nav-vertical-line"></div>
               </div>
               <div className="nav-items-container">
-                <div>
-                  {lang}
-                </div>
                 <Link href="#about" className="link">
                   درباره من
                 </Link>
@@ -77,7 +77,7 @@ const NavBar: React.FC<NavbarProps> = ({locale}) => {
         </div>
       </nav>
 
-      <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Sidebar locale={locale} isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

@@ -2,14 +2,41 @@ import Link from "next/link";
 import { RxCross2 } from "react-icons/rx";
 import ThemeToggle from "./ThemeTogle";
 import Button from "./Button";
+import Image from "next/image";
+import enflag from "@/public/images/en-flag.png";
+import faflag from "@/public/images/fa-flag.png";
 
-const Sidebar = ({
-  isOpen,
-  setIsOpen,
-}: {
+interface SidebarProps {
   isOpen: boolean;
   setIsOpen: (value: boolean) => void;
-}) => {
+  locale: "fa" | "en";
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
+  const fa = () => {
+    return (
+      <Link href="/en" className="nav-lang">
+        <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
+        <span>FA</span>
+      </Link>
+    );
+  };
+
+  const en = () => {
+    return (
+      <Link href="/fa" className="nav-lang">
+        <Image
+          src={enflag}
+          alt="آیکون پرچم انگلیس"
+          className="nav-lang-image"
+        />
+        <span>EN</span>
+      </Link>
+    );
+  };
+
+  const lang = locale === "fa" ? fa() : en();
+
   return (
     <div>
       {isOpen && (
@@ -57,6 +84,10 @@ const Sidebar = ({
           <div className="sidebar-theme-toggle-container">
             <p className="sidebar-switch-theme-text">تعویض تم</p>
             <ThemeToggle className="sidebar-theme-toggle" />
+          </div>
+          <div className="sidebar-lang-container">
+            <p className="sidebar-lang-text">تغییر زبان</p>
+            <div>{lang}</div>
           </div>
           <div onClick={() => setIsOpen(false)}>
             <a href="/files/Mahan-resume.pdf" target="_blank">
