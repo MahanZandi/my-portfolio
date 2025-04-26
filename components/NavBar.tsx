@@ -8,31 +8,38 @@ import Sidebar from "./Sidebar";
 import Image from "next/image";
 import enflag from "@/public/images/en-flag.png";
 import faflag from "@/public/images/fa-flag.png";
+import { useTranslations } from "next-intl";
 
 interface NavbarProps {
   locale: "en" | "fa";
 }
 
-const NavBar: React.FC<NavbarProps> = ({locale}) => {
+const NavBar: React.FC<NavbarProps> = ({ locale }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const t = useTranslations('navbar')
 
   const fa = () => {
     return (
       <Link href="/en" className="nav-lang">
-        <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image"/>
+        <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
         <span>FA</span>
       </Link>
-    )
-  }
+    );
+  };
 
   const en = () => {
     return (
       <Link href="/fa" className="nav-lang">
-        <Image src={enflag} alt="آیکون پرچم انگلیس" className="nav-lang-image"/>
+        <Image
+          src={enflag}
+          alt="آیکون پرچم انگلیس"
+          className="nav-lang-image"
+        />
         <span>EN</span>
       </Link>
-    )
-  }
+    );
+  };
 
   const lang = locale === "fa" ? fa() : en();
 
@@ -52,21 +59,19 @@ const NavBar: React.FC<NavbarProps> = ({locale}) => {
                 </a>
                 <ThemeToggle className="button-theme link" />
               </div>
-                <div>
-                  {lang}
-                </div>
+              <div>{lang}</div>
               <div className="nav-vertical-line-container">
                 <div className="nav-vertical-line"></div>
               </div>
               <div className="nav-items-container">
                 <Link href="#about" className="link">
-                  درباره من
+                  {t('about me')}
                 </Link>
                 <Link href="#works" className="link">
-                  نمونه کارهام
+                  {t('works')}
                 </Link>
                 <Link href="#contact" className="link">
-                  تماس با من
+                  {t('contact me')}
                 </Link>
               </div>
             </div>

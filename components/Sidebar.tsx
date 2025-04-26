@@ -5,6 +5,7 @@ import Button from "./Button";
 import Image from "next/image";
 import enflag from "@/public/images/en-flag.png";
 import faflag from "@/public/images/fa-flag.png";
+import { useTranslations } from "next-intl";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -13,6 +14,9 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
+
+  const t = useTranslations('sidebar')
+
   const fa = () => {
     return (
       <Link href="/en" className="nav-lang">
@@ -63,17 +67,17 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
         <nav className="sidebar-items-container">
           <span onClick={() => setIsOpen(false)}>
             <Link className="link" href="#about">
-              درباره من
+              {t('about me')}
             </Link>
           </span>
           <span onClick={() => setIsOpen(false)}>
             <Link className="link" href="#works">
-              نمونه کارهام
+              {t('works')}
             </Link>
           </span>
           <span onClick={() => setIsOpen(false)}>
             <Link className="link" href="#contact">
-              تماس با من
+              {t('contact me')}
             </Link>
           </span>
         </nav>
@@ -82,11 +86,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
         </div>
         <div className="sidebar-tools-container">
           <div className="sidebar-theme-toggle-container">
-            <p className="sidebar-switch-theme-text">تعویض تم</p>
+            <p className="sidebar-switch-theme-text">{t('change language')}</p>
             <ThemeToggle className="sidebar-theme-toggle" />
           </div>
           <div className="sidebar-lang-container">
-            <p className="sidebar-lang-text">تغییر زبان</p>
+            <p className="sidebar-lang-text">{t('change theme')}</p>
             <div>{lang}</div>
           </div>
           <div onClick={() => setIsOpen(false)}>
