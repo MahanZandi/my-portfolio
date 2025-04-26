@@ -8,20 +8,23 @@ import ReactIcon from "@/public/images/skills-icons/icon-react.svg";
 import NextJsIcon from "@/public/images/skills-icons/icon-nextjs.svg";
 import GitIcon from "@/public/images/skills-icons/icon-git.svg";
 import ThreejsIcon from "@/public/images/skills-icons/Threejs-logo.svg";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
-
 import Image from "next/image";
 
 const Skills: React.FC = () => {
+
+  const t = useTranslations('skills')
+
   return (
     <div className="skills">
       <div className="skills-container">
         <div>
           {/* titles */}
           <div className="skills-titles">
-            <span className="skills-tag">مهارت های من :</span>
+            <span className="skills-tag">{t('tag')}</span>
             <span className="skills-title-span">
-              ابزار ها و فناوری هایی که من واقعا در آنها خوب هستم :
+              {t('overview')} 
             </span>
           </div>
           {/* content */}

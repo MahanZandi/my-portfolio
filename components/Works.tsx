@@ -1,15 +1,19 @@
 import { projects } from "@/data/projectsData";
 import Work from "./Work";
+import { useTranslations } from "next-intl";
 
 const Works: React.FC = () => {
+
+  const t = useTranslations('works');
+
   return (
     <div id="works" className="works">
       <div>
         <span className="works-tags-container">
-          <p className="tags">نمونه کارهام</p>
+          <p className="tags">{t('tag')}</p>
         </span>
         <span className="works-discription">
-          <p>در این بخش میتوانید نمونه کارهایم را مشاهده کنید :</p>
+          <p>{t('description')}</p>
         </span>
       </div>
       {projects.map((data) => (

@@ -21,9 +21,18 @@
     },
 
     "about me": {
-        "tag": "about me",
+        "tag": "About me",
         "title": "If you want to learn more about me and my work, feel free to check out this section.",
         "description": "I'm Mahan Zandi, a Front-end Developer passionate about building modern, clean, and fully responsive user interfaces. Since I started coding, I've been deeply interested in creating professional user experiences using React.js, Next.js, TailwindCSS, and other modern technologies. My experience goes beyond learning and practicing — I've worked on real-world projects like the official website for Faravardeh Arya Factory (fdarya.com). Over the course of three months, I designed, developed, and deployed the entire project from scratch, focusing on Clean Code, SEO optimization, and responsive design to create a modern and effective website that helped boost the company's marketing and sales efforts. In addition to client projects, I’m building my personal portfolio website to showcase my work, skills, and professional journey. In every project, I aim to implement professional designs and deliver a polished, user-centered product — even when I’m not the designer myself. I'm constantly learning and growing. Whether it's reading official documentation, following YouTube tutorials, working on real projects, or solving problems through research, I stay updated with the latest frontend trends and technologies. 🎯 My goal is to become an active and valuable member of a professional team, whether on-site or remote. I genuinely enjoy creating, learning new things, overcoming challenges, and continuously improving my skills."
-        
-    }
+    },
+
+    "skills": {
+        "tag":"Skills",
+        "overview": "Tools and technologies I’m really good at"
+    },
+
+    "works" : {
+        "tag": "Works",
+        "description": ".In this section, you can view my portfolio"
+      }
 }
