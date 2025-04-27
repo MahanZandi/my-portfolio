@@ -1,8 +1,12 @@
+import { useTranslations } from "next-intl";
+
 const Footer = () => {
+    const t = useTranslations()
+
     return (
         <div className="footer">
             <div className="footer-container">
-                این وبسایت توسط ماهان الوارزندی در اسفند ۱۴۰۳ توسعه داده شده است ❤️
+                {t('footer')}
             </div>
         </div>
     );

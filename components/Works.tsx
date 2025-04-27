@@ -3,29 +3,20 @@ import Work from "./Work";
 import { useTranslations } from "next-intl";
 
 const Works: React.FC = () => {
-
-  const t = useTranslations('works');
+  const t = useTranslations("works");
 
   return (
     <div id="works" className="works">
       <div>
         <span className="works-tags-container">
-          <p className="tags">{t('tag')}</p>
+          <p className="tags">{t("tag")}</p>
         </span>
         <span className="works-discription">
-          <p>{t('description')}</p>
+          <p>{t("description")}</p>
         </span>
       </div>
       {projects.map((data) => (
-        <Work
-          key={data.id}
-          title={data.title}
-          description={data.description}
-          link={data.link}
-          picture={data.picture}
-          techs={data.techs}
-          githubLink={data.githubLink}
-        />
+        <Work key={data.id} data={data} />
       ))}
     </div>
   );

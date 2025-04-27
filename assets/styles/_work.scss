@@ -8,15 +8,23 @@
     }
 
     .work-content {
-        @apply dark:bg-gray-800 bg-white w-full desktop:px-[48px] desktop:pt-[48px] px-[32px] pt-[32px] pb-[32px] desktop:rounded-r-xl desktop:rounded-bl-none rounded-b-xl;
+        @apply dark:bg-gray-800 bg-white w-full desktop:px-[48px] desktop:pt-[48px] px-[16px] pt-[32px] pb-[32px] desktop:rounded-r-xl desktop:rounded-bl-none rounded-b-xl;
     }
 
     .work-title {
         @apply text-subtitle text-gray-900 dark:text-gray-100;
     }
 
+    .work-techs-title {
+        @apply text-body1 text-gray-900 dark:text-gray-100 pt-[20px];
+    }
+
+    .work-features-title {
+        @apply text-body1 text-gray-900 dark:text-gray-100 pt-[20px];
+    }
+
     .work-discription {
-        @apply pt-[24px];
+        @apply py-[20px];
     }
 
     .work-techs {
@@ -36,7 +44,7 @@
     }
 
     .work-image-space {
-        @apply p-[32px] desktop:p-[48px];
+        @apply p-[32px];
     }
 
     .work-image {

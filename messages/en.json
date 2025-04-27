@@ -1,38 +1,76 @@
 {
-    "navbar": {
-        "about me": "About me",
-        "works": "Works",
-        "contact me": "Contact me"
-    },
+  "navbar": {
+    "about me": "About me",
+    "works": "Works",
+    "contact me": "Contact me"
+  },
 
-    "sidebar" : {
-        "about me": "About me",
-        "works": "Works",
-        "contact me": "Contact me",
-        "change language": "Change language",
-        "change theme": "Change theme"
-    },
+  "sidebar": {
+    "about me": "About me",
+    "works": "Works",
+    "contact me": "Contact me",
+    "change language": "Change language",
+    "change theme": "Change theme"
+  },
 
-    "header": {
-        "title": "👋 Hi Im Mahan",
-        "description": "I'm Mahan Alvazandi, a front-end developer with over a year of experience in building modern and optimized user interfaces. Using technologies like React, Next.js, and TailwindCSS, I create fast, engaging, and user-friendly experiences. I'm always eager to learn and improve my skills to deliver the best possible experience for users.",
-        "address": "Iran, Golestan Province",
-        "work": "Ready to work"
-    },
+  "header": {
+    "title": "👋 Hi Im Mahan",
+    "description": "I'm Mahan Alvazandi, a front-end developer with over a year of experience in building modern and optimized user interfaces. Using technologies like React, Next.js, and TailwindCSS, I create fast, engaging, and user-friendly experiences. I'm always eager to learn and improve my skills to deliver the best possible experience for users.",
+    "address": "Iran, Golestan Province",
+    "work": "Ready to work"
+  },
 
-    "about me": {
-        "tag": "About me",
-        "title": "If you want to learn more about me and my work, feel free to check out this section.",
-        "description": "I'm Mahan Zandi, a Front-end Developer passionate about building modern, clean, and fully responsive user interfaces. Since I started coding, I've been deeply interested in creating professional user experiences using React.js, Next.js, TailwindCSS, and other modern technologies. My experience goes beyond learning and practicing — I've worked on real-world projects like the official website for Faravardeh Arya Factory (fdarya.com). Over the course of three months, I designed, developed, and deployed the entire project from scratch, focusing on Clean Code, SEO optimization, and responsive design to create a modern and effective website that helped boost the company's marketing and sales efforts. In addition to client projects, I’m building my personal portfolio website to showcase my work, skills, and professional journey. In every project, I aim to implement professional designs and deliver a polished, user-centered product — even when I’m not the designer myself. I'm constantly learning and growing. Whether it's reading official documentation, following YouTube tutorials, working on real projects, or solving problems through research, I stay updated with the latest frontend trends and technologies. 🎯 My goal is to become an active and valuable member of a professional team, whether on-site or remote. I genuinely enjoy creating, learning new things, overcoming challenges, and continuously improving my skills."
-    },
+  "about me": {
+    "tag": "About me",
+    "title": "If you want to learn more about me and my work, feel free to check out this section",
+    "description": "I'm Mahan Zandi, a Front-end Developer passionate about building modern, clean, and fully responsive user interfaces. Since I started coding, I've been deeply interested in creating professional user experiences using React.js, Next.js, TailwindCSS, and other modern technologies. My experience goes beyond learning and practicing — I've worked on real-world projects like the official website for Faravardeh Arya Factory (fdarya.com). Over the course of three months, I designed, developed, and deployed the entire project from scratch, focusing on Clean Code, SEO optimization, and responsive design to create a modern and effective website that helped boost the company's marketing and sales efforts. In addition to client projects, I’m building my personal portfolio website to showcase my work, skills, and professional journey. In every project, I aim to implement professional designs and deliver a polished, user-centered product — even when I’m not the designer myself. I'm constantly learning and growing. Whether it's reading official documentation, following YouTube tutorials, working on real projects, or solving problems through research, I stay updated with the latest frontend trends and technologies. 🎯 My goal is to become an active and valuable member of a professional team, whether on-site or remote. I genuinely enjoy creating, learning new things, overcoming challenges, and continuously improving my skills."
+  },
 
-    "skills": {
-        "tag":"Skills",
-        "overview": "Tools and technologies I’m really good at"
-    },
+  "skills": {
+    "tag": "Skills",
+    "overview": "Tools and technologies I’m really good at"
+  },
 
-    "works" : {
-        "tag": "Works",
-        "description": ".In this section, you can view my portfolio"
-      }
+  "works": {
+    "tag": "Works",
+    "description": ".In this section, you can view my portfolio",
+    "techs": "Technologies used:"
+  },
+
+  "progects": {
+    "works-arya-title": "Aria Processing Website",
+    "works-arya-description": "Aria Processing Factory is an active production company in the field of processing and supplying industrial products, which launched its official website at fdarya.com with the aim of boosting sales and digital marketing. This website has been developed with a modern and user-friendly design, focusing on SEO optimization, clean code structure, and responsive design to provide an excellent user experience for visitors.",
+    "works-arya-feature1": "Responsive design compatible with all devices",
+    "works-arya-feature2": "Includes blog and product pages",
+    "works-arya-feature3": "Modern and professional design with an attractive and user-friendly look",
+    "works-arya-feature4": "SEO optimization to increase website visibility",
+    "works-arya-feature5": "Clean code structure to enhance performance and maintainability",
+
+    "works-portfolio-title": "Personal Portfolio Website",
+    "works-portfolio-description": "Mahan Zandi's personal website is a project designed to showcase portfolios and projects. It uses modern and powerful technologies to create an excellent user experience and an attractive look. The website features both light and dark themes and supports English and Persian languages.",
+    "works-portfolio-feature1": "Includes blog page",
+    "works-portfolio-feature2": "Responsive design compatible with all devices",
+    "works-portfolio-feature3": "Modern and professional design with an attractive and user-friendly look",
+    "works-portfolio-feature4": "Using Three.js to build engaging 3D sections",
+    "works-portfolio-feature5": "Ability to switch between light and dark themes",
+    "works-portfolio-feature6": "Website is available in two languages using Next Intl",
+    "works-portfolio-feature7": "SEO optimization to increase website visibility",
+    "works-portfolio-feature8": "Clean code structure to enhance performance and maintainability",
+
+    "feature-title": ": Features",
+    "works-techs-title": ": Technologies Used"
+  },
+
+  "3dweb": {
+    "description": "With Three.js, you can build websites that go beyond traditional design, offering a fully realistic, interactive, 3D experience.",
+    "bottom-text": "Rotate Monitor"
+  },
+
+  "footer": "This website was developed by Mahan Alva Zandi in May 2025 ❤️",
+
+  "contact": {
+    "tag": "Get in Touch",
+    "description": "If you're looking for a passionate and dedicated front-end developer, I would be excited to collaborate with you. For job opportunities, joint projects, or any other collaboration proposals, feel free to leave a message through the contact section. I look forward to hearing from you.",
+    "social": "You can also connect with me through these platforms:"
+  }
 }

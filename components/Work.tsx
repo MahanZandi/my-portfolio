@@ -2,27 +2,45 @@ import Image from "next/image";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { getWorkImageByName } from "@/utils/getWorkImageByName";
 import { TbBrandGithub } from "react-icons/tb";
+import { GoDotFill } from "react-icons/go";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 interface WorkProps {
-  title: string;
-  description: string;
-  githubLink: string;
-  link: string;
-  picture: string;
-  techs: string[];
+  data: {
+    title: string;
+    description: string;
+    githubLink: string;
+    link: string;
+    picture: string;
+    techs: string[];
+    feature: string[];
+  };
 }
 
-const Work = ({ title, description, link, picture, techs, githubLink }: WorkProps) => {
+const Work = ({ data }: WorkProps) => {
+  const t = useTranslations("progects");
+
   return (
     <div className="work">
       <div className="work-container">
         {/* content */}
         <div className="work-content">
-          <p className="work-title">{title}</p>
-          <p className="work-discription">{description}</p>
+          <h2 className="work-title">{t(data.title)}</h2>
+          <p className="work-discription">{t(data.description)}</p>
+          <ul>
+            <p className="work-features-title">{t("feature-title")}</p>
+            {data.feature.map((data, index) => (
+              <li className="work-features-space" key={index}>
+                <p>{t(data)}</p>
+              </li>
+            ))}
+          </ul>
+          <div>
+            <p className="work-techs-title">{t("works-techs-title")}</p>
+          </div>
           <div className="work-techs">
-            {techs.map((data, index) => (
+            {data.techs.map((data, index) => (
               <span key={index} className="tags-tech">
                 {data}
               </span>
@@ -31,13 +49,13 @@ const Work = ({ title, description, link, picture, techs, githubLink }: WorkProp
           <div className="works-link-end">
             <div className="work-links-flex">
               <Link
-                href={githubLink}
+                href={data.githubLink}
                 target="_blank"
                 className="actions-work"
               >
                 <TbBrandGithub />
               </Link>
-              <Link href={link} className="actions-work" target="_blank">
+              <Link href={data.link} className="actions-work" target="_blank">
                 <RiExternalLinkLine size={24} />
               </Link>
             </div>
@@ -48,7 +66,7 @@ const Work = ({ title, description, link, picture, techs, githubLink }: WorkProp
           <div className="work-image-space">
             <Image
               className="work-image"
-              src={getWorkImageByName(picture)}
+              src={getWorkImageByName(data.picture)}
               alt="arya website image"
             />
           </div>

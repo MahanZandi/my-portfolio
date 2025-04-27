@@ -12,8 +12,7 @@ export default {
       container:{
         center: true,
         padding: {
-          DEFAULT: '1rem',
-          sm: '2rem',
+          DEFAULT: '14px',
         },
         screens: {
           'xl': '1280px', 

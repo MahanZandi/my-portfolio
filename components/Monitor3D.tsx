@@ -9,7 +9,7 @@ const Monitor3D: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
 
   useEffect(() => {
     const video = document.createElement("video");
-    video.src = "/videos/video.mp4";
+    video.src = "/videos/video-cover.mp4";
     video.crossOrigin = "anonymous";
     video.loop = true;
     video.muted = true;

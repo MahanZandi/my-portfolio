@@ -5,9 +5,12 @@ import { OrbitControls } from "@react-three/drei";
 import Monitor3D from "@/components/Monitor3D";
 import MouseKeybord3D from "./MouseKeybord3D";
 import { IoReloadOutline } from "react-icons/io5";
+import { useTranslations } from "next-intl";
 
 const Scene3D = () => {
   const [isMobile, setIsMobile] = useState(false);
+
+  const t = useTranslations('3dweb')
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -24,8 +27,7 @@ const Scene3D = () => {
         </div>
         <div className="scene3d-description">
           <p>
-            با Three.js می‌توان وب‌سایت‌هایی ساخت که از طراحی سنتی فراتر رفته و
-            تجربه‌ای سه‌بعدی، تعاملی و کاملاً واقعی ارائه می‌دهند.
+            {t('description')}
           </p>
         </div>
         <Canvas
@@ -46,7 +48,7 @@ const Scene3D = () => {
         </Canvas>
       </div>
       <div className="scene3d-bottom-text">
-        <p>مانیتور رو بچرخون</p>
+        <p>{t('bottom-text')}</p>
         <IoReloadOutline />
       </div>
     </div>
