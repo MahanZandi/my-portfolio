@@ -39,7 +39,7 @@
 
   "progects": {
     "works-arya-title": "Aria Processing Website",
-    "works-arya-description": "Aria Processing Factory is an active production company in the field of processing and supplying industrial products, which launched its official website at fdarya.com with the aim of boosting sales and digital marketing. This website has been developed with a modern and user-friendly design, focusing on SEO optimization, clean code structure, and responsive design to provide an excellent user experience for visitors.",
+    "works-arya-description": "Faravardaneh Aria Factory is a manufacturing company active in the processing and supply of industrial products. To enhance its digital presence and boost sales, the company launched its official website at fdarya.com. The website was developed with a modern and user-friendly design, focusing on SEO optimization, responsive design, and clean code to deliver a great user experience. This was my first project using Next.js, through which I gained strong proficiency in the framework.",
     "works-arya-feature1": "Responsive design compatible with all devices",
     "works-arya-feature2": "Includes blog and product pages",
     "works-arya-feature3": "Modern and professional design with an attractive and user-friendly look",
@@ -47,8 +47,7 @@
     "works-arya-feature5": "Clean code structure to enhance performance and maintainability",
 
     "works-portfolio-title": "Personal Portfolio Website",
-    "works-portfolio-description": "Mahan Zandi's personal website is a project designed to showcase portfolios and projects. It uses modern and powerful technologies to create an excellent user experience and an attractive look. The website features both light and dark themes and supports English and Persian languages.",
-    "works-portfolio-feature1": "Includes blog page",
+    "works-portfolio-description": "The personal website of Mahan Zandi is a portfolio project designed to showcase my work and development experience. Built with modern and powerful technologies, the site delivers an excellent user experience with a visually appealing design. It features both light and dark themes, and supports English and Persian languages. This is also the first real-world project where I’ve used Next-Intl and Three.js, expanding my skills in internationalization and 3D web development.",
     "works-portfolio-feature2": "Responsive design compatible with all devices",
     "works-portfolio-feature3": "Modern and professional design with an attractive and user-friendly look",
     "works-portfolio-feature4": "Using Three.js to build engaging 3D sections",
