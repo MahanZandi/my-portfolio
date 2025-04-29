@@ -6,10 +6,10 @@ import { FiCopy } from "react-icons/fi";
 import { FiPhone } from "react-icons/fi";
 import { TbBrandGithub } from "react-icons/tb";
 import { LiaTelegramPlane } from "react-icons/lia";
-import { FaInstagram } from "react-icons/fa";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { LuCopyCheck } from "react-icons/lu";
 import { useTranslations } from "next-intl";
+import { MdCall } from "react-icons/md";
 
 const Contact = () => {
   const [copied, setCopied] = useState<"email" | "phone" | null>(null);
@@ -42,12 +42,11 @@ const Contact = () => {
           >
             {copied === "email" ? <LuCopyCheck /> : <FiCopy />}
           </span>
-          <span className="contact-info-text">zandim221@gmail.com</span>
+          <Link href="mailto:zandim221@gmail.com?subject=(Email from website)" className="contact-info-text">zandim221@gmail.com</Link>
           <span className="contact-info-icon">
             <MdOutlineEmail />
           </span>
         </div>
-
         <div className="contact-info">
           <span
             className="contact-info-icon-copy"
@@ -55,9 +54,9 @@ const Contact = () => {
           >
             {copied === "phone" ? <LuCopyCheck /> : <FiCopy />}
           </span>
-          <span dir="ltr" className="contact-info-text">
+          <Link href="tel:+98 939 552 6996" dir="ltr" className="contact-info-text">
             +98 9395526996
-          </span>
+          </Link>
           <span className="contact-info-icon">
             <FiPhone />
           </span>
@@ -67,16 +66,16 @@ const Contact = () => {
       <div className="contact-social">
         <span className="contact-social-title">{t("social")}</span>
         <div className="contact-social-links">
-          <Link href="#" className="actions">
+          <Link href="tel:+98 939 552 6996" className="actions">
+            <MdCall />
+          </Link>
+          <Link href="https://github.com/MahanZandi" className="actions">
             <TbBrandGithub />
           </Link>
-          <Link href="#" className="actions">
+          <Link href="https://t.me/+989395526996" className="actions">
             <LiaTelegramPlane />
           </Link>
-          <Link href="#" className="actions">
-            <FaInstagram />
-          </Link>
-          <Link href="#" className="actions">
+          <Link href="https://www.linkedin.com/in/mahanzandi" className="actions">
             <PiLinkedinLogoBold />
           </Link>
         </div>

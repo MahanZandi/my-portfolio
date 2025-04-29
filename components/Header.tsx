@@ -4,7 +4,6 @@ import Link from "next/link";
 import { SlLocationPin } from "react-icons/sl";
 import { TbBrandGithub } from "react-icons/tb";
 import { LiaTelegramPlane } from "react-icons/lia";
-import { FaInstagram } from "react-icons/fa";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { MdCall } from "react-icons/md";
 import {useTranslations} from 'next-intl';
@@ -60,9 +59,9 @@ const Header: React.FC = () => {
                         <Link href="https://t.me/+989395526996" className="actions">
                             <LiaTelegramPlane/>
                         </Link>
-                        <Link href="https://www.instagram.com/mahan.zandi.85" className="actions">
+                        {/* <Link href="https://www.instagram.com/mahan.zandi.85" className="actions">
                             <FaInstagram/>
-                        </Link>
+                        </Link> */}
                         <Link href="https://www.linkedin.com/in/mahanzandi" className="actions">
                             <PiLinkedinLogoBold/>
                         </Link>
