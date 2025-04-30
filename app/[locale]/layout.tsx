@@ -4,6 +4,7 @@ import "@/assets/styles/globals.scss";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import UseLocalePage from "@/components/UseLocalePage";
 import NavBar from "@/components/NavBar";
 
 export const metadata: Metadata = {

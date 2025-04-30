@@ -1,12 +1,14 @@
 {
   "navbar": {
     "about me": "About me",
+    "blog": "Blogs",
     "works": "Works",
     "contact me": "Contact me"
   },
 
   "sidebar": {
     "about me": "About me",
+    "blog": "Blogs",
     "works": "Works",
     "contact me": "Contact me",
     "change language": "Change language",
@@ -48,6 +50,7 @@
 
     "works-portfolio-title": "Personal Portfolio Website",
     "works-portfolio-description": "The personal website of Mahan Zandi is a portfolio project designed to showcase my work and development experience. Built with modern and powerful technologies, the site delivers an excellent user experience with a visually appealing design. It features both light and dark themes, and supports English and Persian languages. This is also the first real-world project where I’ve used Next-Intl and Three.js, expanding my skills in internationalization and 3D web development.",
+    "works-portfolio-feature1": "Includes articles page",
     "works-portfolio-feature2": "Responsive design compatible with all devices",
     "works-portfolio-feature3": "Modern and professional design with an attractive and user-friendly look",
     "works-portfolio-feature4": "Using Three.js to build engaging 3D sections",
@@ -71,5 +74,55 @@
     "tag": "Get in Touch",
     "description": "If you're looking for a passionate and dedicated front-end developer, I would be excited to collaborate with you. For job opportunities, joint projects, or any other collaboration proposals, feel free to leave a message through the contact section. I look forward to hearing from you.",
     "social": "You can also connect with me through these platforms:"
+  },
+
+  "blogs": {
+    "read more": "...Read More",
+
+    "blog-telegram-title": "The Durov Brothers' Story",
+    "blog-telegram-language": "en",
+    "blog-telegram-word-count": "540",
+    "blog-telegram-created-at": "30 / 04 / 2025",
+    "blog-telegram-author": "Mahan Zandi",
+    "blog-telegram-introduction": "Telegram, a messaging app renowned worldwide for its security, speed, and unique features, was founded by brothers Pavel and Nikolay Durov, two Russian entrepreneurs. Launched in 2013, this platform, with its focus on privacy and freedom of expression, has become a key communication tool for millions. The story of the Durov brothers, a blend of technical genius, entrepreneurial spirit, and resistance to censorship, inspires many in the tech world.",
+    "blog-telegram-section1-title": "Pavel Durov: From VK to Telegram",
+    "blog-telegram-section1-text": "Pavel Durov, born on October 10, 1984, in St. Petersburg, is the mastermind behind Telegram and its CEO. Before Telegram, he founded the social network VKontakte (VK) in 2006, which quickly became Russia’s largest social platform, earning the nickname 'Russia’s Facebook.' Pavel, who completed his studies in linguistics, transformed VK into a space for the free exchange of ideas with his creativity and innovative vision. However, in 2014, the Russian government demanded user data and content censorship. Pavel refused, resigned from VK’s leadership, and left Russia. This experience led him to create Telegram, a platform with security and privacy at its core.",
+    "blog-telegram-section2-title": "Nikolay Durov: Telegram’s Technical Architect",
+    "blog-telegram-section2-text": "Nikolay Durov, Pavel’s older brother, born in 1980, is the technical genius behind Telegram. Holding a PhD in mathematics from St. Petersburg University, he specializes in programming and cryptography. Nikolay designed the MTProto protocol, a system that enables Telegram’s advanced encryption, protecting private chats from unauthorized access. He also played a key role in developing Telegram’s cloud infrastructure, which provides unmatched speed and stability. The close collaboration between Nikolay and Pavel brought a combination of cutting-edge technology and user-centric vision to Telegram.",
+    "blog-telegram-section3-title": "Telegram: Global Impact and Challenges",
+    "blog-telegram-section3-text": "Since its inception, Telegram has grown to over 800 million monthly active users, thanks to features like encrypted chats, public channels, large groups, and smart bots. After leaving Russia, the Durov brothers managed Telegram from Dubai and other locations, avoiding government or commercial investments to maintain the platform’s independence. This commitment to free speech has made Telegram a popular tool for activists, journalists, and users in countries with heavy censorship. However, this stance has led to challenges, including restrictions or bans in countries like Iran, China, and Russia. Telegram also demonstrated its ambition to expand into financial and decentralized domains with the introduction of the TON (Telegram Open Network) blockchain technology in 2018, though the project was halted due to legal issues.",
+    "blog-telegram-conclusion": "Pavel and Nikolay Durov, with their blend of technical brilliance, entrepreneurial vision, and commitment to privacy, have transformed Telegram into one of the world’s most influential communication platforms. Their story, from resisting censorship to creating a tool that empowers millions, underscores the importance of independence and innovation in the digital world. Telegram continues to shine as a symbol of free speech and security in the online space.",
+
+    "blog-linus-title": "The Life of Linus Torvalds",
+    "blog-linus-language": "en",
+    "blog-linus-word_count": "682",
+    "blog-linus-created_at": "30 / 04 / 2025",
+    "blog-linus-author": "Mahan Zandi",
+    "blog-linus-introduction": "Linus Torvalds, a Finnish programmer, is one of the most influential figures in the world of technology. By creating the Linux kernel, he opened a new door into the world of free and open-source software. Although Linux began as a personal learning project, it has grown into one of the most powerful operating systems used across servers, mobile devices, and computers. In this article, we’ll take a closer look at Torvalds’ life, achievements, and lasting impact.",
+    "blog-linus-section1-title": "Early Life and Education",
+    "blog-linus-section1-text": "Linus Benedict Torvalds was born on December 28, 1969, in Helsinki, Finland. He came from a family of academics and journalists; his grandfather was a professor of statistics, and both his parents worked in media. Torvalds’ interest in programming began at an early age. He received his first computer, a Commodore VIC-20, at the age of 11 and soon began experimenting with basic programming languages. He pursued a degree in computer science at the University of Helsinki. During his time there, he encountered the Unix operating system, which would deeply influence him and inspire the creation of Linux.",
+    "blog-linus-section2-title": "The Birth of Linux",
+    "blog-linus-section2-text": "In 1991, Torvalds started writing a Unix-like kernel as a personal programming exercise. He introduced the project in a post on the comp.os.minix newsgroup, inviting others to contribute. To his surprise, the project quickly gained attention and community support. Initially just a simple kernel, Linux rapidly evolved thanks to the growing open-source community. A key element of Linux’s success was its release under the GNU General Public License, which allowed anyone to use, modify, and distribute the code freely.",
+    "blog-linus-section3-title": "Linus Torvalds' Major Achievements",
+    "blog-linus-section3-text": "Torvalds' impact goes far beyond the creation of Linux. He also developed Git, the most widely used version control system in the world. Originally designed to manage the Linux kernel codebase, Git is now the backbone of development in companies like Google, Microsoft, and countless open-source projects. Torvalds is widely recognized as a symbol of the open-source movement. He has received numerous awards, including the prestigious Millennium Technology Prize. Despite his fame, he remains focused on the technical aspects of his work and avoids the spotlight.",
+    "blog-linus-section4-title": "Legacy and Global Influence",
+    "blog-linus-section4-text": "Today, Linux powers over 90% of internet servers, millions of Android devices, and critical infrastructure such as banking systems and supercomputers. All of this stems from Torvalds' initiative and the strength of the open-source community. In a world dominated by proprietary software, Linux represents a successful model of open collaboration and freedom. Even tech giants like IBM, Red Hat, and Google use and contribute to Linux in their products and services.",
+    "blog-linus-conclusion": "Linus Torvalds is not just a programmer—he is a revolutionary in the tech world. Through Linux and Git, he has proven that individual effort can have a global impact. Linux stands as a symbol of freedom, innovation, and collaboration. Without a doubt, Linus Torvalds' legacy will continue to shape the future of technology for generations to come.",
+
+    "blog-react-title": "?Why is React So Popular",
+    "blog-react-language": "en",
+    "blog-react-word_count": "620",
+    "blog-react-created_at": "30 April 2025",
+    "blog-react-author": "Mahan Zandi",
+    "blog-react-introduction": "React is one of the most popular frameworks in the world of web development and has gained significant attention. Many developers turn to React for various reasons. This article explores the reasons behind React's popularity and the features that differentiate it from other frameworks.",
+    "blog-react-section1-title": "Simplicity and Easy Learning",
+    "blog-react-section1-text": "React became popular among developers quickly due to its simple and intuitive design. This framework is designed in such a way that any developer can easily start using it. Concepts like components and local states allow developers to quickly create scalable applications. Additionally, its comprehensive documentation and large community make learning and using React easy for beginners.",
+    "blog-react-section2-title": "Components and Code Reusability",
+    "blog-react-section2-text": "One of React's biggest features is its use of components. This feature allows developers to build different parts of the UI independently and reuse them in various sections of the application. This improves code organization and helps developers manage complex projects more easily.",
+    "blog-react-section3-title": "High Performance with Virtual DOM",
+    "blog-react-section3-text": "React uses Virtual DOM, which allows the app to only re-render the parts of the UI that have changed. This method significantly improves performance and ensures that even in large and complex projects, performance remains excellent. Virtual DOM allows React to process changes faster and more efficiently.",
+    "blog-react-section4-title": "Usage in Mobile Projects with React Native",
+    "blog-react-section4-text": "Another reason for React's popularity is its ability to be used for mobile app development. **React Native** allows developers to build native apps for iOS and Android. This feature is particularly attractive for those who want to build an app for multiple platforms.",
+    "blog-react-conclusion": "In conclusion, React has become one of the most popular frameworks in web development due to its simplicity, high performance, large community support, and ability to be used in mobile projects. Features like the use of components, Virtual DOM, and numerous auxiliary tools have made it easy for developers to create scalable and fast applications. As a result, React continues to grow and will undoubtedly play an important role in the future of web development."
   }
 }

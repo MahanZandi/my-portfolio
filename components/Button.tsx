@@ -1,12 +1,15 @@
+import { ReactNode } from "react";
+
 interface ButtonProps {
   onClick?: () => void;
-  className: string;
-  text: string;
+  className?: string;
+  text?: string | ReactNode;
+  type?: "button" | "submit";
 }
 
-const Button: React.FC<ButtonProps> = ({ onClick, text, className }) => {
+const Button: React.FC<ButtonProps> = ({ onClick, text, className, type }) => {
   return (
-    <button onClick={onClick} className={className}>
+    <button onClick={onClick} type={type} className={className}>
       {text}
     </button>
   );

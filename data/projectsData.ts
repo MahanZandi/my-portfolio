@@ -1,4 +1,4 @@
-interface Projects {
+interface ProjectsType {
   id: number;
   title: string;
   description: string;
@@ -9,7 +9,7 @@ interface Projects {
   feature?: string[]
 }
 
-export const projects: Projects[] = [
+export const projects: ProjectsType[] = [
   {
     id: 1,
     title: "works-arya-title",
@@ -40,7 +40,6 @@ export const projects: Projects[] = [
       "works-portfolio-feature6",
       "works-portfolio-feature7",
       "works-portfolio-feature8",
-
     ],
     githubLink: "https://github.com/MahanZandi/my-portfolio",
     picture: "portfolio-image",

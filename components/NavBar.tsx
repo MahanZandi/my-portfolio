@@ -64,8 +64,8 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
                 <div className="nav-vertical-line"></div>
               </div>
               <div className="nav-items-container">
-                <Link href="#about" className="link">
-                  {t('about me')}
+                <Link href="/blogs" className="link">
+                  {t('blog')}
                 </Link>
                 <Link href="#works" className="link">
                   {t('works')}
@@ -76,7 +76,7 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
               </div>
             </div>
           </div>
-          <Link href="#header" className="nav-logo">
+          <Link href="/" className="nav-logo">
             {"</ M>"}
           </Link>
         </div>

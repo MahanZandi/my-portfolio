@@ -2,7 +2,6 @@ import Image from "next/image";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { getWorkImageByName } from "@/utils/getWorkImageByName";
 import { TbBrandGithub } from "react-icons/tb";
-import { GoDotFill } from "react-icons/go";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 

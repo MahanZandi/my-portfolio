@@ -66,8 +66,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
         </div>
         <nav className="sidebar-items-container">
           <span onClick={() => setIsOpen(false)}>
-            <Link className="link" href="#about">
-              {t('about me')}
+            <Link className="link" href="/blogs">
+              {t('blog')}
             </Link>
           </span>
           <span onClick={() => setIsOpen(false)}>
