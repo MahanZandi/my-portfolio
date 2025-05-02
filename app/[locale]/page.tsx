@@ -9,7 +9,7 @@ import Scene3D from "@/components/Scene3D";
 const App:React.FC = () => {
 
   return (
-    <div className="bg-white text-gray-600 dark:bg-gray-950  dark:text-gray-300 transition-all">
+    <div className="page">
       <Header/>
       <AboutMe/>
       <Skills/>
