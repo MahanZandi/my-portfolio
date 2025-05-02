@@ -1,5 +1,6 @@
 import AryaImage from "@/public/images/aryawebsite.png";
-import PortfolioImage from "@/public/images/website-cover.png"
+import PortfolioImage from "@/public/images/website-cover.png";
+import placeholderImage from "@/public/images/placeholder.png";
 
 export const getWorkImageByName = (picture: string) => {
   switch (picture) {
@@ -7,5 +8,7 @@ export const getWorkImageByName = (picture: string) => {
       return AryaImage;
     case "portfolio-image":
         return PortfolioImage;
+    default:
+      return placeholderImage;
   }
 };
