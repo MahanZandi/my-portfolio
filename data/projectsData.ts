@@ -39,7 +39,6 @@ export const projects: Projects[] = [
       "works-portfolio-feature5",
       "works-portfolio-feature6",
       "works-portfolio-feature7",
-      "works-portfolio-feature8",
 
     ],
     githubLink: "https://github.com/MahanZandi/my-portfolio",

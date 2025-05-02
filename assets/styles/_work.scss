@@ -24,7 +24,7 @@
     }
 
     .work-features-space {
-        @apply py-1.5;
+        @apply py-1.5 flex gap-1 items-center;
     }
 
     .work-discription {

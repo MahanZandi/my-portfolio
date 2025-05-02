@@ -21,17 +21,22 @@ interface WorkProps {
 const Work = ({ data }: WorkProps) => {
   const t = useTranslations("progects");
 
+  const getLang = useTranslations();
+
+  const dynamicDir = getLang("lang") === "fa" ? "rtl" : "ltr";
+
   return (
     <div className="work">
       <div className="work-container">
         {/* content */}
-        <div className="work-content">
+        <div dir={dynamicDir} className="work-content">
           <h2 className="work-title">{t(data.title)}</h2>
           <p className="work-discription">{t(data.description)}</p>
           <ul>
             <p className="work-features-title">{t("feature-title")}</p>
             {data.feature.map((data, index) => (
               <li className="work-features-space" key={index}>
+                <GoDotFill/>
                 <p>{t(data)}</p>
               </li>
             ))}
