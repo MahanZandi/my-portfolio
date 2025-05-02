@@ -12,7 +12,7 @@ interface WorkProps {
     description: string;
     githubLink: string;
     link: string;
-    picture: string;
+    picture: any;
     techs: string[];
     feature: string[];
   };
