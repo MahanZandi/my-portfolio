@@ -109,10 +109,10 @@
     "blog-linus-section4-text": "Today, Linux powers over 90% of internet servers, millions of Android devices, and critical infrastructure such as banking systems and supercomputers. All of this stems from Torvalds' initiative and the strength of the open-source community. In a world dominated by proprietary software, Linux represents a successful model of open collaboration and freedom. Even tech giants like IBM, Red Hat, and Google use and contribute to Linux in their products and services.",
     "blog-linus-conclusion": "Linus Torvalds is not just a programmer—he is a revolutionary in the tech world. Through Linux and Git, he has proven that individual effort can have a global impact. Linux stands as a symbol of freedom, innovation, and collaboration. Without a doubt, Linus Torvalds' legacy will continue to shape the future of technology for generations to come.",
 
-    "blog-react-title": "?Why is React So Popular",
+    "blog-react-title": "Why is React So Popular?",
     "blog-react-language": "en",
     "blog-react-word_count": "620",
-    "blog-react-created_at": "30 April 2025",
+    "blog-react-created_at": "30 / 4 / 2025",
     "blog-react-author": "Mahan Zandi",
     "blog-react-introduction": "React is one of the most popular frameworks in the world of web development and has gained significant attention. Many developers turn to React for various reasons. This article explores the reasons behind React's popularity and the features that differentiate it from other frameworks.",
     "blog-react-section1-title": "Simplicity and Easy Learning",
@@ -125,4 +125,5 @@
     "blog-react-section4-text": "Another reason for React's popularity is its ability to be used for mobile app development. **React Native** allows developers to build native apps for iOS and Android. This feature is particularly attractive for those who want to build an app for multiple platforms.",
     "blog-react-conclusion": "In conclusion, React has become one of the most popular frameworks in web development due to its simplicity, high performance, large community support, and ability to be used in mobile projects. Features like the use of components, Virtual DOM, and numerous auxiliary tools have made it easy for developers to create scalable and fast applications. As a result, React continues to grow and will undoubtedly play an important role in the future of web development."
   }
+
 }

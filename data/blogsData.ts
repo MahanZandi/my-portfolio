@@ -20,7 +20,7 @@ interface BlogType {
   word_count: string;
   created_at: string;
   author: string;
-  picture?: StaticImageData;
+  picture: StaticImageData;
   introduction?: {
     text: string;
     picture?: StaticImageData;
