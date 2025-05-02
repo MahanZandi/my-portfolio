@@ -15,7 +15,7 @@ const Works: React.FC = () => {
           <p>{t("description")}</p>
         </span>
       </div>
-      {projects.map((data) => (
+      {projects.map((data: any) => (
         <Work key={data.id} data={data} />
       ))}
     </div>

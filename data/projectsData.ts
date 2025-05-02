@@ -1,10 +1,12 @@
+import { StaticImageData } from "next/image";
+
 interface Projects {
   id: number;
   title: string;
   description: string;
   link: string;
   githubLink: string;
-  picture: string;
+  picture: string | StaticImageData;
   techs: string[];
   feature?: string[]
 }
