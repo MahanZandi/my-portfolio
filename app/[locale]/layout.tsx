@@ -5,10 +5,55 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import NavBar from "@/components/NavBar";
+import ogImage from "@/public/images/ogImage.jpg";
 
 export const metadata: Metadata = {
-  title: "Mahan portfolio",
-  description: "created by Mahan",
+  title: "ماهان زندی | توسعه دهنده فرانت اند",
+  description:
+    "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
+  keywords:
+    "ماهان الوارزندی, توسعه‌دهنده فرانت‌اند, برنامه‌نویس وب, React, Next.js, TailwindCSS, طراحی رابط کاربری, توسعه وب, برنامه‌نویسی فرانت‌اند, پورتفولیو, پروژه‌های وب, توسعه‌دهنده React, توسعه‌دهنده Next.js",
+  openGraph: {
+    title: "ماهان زندی | توسعه دهنده فرانت اند",
+    description:
+      "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
+    siteName: "ماهان زندی",
+    locale: "fa_IR",
+    // url: "https://www.mahanzandi.ir",
+    images: [
+      {
+        url: ogImage.src,
+        width: 1200,
+        height: 630,
+        alt: "لوگوی وبسایت ماهان زندی",
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ماهان زندی | توسعه دهنده فرانت اند",
+    description:
+      "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
+    // site: "https://www.mahanzandi.ir",
+    images: [
+      {
+        url: ogImage.src,
+        width: 1200,
+        height: 630,
+        alt: "لوگوی وبسایت ماهان زندی",
+        type: "image/jpg",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default async function LocaleLayout({
@@ -30,7 +75,7 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider>
           <div dir="rtl" className={dir}>
-            <NavBar locale={locale}/>
+            <NavBar locale={locale} />
             <div>{children}</div>
           </div>
         </NextIntlClientProvider>

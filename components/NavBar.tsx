@@ -55,7 +55,7 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
             <div className="nav-items-parents">
               <div className="nav-buttons-container">
                 <a href="/files/Mahan-resume.pdf" target="_blank">
-                  <Button className="button" text="دانلود رزومه" />
+                  <Button className="button" text={t("cv button")} />
                 </a>
                 <ThemeToggle className="button-theme link" />
               </div>

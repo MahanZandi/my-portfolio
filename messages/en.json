@@ -4,7 +4,8 @@
   "navbar": {
     "about me": "About me",
     "works": "Works",
-    "contact me": "Contact me"
+    "contact me": "Contact me",
+    "cv button": "Download CV "
   },
 
   "sidebar": {
@@ -12,12 +13,13 @@
     "works": "Works",
     "contact me": "Contact me",
     "change language": "Change language",
-    "change theme": "Change theme"
+    "change theme": "Change theme",
+    "cv button": "Download CV "
   },
 
   "header": {
     "title": "👋 Hi Im Mahan",
-    "description": "I'm Mahan Alvazandi, a front-end developer with over a year of experience in building modern and optimized user interfaces. Using technologies like React, Next.js, and TailwindCSS, I create fast, engaging, and user-friendly experiences. I'm always eager to learn and improve my skills to deliver the best possible experience for users.",
+    "description": "I'm Mahan zandi, a front-end developer with over a year of experience in building modern and optimized user interfaces. Using technologies like React, Next.js, and TailwindCSS, I create fast, engaging, and user-friendly experiences. I'm always eager to learn and improve my skills to deliver the best possible experience for users.",
     "address": "Iran, Golestan Province",
     "work": "Ready to work"
   },

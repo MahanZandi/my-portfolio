@@ -95,7 +95,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
           </div>
           <div onClick={() => setIsOpen(false)}>
             <a href="/files/Mahan-resume.pdf" target="_blank">
-              <Button className="button-sidebar" text="دانلود رزومه" />
+              <Button className="button-sidebar" text={t("cv button")} />
             </a>
           </div>
         </div>
