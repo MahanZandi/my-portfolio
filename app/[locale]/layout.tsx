@@ -3,10 +3,10 @@ import "@/assets/fonts/vazir/Vazirmatn-font-face.css";
 import "@/assets/styles/globals.scss";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
 import NavBar from "@/components/NavBar";
 import ogImage from "@/public/images/ogImage.jpg";
-
+import {routing} from '@/i18n/routing';
+ 
 export const metadata: Metadata = {
   title: "ماهان زندی | توسعه دهنده فرانت اند",
   description:
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     siteName: "ماهان زندی",
     locale: "fa_IR",
     // url: "https://www.mahanzandi.ir",
+    // url: "https://localhost:3000",
     images: [
       {
         url: ogImage.src,
@@ -36,6 +37,7 @@ export const metadata: Metadata = {
     description:
       "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
     // site: "https://www.mahanzandi.ir",
+    // site: "https://localhost:3000",
     images: [
       {
         url: ogImage.src,
@@ -55,6 +57,12 @@ export const metadata: Metadata = {
     },
   },
 };
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
+}
+
+
 
 export default async function LocaleLayout({
   children,

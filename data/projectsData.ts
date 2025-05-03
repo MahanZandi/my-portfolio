@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-interface Projects {
+export interface ProjectsType {
   id: number;
   title: string;
   description: string;
@@ -8,10 +8,10 @@ interface Projects {
   githubLink: string;
   picture: string | StaticImageData;
   techs: string[];
-  feature?: string[]
+  feature: string[];
 }
 
-export const projects: Projects[] = [
+export const projects: ProjectsType[] = [
   {
     id: 1,
     title: "works-arya-title",

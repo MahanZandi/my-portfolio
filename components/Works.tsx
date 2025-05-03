@@ -1,4 +1,4 @@
-import { projects } from "@/data/projectsData";
+import { projects , ProjectsType} from "@/data/projectsData";
 import Work from "./Work";
 import { useTranslations } from "next-intl";
 
@@ -15,7 +15,7 @@ const Works: React.FC = () => {
           <p>{t("description")}</p>
         </span>
       </div>
-      {projects.map((data: any) => (
+      {projects.map((data:ProjectsType) => (
         <Work key={data.id} data={data} />
       ))}
     </div>

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { getWorkImageByName } from "@/utils/getWorkImageByName";
 import { TbBrandGithub } from "react-icons/tb";
@@ -12,7 +12,7 @@ interface WorkProps {
     description: string;
     githubLink: string;
     link: string;
-    picture: undefined | string;
+    picture: StaticImageData | string;
     techs: string[];
     feature: string[];
   };
