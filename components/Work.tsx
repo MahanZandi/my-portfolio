@@ -36,7 +36,7 @@ const Work = ({ data }: WorkProps) => {
             <p className="work-features-title">{t("feature-title")}</p>
             {data.feature.map((data, index) => (
               <li className="work-features-space" key={index}>
-                <GoDotFill/>
+                <GoDotFill className="work-icon" size={16}/>
                 <p>{t(data)}</p>
               </li>
             ))}

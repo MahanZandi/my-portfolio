@@ -23,6 +23,7 @@ const Contact = () => {
   };
 
   const t = useTranslations("contact");
+  
 
   return (
     <div id="contact" className="contact" data-first-enter-image="true">

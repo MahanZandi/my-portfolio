@@ -32,9 +32,11 @@ const Scene3D = () => {
         </div>
         <Canvas
           camera={{
-            position: [0, 0.8, isMobile ? 8 : 4.8],
+            position: [0, 0.8, isMobile ? 6.3 : 4.8],
             fov: 75,
+            pointerEvents: 'none',
           }}
+          
         >
           <ambientLight intensity={1.5} />
           <pointLight position={[0, 7, 4]} intensity={100} distance={50} />

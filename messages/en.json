@@ -18,7 +18,7 @@
   },
 
   "header": {
-    "title": "👋 Hi Im Mahan",
+    "title": "Hi Im Mahan 👋",
     "description": "I'm Mahan zandi, a front-end developer with over a year of experience in building modern and optimized user interfaces. Using technologies like React, Next.js, and TailwindCSS, I create fast, engaging, and user-friendly experiences. I'm always eager to learn and improve my skills to deliver the best possible experience for users.",
     "address": "Iran, Golestan Province",
     "work": "Ready to work"
@@ -69,11 +69,11 @@
     "bottom-text": "Rotate Monitor"
   },
 
-  "footer": "This website was developed by Mahan Alva Zandi in May 2025 ❤️",
+  "footer": "This website was developed by Mahan Zandi in May 2025 ❤️",
 
   "contact": {
     "tag": "Get in Touch",
-    "description": "If you're looking for a passionate and dedicated front-end developer, I would be excited to collaborate with you. For job opportunities, joint projects, or any other collaboration proposals, feel free to leave a message through the contact section. I look forward to hearing from you.",
-    "social": "You can also connect with me through these platforms:"
+    "description": "If you're looking for a passionate and dedicated front-end developer, I would be excited to collaborate with you. For job opportunities, joint projects, or any other collaboration proposals, feel free to leave a message through the contact section. I look forward to hearing from you",
+    "social": ": You can also connect with me through these platforms"
   }
 }

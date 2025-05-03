@@ -27,6 +27,10 @@
         @apply py-1.5 flex gap-1 items-center;
     }
 
+    .work-icon {
+        @apply sm:flex hidden;
+    }
+
     .work-discription {
         @apply py-[20px];
     }

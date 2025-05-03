@@ -7,7 +7,7 @@ const Works: React.FC = () => {
 
   return (
     <div id="works" className="works">
-      <div>
+      <div className="works-container">
         <span className="works-tags-container">
           <p className="tags">{t("tag")}</p>
         </span>
@@ -15,7 +15,7 @@ const Works: React.FC = () => {
           <p>{t("description")}</p>
         </span>
       </div>
-      {projects.map((data:ProjectsType) => (
+      {projects.map((data: ProjectsType) => (
         <Work key={data.id} data={data} />
       ))}
     </div>

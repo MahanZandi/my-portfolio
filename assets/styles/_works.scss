@@ -1,6 +1,10 @@
 @layer components {
     .works {
-        @apply container xl:py-[96px] bg-white dark:bg-gray-950 transition-all;
+        @apply bg-gray-50 dark:bg-gray-950 transition-all;
+    }
+
+    .works-container {
+        @apply container py-[64px] xl:py-[96px];
     }
 
     .works-tags-container {

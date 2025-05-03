@@ -6,6 +6,10 @@ const AboutMe: React.FC = () => {
 
   const t = useTranslations('about me');
 
+  const getLang = useTranslations();
+
+  const dynamicDir = getLang("lang") === "fa" ? "rtl" : "ltr";
+
   return (
     <section id="about" className="about">
       <div className="about-container">
@@ -25,7 +29,7 @@ const AboutMe: React.FC = () => {
             </div>
           </div>
           {/* content */}
-          <span>
+          <span dir={dynamicDir}>
             <h3 className="about-title">
               {t('title')}
             </h3>
