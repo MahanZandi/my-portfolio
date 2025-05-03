@@ -86,11 +86,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
         </div>
         <div className="sidebar-tools-container">
           <div className="sidebar-theme-toggle-container">
-            <p className="sidebar-switch-theme-text">{t('change language')}</p>
+            <p className="sidebar-switch-theme-text">{t('change theme')}</p>
             <ThemeToggle className="sidebar-theme-toggle" />
           </div>
           <div className="sidebar-lang-container">
-            <p className="sidebar-lang-text">{t('change theme')}</p>
+            <p className="sidebar-lang-text">{t('change language')}</p>
             <div>{lang}</div>
           </div>
           <div onClick={() => setIsOpen(false)}>
