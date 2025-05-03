@@ -25,6 +25,8 @@ const Work = ({ data }: WorkProps) => {
 
   const dynamicDir = getLang("lang") === "fa" ? "rtl" : "ltr";
 
+  const checkGithubLink = data.githubLink;
+
   return (
     <div className="work">
       <div className="work-container">
@@ -54,9 +56,9 @@ const Work = ({ data }: WorkProps) => {
           <div className="works-link-end">
             <div className="work-links-flex">
               <Link
-                href={data.githubLink}
+                href={data.githubLink || "/"}
                 target="_blank"
-                className="actions-work"
+                className={`actions-work ${checkGithubLink ? null : "hidden"}`}
               >
                 <TbBrandGithub />
               </Link>

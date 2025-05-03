@@ -5,7 +5,7 @@ export interface ProjectsType {
   title: string;
   description: string;
   link: string;
-  githubLink: string;
+  githubLink: string | null;
   picture: string | StaticImageData;
   techs: string[];
   feature: string[];
@@ -17,7 +17,7 @@ export const projects: ProjectsType[] = [
     title: "works-arya-title",
     description: "works-arya-description",
     link: "https://www.fdarya.com",
-    githubLink: "https://github.com/MahanZandi/fdarya.com",
+    githubLink: null,
     picture: "arya-image",
     feature: [
       "works-arya-feature1",
