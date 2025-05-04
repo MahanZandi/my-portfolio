@@ -1,5 +1,9 @@
 @layer components {
     .page {
       @apply bg-white text-gray-600 dark:bg-gray-950  dark:text-gray-300 transition-all;
+    };
+
+    .scene3d {
+      @apply hidden lg:block;
     }
   }

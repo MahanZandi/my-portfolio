@@ -20,7 +20,7 @@
     }
 
     .about-image-flex {
-        @apply flex justify-center md:order-first xl:justify-end desktop:pr-[144px] pb-[48px];
+        @apply flex justify-center md:order-first xl:justify-end desktop:pr-[144px] sm:pb-[24px] xl:pb-[48px];
     }
 
     .about-image-position {
