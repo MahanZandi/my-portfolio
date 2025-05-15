@@ -3,6 +3,7 @@ import "@/assets/fonts/vazir/Vazirmatn-font-face.css";
 import "@/assets/styles/globals.scss";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import { ReactNode } from "react";
 import NavBar from "@/components/NavBar";
 import ogImage from "@/public/images/ogImage.jpg";
 import {routing} from '@/i18n/routing';
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ماهان زندی | توسعه دهنده فرانت اند",
+    title: " ماهان زندی | توسعه دهنده فرانت اند ",
     description:
       "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
     // site: "https://www.mahanzandi.ir",
@@ -62,15 +63,12 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
 }
 
+type Props = {
+  children: ReactNode;
+  params: Promise<{locale: string}>;
+};
 
-
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
+export default async function LocaleLayout({children, params}: Props) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
