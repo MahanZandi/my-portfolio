@@ -19,8 +19,7 @@ export const metadata: Metadata = {
       "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
     siteName: "ماهان زندی",
     locale: "fa_IR",
-    // url: "https://www.mahanzandi.ir",
-    // url: "https://localhost:3000",
+    url: "https://www.mahanzandi.ir",
     images: [
       {
         url: ogImage.src,
@@ -36,8 +35,7 @@ export const metadata: Metadata = {
     title: "ماهان زندی | توسعه دهنده فرانت اند",
     description:
       "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
-    // site: "https://www.mahanzandi.ir",
-    // site: "https://localhost:3000",
+    site: "https://www.mahanzandi.ir",
     images: [
       {
         url: ogImage.src,
