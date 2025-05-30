@@ -5,16 +5,16 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import NavBar from "@/components/NavBar";
 import ogImage from "@/public/images/ogImage.jpg";
-import {routing} from '@/i18n/routing';
- 
+import { routing } from "@/i18n/routing";
+
 export const metadata: Metadata = {
-  title: "ماهان زندی | توسعه دهنده فرانت اند",
+  title: "ماهان زندی | Mahan Zandi",
   description:
     "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
   keywords:
     "ماهان الوارزندی, توسعه‌دهنده فرانت‌اند, برنامه‌نویس وب, React, Next.js, TailwindCSS, طراحی رابط کاربری, توسعه وب, برنامه‌نویسی فرانت‌اند, پورتفولیو, پروژه‌های وب, توسعه‌دهنده React, توسعه‌دهنده Next.js",
   openGraph: {
-    title: "ماهان زندی | توسعه دهنده فرانت اند",
+    title: "ماهان زندی توسعه دهنده وبسایت های مدرن و کاربر پسند",
     description:
       "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
     siteName: "ماهان زندی",
@@ -57,10 +57,8 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
-
-
 
 export default async function LocaleLayout({
   children,
