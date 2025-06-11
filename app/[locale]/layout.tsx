@@ -14,10 +14,11 @@ export const metadata: Metadata = {
   keywords:
     "ماهان الوارزندی, توسعه‌دهنده فرانت‌اند, برنامه‌نویس وب, React, Next.js, TailwindCSS, طراحی رابط کاربری, توسعه وب, برنامه‌نویسی فرانت‌اند, پورتفولیو, پروژه‌های وب, توسعه‌دهنده React, توسعه‌دهنده Next.js",
   openGraph: {
-    title: "ماهان زندی توسعه دهنده وبسایت های مدرن و کاربر پسند",
+    title: "ماهان زندی | Mahan Zandi",
     description:
       "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
     siteName: "ماهان زندی",
+    type: "website",
     locale: "fa_IR",
     url: "https://www.mahanzandi.ir",
     images: [
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ماهان زندی | توسعه دهنده فرانت اند",
+    title: "ماهان زندی | Mahan Zandi",
     description:
       "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
     site: "https://www.mahanzandi.ir",
@@ -53,6 +54,9 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
     },
+  },
+  alternates: {
+    canonical: "https://www.mahanzandi.ir",
   },
 };
 
