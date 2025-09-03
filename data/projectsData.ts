@@ -18,7 +18,7 @@ export const projects: ProjectsType[] = [
     description: "works-arya-description",
     link: "https://www.fdarya.com",
     githubLink: null,
-    picture: "arya-image",
+    picture: "/images/arya-project.png",
     feature: [
       "works-arya-feature1",
       "works-arya-feature2",
@@ -44,7 +44,7 @@ export const projects: ProjectsType[] = [
 
     ],
     githubLink: "https://github.com/MahanZandi/my-portfolio",
-    picture: "portfolio-image",
+    picture: "/images/portfolio-project.png",
     techs: ["Next.js", "TypeScript", "Tailwind", "Three js" , "SCSS", "Git"],
   },
 ];

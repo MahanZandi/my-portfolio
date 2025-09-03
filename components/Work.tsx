@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import { RiExternalLinkLine } from "react-icons/ri";
-import { getWorkImageByName } from "@/utils/getWorkImageByName";
 import { TbBrandGithub } from "react-icons/tb";
 import { GoDotFill } from "react-icons/go";
 import { useTranslations } from "next-intl";
@@ -73,8 +72,10 @@ const Work = ({ data }: WorkProps) => {
           <div className="work-image-space">
             <Image
               className="work-image"
-              src={getWorkImageByName(data.picture)}
-              alt="arya website image"
+              width={600}
+              height={400}
+              src={data.picture}
+              alt={data.title}
             />
           </div>
         </div>

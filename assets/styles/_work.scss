@@ -1,14 +1,14 @@
 @layer components {
     .work {
-        @apply container desktop:pb-[48px] pb-[24px];
+        @apply desktop:w-[600px] desktop:pb-[48px] pb-[24px];
     }
 
     .work-container {
-        @apply flex justify-center desktop:flex-row flex-col-reverse shadow-md rounded-xl;
+        @apply flex justify-center flex-col-reverse shadow-md rounded-xl;
     }
 
     .work-content {
-        @apply dark:bg-gray-800 bg-white w-full desktop:px-[48px] desktop:pt-[48px] px-[16px] pt-[32px] pb-[32px] desktop:rounded-r-xl desktop:rounded-bl-none rounded-b-xl;
+        @apply dark:bg-gray-800 bg-white w-full desktop:px-[48px] desktop:pt-[48px] px-[16px] pt-[32px] pb-[32px] rounded-b-xl;
     }
 
     .work-title {
@@ -48,7 +48,7 @@
     }
 
     .work-image-outline {
-        @apply dark:bg-gray-700 bg-gray-50 w-full desktop:rounded-l-xl desktop:rounded-tr-none rounded-t-xl;
+        @apply dark:bg-gray-700 bg-gray-50 w-full rounded-t-xl;
     }
 
     .work-image-space {
