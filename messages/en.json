@@ -60,6 +60,16 @@
     "works-portfolio-feature6": "SEO optimization to increase website visibility",
     "works-portfolio-feature7": "Clean code structure to enhance performance and maintainability",
 
+    "works-nobito-title": "Nobito Website | Online Appointment Booking",
+    "works-nobito-description": "Nobito is an online appointment booking platform in the medical services sector. In this project, I was responsible for front-end development, focusing on creating a fast, responsive, and user-friendly interface. During the development, I emphasized clean code, scalability, and modern design principles to deliver a smooth and consistent user experience across all devices.",
+    "works-nobito-feature1": "Modern and user-friendly design",
+    "works-nobito-feature2": "Clean code structure to improve performance and maintainability",
+    "works-nobito-feature3": "Engaging sections and sliders",
+    "works-nobito-feature4": "Modern and professional design with an attractive and user-friendly interface",
+    "works-nobito-feature5": "High loading speed and optimized performance",
+    "works-nobito-feature6": "Lightweight and efficient state management",
+    "works-nobito-feature7": "Includes over twenty pages such as main pages, doctor category pages, doctor profiles, user dashboard, articles page, and more",
+
     "feature-title": "Features :",
     "works-techs-title": "Technologies Used :"
   },

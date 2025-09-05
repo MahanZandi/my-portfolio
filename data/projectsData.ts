@@ -5,7 +5,7 @@ export interface ProjectsType {
   title: string;
   description: string;
   link: string;
-  githubLink: string | null;
+  githubLink?: string;
   picture: string | StaticImageData;
   techs: string[];
   feature: string[];
@@ -17,7 +17,6 @@ export const projects: ProjectsType[] = [
     title: "works-arya-title",
     description: "works-arya-description",
     link: "https://www.fdarya.com",
-    githubLink: null,
     picture: "/images/arya-project.png",
     feature: [
       "works-arya-feature1",
@@ -41,10 +40,26 @@ export const projects: ProjectsType[] = [
       "works-portfolio-feature5",
       "works-portfolio-feature6",
       "works-portfolio-feature7",
-
     ],
     githubLink: "https://github.com/MahanZandi/my-portfolio",
     picture: "/images/portfolio-project.png",
-    techs: ["Next.js", "TypeScript", "Tailwind", "Three js" , "SCSS", "Git"],
+    techs: ["Next.js", "TypeScript", "Tailwind", "Three js", "SCSS", "Git"],
+  },
+  {
+    id: 3,
+    title: "works-nobito-title",
+    description: "works-nobito-description",
+    link: "https://nobito-demo.vercel.app/",
+    feature: [
+      "works-nobito-feature1",
+      "works-nobito-feature2",
+      "works-nobito-feature3",
+      "works-nobito-feature4",
+      "works-nobito-feature5",
+      "works-nobito-feature6",
+      "works-nobito-feature7",
+    ],
+    picture: "/images/nobito-project.png",
+    techs: ["Next.js", "TypeScript", "Tailwind", "zustand", "Git"],
   },
 ];

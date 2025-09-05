@@ -15,7 +15,7 @@ const Works: React.FC = () => {
           <p>{t("description")}</p>
         </span>
       </div>
-      <div className="flex xl:flex-row flex-col container gap-6 desktop:gap-12">
+      <div className="flex flex-col container gap-6 desktop:gap-12">
         {projects.map((data: ProjectsType) => (
           <Work key={data.id} data={data} />
         ))}
