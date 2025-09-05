@@ -19,6 +19,7 @@
         @apply pt-[16px] pb-[24px] desktop:pb-[48px] text-subtitle text-center;
     }
 
+    // TODO سوییچ کردن از گرید به فلس و اضافه کردن flex warp
     .skills-content-container {
         @apply grid grid-cols-3 gap-y-[16px] tablet:grid-cols-5 desktop:grid-cols-10;
     }
