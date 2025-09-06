@@ -5,6 +5,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import NavBar from "@/components/NavBar";
 import ogImage from "@/public/images/ogImage.jpg";
+import ScrollProgress from "@/components/ScrollProgress";
 import { routing } from "@/i18n/routing";
 
 export const metadata: Metadata = {
@@ -81,6 +82,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
+        <ScrollProgress/>
         <NextIntlClientProvider>
           <div dir="rtl" className={dir}>
             <NavBar locale={locale} />
