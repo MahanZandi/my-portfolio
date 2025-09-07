@@ -1,20 +1,14 @@
 import Image, { StaticImageData } from "next/image";
+import {ProjectsType} from "@/data/projectsData";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { TbBrandGithub } from "react-icons/tb";
 import { GoDotFill } from "react-icons/go";
 import { useTranslations } from "next-intl";
+import clsx from "clsx";
 import Link from "next/link";
 
 interface WorkProps {
-  data: {
-    title: string;
-    description: string;
-    githubLink?: string;
-    link: string;
-    picture: StaticImageData | string;
-    techs: string[];
-    feature: string[];
-  };
+  data: ProjectsType;
 }
 
 const Work = ({ data }: WorkProps) => {
@@ -24,62 +18,25 @@ const Work = ({ data }: WorkProps) => {
 
   const dynamicDir = getLang("lang") === "fa" ? "rtl" : "ltr";
 
-  const checkGithubLink = data.githubLink;
+  // "col-span-2 row-span-2 col-start-2 row-start-1"
 
   return (
-    <div className="work">
-      <div className="work-container cursor-hover">
-        {/* content */}
-        <div dir={dynamicDir} className="work-content">
-          <h2 className="work-title">{t(data.title)}</h2>
-          <p className="work-discription">{t(data.description)}</p>
-          <ul>
-            <p className="work-features-title">{t("feature-title")}</p>
-            {data.feature.map((data, index) => (
-              <li className="work-features-space" key={index}>
-                <GoDotFill className="work-icon" size={16}/>
-                <p>{t(data)}</p>
-              </li>
-            ))}
-          </ul>
-          <div>
-            <p className="work-techs-title">{t("works-techs-title")}</p>
-          </div>
-          <div className="work-techs">
-            {data.techs.map((data, index) => (
-              <span key={index} className="tags-tech">
-                {data}
-              </span>
-            ))}
-          </div>
-          <div className="works-link-end">
-            <div className="work-links-flex">
-              <Link
-                href={data.githubLink || "/"}
-                target="_blank"
-                className={`actions-work ${checkGithubLink ? null : "hidden"}`}
-              >
-                <TbBrandGithub />
-              </Link>
-              <Link href={data.link} className="actions-work" target="_blank">
-                <RiExternalLinkLine size={24} />
-              </Link>
-            </div>
-          </div>
-        </div>
-        {/* image */}
-        <div className="work-image-outline">
-          <div className="work-image-space">
-            <Image
-              className="work-image"
-              width={600}
-              height={400}
-              src={data.picture}
-              alt={data.title}
-            />
-          </div>
-        </div>
-      </div>
+    <div
+      className={clsx(
+        data.firstSuggestion &&
+          "sm:col-span-2 sm:row-span-2 sm:col-start-1 sm:row-start-1 lg:col-span-2 lg:row-span-2 lg:col-start-2 lg:row-start-1",
+        data.secondSuggestion &&
+          "sm:col-span-2 sm:row-span-2 sm:row-start-4 lg:col-span-2 lg:row-span-2 lg:row-start-3",
+        "rounded-md overflow-hidden"
+      )}
+    >
+      <Image
+        className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+        width={900}
+        height={600}
+        alt={data.title}
+        src={data.picture}
+      />
     </div>
   );
 };

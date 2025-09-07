@@ -9,6 +9,8 @@ export interface ProjectsType {
   picture: string | StaticImageData;
   techs: string[];
   feature: string[];
+  firstSuggestion?: boolean;
+  secondSuggestion?: boolean;
 }
 
 export const projects: ProjectsType[] = [
@@ -44,6 +46,7 @@ export const projects: ProjectsType[] = [
     githubLink: "https://github.com/MahanZandi/my-portfolio",
     picture: "/images/portfolio-project.png",
     techs: ["Next.js", "TypeScript", "Tailwind", "Three js", "SCSS", "Git"],
+    secondSuggestion:true,
   },
   {
     id: 3,
@@ -61,5 +64,58 @@ export const projects: ProjectsType[] = [
     ],
     picture: "/images/nobito-project.png",
     techs: ["Next.js", "TypeScript", "Tailwind", "zustand", "Git"],
+    firstSuggestion: true,
+  },
+  {
+    id: 4,
+    title: "works-nobito-title",
+    description: "works-nobito-description",
+    link: "https://nobito-demo.vercel.app/",
+    feature: [
+      "works-nobito-feature1",
+      "works-nobito-feature2",
+      "works-nobito-feature3",
+      "works-nobito-feature4",
+      "works-nobito-feature5",
+      "works-nobito-feature6",
+      "works-nobito-feature7",
+    ],
+    picture: "/images/nobito-project.png",
+    techs: ["Next.js", "TypeScript", "Tailwind", "zustand", "Git"],
+  },
+  {
+    id: 5,
+    title: "works-nobito-title",
+    description: "works-nobito-description",
+    link: "https://nobito-demo.vercel.app/",
+    feature: [
+      "works-nobito-feature1",
+      "works-nobito-feature2",
+      "works-nobito-feature3",
+      "works-nobito-feature4",
+      "works-nobito-feature5",
+      "works-nobito-feature6",
+      "works-nobito-feature7",
+    ],
+    picture: "/images/nobito-project.png",
+    techs: ["Next.js", "TypeScript", "Tailwind", "zustand", "Git"],
+  },
+  {
+    id: 6,
+    title: "works-nobito-title",
+    description: "works-nobito-description",
+    link: "https://nobito-demo.vercel.app/",
+    feature: [
+      "works-nobito-feature1",
+      "works-nobito-feature2",
+      "works-nobito-feature3",
+      "works-nobito-feature4",
+      "works-nobito-feature5",
+      "works-nobito-feature6",
+      "works-nobito-feature7",
+    ],
+    picture: "/images/nobito-project.png",
+    techs: ["Next.js", "TypeScript", "Tailwind", "zustand", "Git"],
+    
   },
 ];
