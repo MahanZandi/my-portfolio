@@ -26,9 +26,9 @@ const ThemeToggle: React.FC<ThemeToggle> = ({ className }) => {
 
   if (!theme) {
     return (
-      <span className={`${className} animate-spin`}>
+      <button className={`${className} animate-spin`}>
         <FaSpinner />
-      </span>
+      </button>
     );
   }
 

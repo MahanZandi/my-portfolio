@@ -33,6 +33,15 @@ const Skills: React.FC = () => {
             ))}
           </div>
         </div>
+        <div className="flex justify-center -mt-[250px] md:-mt-[150px]">
+          <Image
+            width={768}
+            height={384}
+            className="opacity-15 h-[300px] w-auto"
+            alt="code image"
+            src="/images/code-image.webp"
+          />
+        </div>
       </div>
     </div>
   );

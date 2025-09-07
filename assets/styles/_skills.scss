@@ -4,7 +4,7 @@
     }
 
     .skills-container {
-        @apply container py-[64px] desktop:py-[96px] xl:px-0;
+        @apply container pt-[64px] desktop:pt-[96px] xl:px-0;
     }
 
     .skills-titles {
@@ -25,7 +25,7 @@
     }
 
     .skills-item {
-        @apply grid place-items-center;
+        @apply grid place-items-center relative z-10;
     }
 
     .skills-item-image {
