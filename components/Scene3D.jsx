@@ -10,7 +10,7 @@ import { useTranslations } from "next-intl";
 const Scene3D = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  const t = useTranslations('3dweb')
+  const t = useTranslations("3dweb");
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -26,17 +26,14 @@ const Scene3D = () => {
           <span className="tags">3D web</span>
         </div>
         <div className="scene3d-description">
-          <p>
-            {t('description')}
-          </p>
+          <p>{t("description")}</p>
         </div>
         <Canvas
           camera={{
             position: [0, 0.8, isMobile ? 6.3 : 4.8],
             fov: 75,
-            pointerEvents: 'none',
+            pointerEvents: "none",
           }}
-          
         >
           <ambientLight intensity={1.5} />
           <pointLight position={[0, 7, 4]} intensity={100} distance={50} />
@@ -50,7 +47,7 @@ const Scene3D = () => {
         </Canvas>
       </div>
       <div className="scene3d-bottom-text">
-        <p>{t('bottom-text')}</p>
+        <p>{t("bottom-text")}</p>
         <IoReloadOutline />
       </div>
     </div>

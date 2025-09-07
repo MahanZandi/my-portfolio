@@ -28,7 +28,7 @@ const Work = ({ data }: WorkProps) => {
 
   return (
     <div className="work">
-      <div className="work-container">
+      <div className="work-container cursor-hover">
         {/* content */}
         <div dir={dynamicDir} className="work-content">
           <h2 className="work-title">{t(data.title)}</h2>

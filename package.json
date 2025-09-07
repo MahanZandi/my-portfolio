@@ -12,6 +12,7 @@
     "@next/font": "^14.2.15",
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
+    "gsap": "^3.13.0",
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.2",
     "i18next-http-backend": "^3.0.2",

@@ -15,13 +15,28 @@ interface NavbarProps {
 }
 
 const NavBar: React.FC<NavbarProps> = ({ locale }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations("navbar");
 
-  const t = useTranslations('navbar')
+  const navLinks = [
+    {
+      title: "about me",
+      link: "#about",
+    },
+    {
+      title: "works",
+      link: "#works",
+    },
+    {
+      title: "contact me",
+      link: "#contact",
+    },
+  ];
+
+  const [isOpen, setIsOpen] = useState(false);
 
   const fa = () => {
     return (
-      <Link href="/en" className="nav-lang">
+      <Link href="/en" className="nav-lang ">
         <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
         <span>FA</span>
       </Link>
@@ -54,7 +69,7 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
           <div className="nav-flex-space">
             <div className="nav-items-parents">
               <div className="nav-buttons-container">
-                <a href="/files/mahan-resume.pdf" target="_blank">
+                <a className="" href="/files/mahan-resume.pdf" target="_blank">
                   <Button className="button" text={t("cv button")} />
                 </a>
                 <ThemeToggle className="button-theme link" />
@@ -64,15 +79,11 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
                 <div className="nav-vertical-line"></div>
               </div>
               <div className="nav-items-container">
-                <Link href="#about" className="link">
-                  {t('about me')}
-                </Link>
-                <Link href="#works" className="link">
-                  {t('works')}
-                </Link>
-                <Link href="#contact" className="link">
-                  {t('contact me')}
-                </Link>
+                {navLinks?.map((item, index) => (
+                  <Link key={index} href={item.link} className="link">
+                    {t(item.title)}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
