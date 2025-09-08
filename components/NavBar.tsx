@@ -36,7 +36,7 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
 
   const fa = () => {
     return (
-      <Link href="/en" className="nav-lang ">
+      <Link href="/en" scroll={false} className="nav-lang ">
         <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
         <span>FA</span>
       </Link>
@@ -45,7 +45,7 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
 
   const en = () => {
     return (
-      <Link href="/fa" className="nav-lang">
+      <Link href="/fa" scroll={false} className="nav-lang">
         <Image
           src={enflag}
           alt="آیکون پرچم انگلیس"

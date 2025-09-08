@@ -15,4 +15,20 @@
     animation: glow 1.5s infinite alternate;
     transition: box-shadow 0.3s ease-in-out;
   }
+
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+    60% {
+      left: 100%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  .animate-shine {
+    animation: shine 1.5s ease-out infinite;
+  }
 }
