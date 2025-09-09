@@ -16,11 +16,11 @@
     }
 
     .about-space {
-        @apply flex flex-col xl:flex-row-reverse desktop:gap-x-[48px];
+        @apply flex flex-col xl:flex-row-reverse xl:justify-between;
     }
 
     .about-image-flex {
-        @apply flex justify-center md:order-first xl:justify-end desktop:pr-[144px] sm:pb-[24px] xl:pb-[48px];
+        @apply flex justify-center md:order-first xl:justify-end sm:pb-[24px] xl:pb-[48px];
     }
 
     .about-image-position {
@@ -40,7 +40,7 @@
     }
 
     .about-caption {
-        @apply text-body2;
+        @apply text-body2 ;
     }
 
 }

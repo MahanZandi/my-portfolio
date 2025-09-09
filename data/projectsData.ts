@@ -11,6 +11,8 @@ export interface ProjectsType {
   feature: string[];
   firstSuggestion?: boolean;
   secondSuggestion?: boolean;
+  date: "works-arya-date" | "works-portfolio-date" | "works-nobito-date";
+  slug: string;
 }
 
 export const projects: ProjectsType[] = [
@@ -28,6 +30,8 @@ export const projects: ProjectsType[] = [
       "works-arya-feature5",
     ],
     techs: ["Next.js", "TypeScript", "Tailwind", "SCSS", "Git"],
+    date: "works-arya-date",
+    slug: "arya-website",
   },
   {
     id: 2,
@@ -45,7 +49,9 @@ export const projects: ProjectsType[] = [
     ],
     githubLink: "https://github.com/MahanZandi/my-portfolio",
     picture: "/images/portfolio-project.png",
-    techs: ["Next.js", "TypeScript", "Tailwind", "Three js", "SCSS", "Git"]
+    techs: ["Next.js", "TypeScript", "Tailwind", "Three js", "SCSS", "Git"],
+    date: "works-portfolio-date",
+    slug: "portfolio-website",
   },
   {
     id: 3,
@@ -64,5 +70,59 @@ export const projects: ProjectsType[] = [
     picture: "/images/nobito-project.png",
     techs: ["Next.js", "TypeScript", "Tailwind", "zustand", "Git"],
     firstSuggestion: true,
+    date: "works-nobito-date",
+    slug: "nobito-website",
   },
+  // {
+  //   id: 4,
+  //   title: "works-nobito-title",
+  //   description: "works-nobito-description",
+  //   link: "https://nobito-demo.vercel.app/",
+  //   feature: [
+  //     "works-nobito-feature1",
+  //     "works-nobito-feature2",
+  //     "works-nobito-feature3",
+  //     "works-nobito-feature4",
+  //     "works-nobito-feature5",
+  //     "works-nobito-feature6",
+  //     "works-nobito-feature7",
+  //   ],
+  //   picture: "/images/nobito-project.png",
+  //   techs: ["Next.js", "TypeScript", "Tailwind", "zustand", "Git"],
+  //   secondSuggestion: true,
+  // },
+  // {
+  //   id: 5,
+  //   title: "works-nobito-title",
+  //   description: "works-nobito-description",
+  //   link: "https://nobito-demo.vercel.app/",
+  //   feature: [
+  //     "works-nobito-feature1",
+  //     "works-nobito-feature2",
+  //     "works-nobito-feature3",
+  //     "works-nobito-feature4",
+  //     "works-nobito-feature5",
+  //     "works-nobito-feature6",
+  //     "works-nobito-feature7",
+  //   ],
+  //   picture: "/images/nobito-project.png",
+  //   techs: ["Next.js", "TypeScript", "Tailwind", "zustand", "Git"],
+  // },
+  // {
+  //   id: 6,
+  //   title: "works-nobito-title",
+  //   description: "works-nobito-description",
+  //   link: "https://nobito-demo.vercel.app/",
+  //   feature: [
+  //     "works-nobito-feature1",
+  //     "works-nobito-feature2",
+  //     "works-nobito-feature3",
+  //     "works-nobito-feature4",
+  //     "works-nobito-feature5",
+  //     "works-nobito-feature6",
+  //     "works-nobito-feature7",
+  //   ],
+  //   picture: "/images/nobito-project.png",
+  //   techs: ["Next.js", "TypeScript", "Tailwind", "zustand", "Git"],
+  // },
 ];
