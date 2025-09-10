@@ -16,22 +16,23 @@ const Skills: React.FC = () => {
             <span className="skills-title-span">{t("overview")}</span>
           </div>
           {/* content */}
-          <div className="skills-content-container">
-            {skillsData?.map((item, index) => (
-              <div key={index} className="skills-item">
-                <Link href={item.link}>
-                  <Image
-                    className="skills-item-image"
-                    src={item.image}
-                    alt={item.title}
-                    width={64}
-                    height={64}
-                  />
-                </Link>
-                <p className="skills-item-text">{item.title}</p>
-              </div>
-            ))}
-          </div>
+
+            <div className="skills-content-container">
+              {skillsData?.map((item, index) => (
+                <div key={index} className="skills-item">
+                  <Link href={item.link}>
+                    <Image
+                      className="skills-item-image"
+                      src={item.image}
+                      alt={item.title}
+                      width={64}
+                      height={64}
+                    />
+                  </Link>
+                  <p className="skills-item-text">{item.title}</p>
+                </div>
+              ))}
+            </div>
         </div>
         <div className="flex justify-center -mt-[250px] md:-mt-[150px]">
           <Image

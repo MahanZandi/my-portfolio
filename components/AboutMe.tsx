@@ -1,6 +1,5 @@
 import MahanImage from "@/public/images/mahanImage2.jpg";
 import Image from "next/image";
-// import AnimatedSection from "./AnimatedSection";
 import { useTranslations } from "next-intl";
 
 const AboutMe: React.FC = () => {
@@ -18,7 +17,6 @@ const AboutMe: React.FC = () => {
         </div>
         <div className="about-space">
           {/* Image */}
-
           <div className="about-image-flex">
             <div className="about-image-position">
               <Image
