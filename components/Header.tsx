@@ -24,7 +24,6 @@ const Header: React.FC = () => {
             src={MahanImae}
             alt="MahanImae"
             className="header-image"
-            style={{ objectFit: "cover" }}
           />
           <div className="header-shape"></div>
         </div>
