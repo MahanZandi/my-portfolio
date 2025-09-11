@@ -8,6 +8,7 @@ import ogImage from "@/public/images/ogImage.jpg";
 import ScrollProgress from "@/components/ScrollProgress";
 import { routing } from "@/i18n/routing";
 import SmoothCursor from "@/components/SmoothCursor";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "ماهان زندی | Mahan Zandi",
@@ -89,6 +90,7 @@ export default async function LocaleLayout({
             <NavBar locale={locale} />
             <div>{children}</div>
           </div>
+          <Footer />
         </NextIntlClientProvider>
         <div className="xl:block hidden">
           <SmoothCursor />

@@ -9,6 +9,7 @@ import Image from "next/image";
 import enflag from "@/public/images/en-flag.png";
 import faflag from "@/public/images/fa-flag.png";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 interface NavbarProps {
   locale: "en" | "fa";
@@ -20,41 +21,37 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
   const navLinks = [
     {
       title: "about me",
-      link: "#about",
+      link: "/#about",
     },
     {
       title: "works",
-      link: "#works",
+      link: "/#works",
     },
     {
       title: "contact me",
-      link: "#contact",
+      link: "/#contact",
     },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const fa = () => {
-    return (
-      <Link href="/en" scroll={false} className="nav-lang ">
-        <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
-        <span>FA</span>
-      </Link>
-    );
-  };
+  const pathname = usePathname();
 
-  const en = () => {
-    return (
-      <Link href="/fa" scroll={false} className="nav-lang">
-        <Image
-          src={enflag}
-          alt="آیکون پرچم انگلیس"
-          className="nav-lang-image"
-        />
-        <span>EN</span>
-      </Link>
-    );
-  };
+  const currentPath = pathname.replace(/^\/(fa|en)/, "");
+
+  const fa = () => (
+    <Link href={`/en${currentPath}`} scroll={false} className="nav-lang">
+      <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
+      <span>FA</span>
+    </Link>
+  );
+
+  const en = () => (
+    <Link href={`/fa${currentPath}`} scroll={false} className="nav-lang">
+      <Image src={enflag} alt="آیکون پرچم انگلیس" className="nav-lang-image" />
+      <span>EN</span>
+    </Link>
+  );
 
   const lang = locale === "fa" ? fa() : en();
 
@@ -89,7 +86,7 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
               </div>
             </div>
           </div>
-          <Link href="#header" className="nav-logo">
+          <Link href="/#header" className="nav-logo">
             {"</ M>"}
           </Link>
         </div>
