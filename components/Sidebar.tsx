@@ -53,7 +53,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
   const lang = locale === "fa" ? fa() : en();
 
   // TODO: وقتی روی متن تغییر زبان یا تغییر تم میزنم تم و زبان عوض شه
-  // TODO: pdf رزومه را اپدیت کنم
 
   return (
     <div>

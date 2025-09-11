@@ -16,8 +16,6 @@ const Work = ({ data }: WorkProps) => {
 
   const dynamicDir = getLang("lang") === "fa" ? "rtl" : "ltr";
 
-  // "col-span-2 row-span-2 col-start-2 row-start-1"
-
   return (
     <div
       className={clsx(

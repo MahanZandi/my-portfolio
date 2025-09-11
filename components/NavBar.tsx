@@ -55,8 +55,6 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
 
   const lang = locale === "fa" ? fa() : en();
 
-  // TODO: pdf رزومه را اپدیت کنم
-
   return (
     <div>
       <nav id="header" className="nav-parents">

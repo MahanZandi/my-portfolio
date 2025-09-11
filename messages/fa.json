@@ -78,7 +78,9 @@
 
     "feature-title": "ویژگی ها :",
     "works-techs-title": "تکنولوژی های مورد استفاده :",
-    "progect-detail-link": "جزئیات پروژه"
+    "progect-detail-link": "جزئیات پروژه",
+    "back":"بازگشت",
+    "project-link": "لینک پروژه"
   },
 
   "3dweb": {
