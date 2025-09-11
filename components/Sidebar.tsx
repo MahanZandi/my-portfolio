@@ -8,6 +8,7 @@ import enflag from "@/public/images/en-flag.png";
 import faflag from "@/public/images/fa-flag.png";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import { useStore } from "@/libs/store";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -21,6 +22,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
   const pathname = usePathname();
 
   const currentPath = pathname.replace(/^\/(fa|en)/, "");
+
+  const { theme, setTheme } = useStore();
 
   const fa = () => (
     <>
@@ -51,8 +54,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
   );
 
   const lang = locale === "fa" ? fa() : en();
-
-  // TODO: وقتی روی متن تغییر زبان یا تغییر تم میزنم تم و زبان عوض شه
 
   return (
     <div>
@@ -99,8 +100,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
         </div>
         <div className="sidebar-tools-container">
           <div className="sidebar-theme-toggle-container">
-            {/* TODO فیکس کردن تعویض تم با zustand */}
-            <p className="sidebar-switch-theme-text">{t("change theme")}</p>
+            <p onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="sidebar-switch-theme-text">{t("change theme")}</p>
             <ThemeToggle className="sidebar-theme-toggle" />
           </div>
           <div className="sidebar-lang-container">{lang}</div>
