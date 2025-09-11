@@ -49,7 +49,7 @@ export const projects: ProjectsType[] = [
     ],
     githubLink: "https://github.com/MahanZandi/my-portfolio",
     picture: "/images/portfolio-project.png",
-    techs: ["Next.js", "TypeScript", "Tailwind", "Three js", "SCSS", "Git"],
+    techs: ["Next.js", "TypeScript", "Tailwind", "Three js", "zustand" , "SCSS", "Git"],
     date: "works-portfolio-date",
     slug: "portfolio-website",
   },
