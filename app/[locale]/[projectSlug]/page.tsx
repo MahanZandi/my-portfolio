@@ -1,7 +1,59 @@
 import { projects } from "@/data/projectsData";
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+
+export async function generateMetadata({ params }: ProjectDetailProps) {
+  const { projectSlug, locale } = await params;
+  const t = await getTranslations({ locale, namespace: "progects" });
+
+  const project = projects.find((p) => p.slug === projectSlug);
+
+  if (!project) {
+    return {
+      title: "پروژه یافت نشد | ماهان زندی",
+      description: "پروژه مورد نظر یافت نشد.",
+    };
+  }
+
+  return {
+    title: `${t(project.title)} | ماهان زندی`,
+    description: t(project.description),
+    keywords: project.feature?.join(", ") || "ماهان زندی, پروژه وب, React, Next.js",
+    openGraph: {
+      title: `${t(project.title)} | ماهان زندی`,
+      description: t(project.description),
+      type: "website",
+      locale: "fa_IR",
+      url: `https://www.mahanzandi.ir/projects/${project.slug}`,
+      images: [
+        {
+          url: project.picture,
+          width: 1200,
+          height: 630,
+          alt: t(project.title),
+          type: "image/png",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${t(project.title)} | ماهان زندی`,
+      description: t(project.description),
+      images: [
+        {
+          url: project.picture,
+          width: 1200,
+          height: 630,
+          alt: t(project.title),
+          type: "image/png",
+        },
+      ],
+      site: "https://www.mahanzandi.ir",
+    },
+  };
+}
+
+import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import { RiExternalLinkLine } from "react-icons/ri";

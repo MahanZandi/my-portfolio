@@ -4,7 +4,6 @@ import "@/assets/styles/globals.scss";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import NavBar from "@/components/NavBar";
-import ogImage from "@/public/images/ogImage.jpg";
 import ScrollProgress from "@/components/ScrollProgress";
 import { routing } from "@/i18n/routing";
 import SmoothCursor from "@/components/SmoothCursor";
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
     url: "https://www.mahanzandi.ir",
     images: [
       {
-        url: ogImage.src,
+        url: "/favicon.ico",
         width: 1200,
         height: 630,
         alt: "لوگوی وبسایت ماهان زندی",
@@ -44,7 +43,7 @@ export const metadata: Metadata = {
     site: "https://www.mahanzandi.ir",
     images: [
       {
-        url: ogImage.src,
+        url: "/favicon.ico",
         width: 1200,
         height: 630,
         alt: "لوگوی وبسایت ماهان زندی",
