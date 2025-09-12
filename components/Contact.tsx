@@ -10,7 +10,6 @@ import { PiLinkedinLogoBold } from "react-icons/pi";
 import { LuCopyCheck } from "react-icons/lu";
 import { useTranslations } from "next-intl";
 import { MdCall } from "react-icons/md";
-import InstallWebApp from "./InstallWebApp";
 
 const Contact = () => {
   const [copied, setCopied] = useState<"email" | "phone" | null>(null);
@@ -81,9 +80,6 @@ const Contact = () => {
             <PiLinkedinLogoBold />
           </Link>
         </div>
-      </div>
-      <div>
-        <InstallWebApp/>
       </div>
     </div>
   );
