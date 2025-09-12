@@ -1,6 +1,6 @@
 @layer components {
     .page {
-      @apply bg-white text-gray-600 dark:bg-gray-950  dark:text-gray-300 transition-all;
+      @apply bg-white dark:bg-gray-950 text-gray-600 dark:text-gray-300 transition-all;
     };
 
     .scene3d {

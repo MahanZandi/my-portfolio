@@ -1,8 +1,9 @@
 "use client";
 import { IoSunnyOutline } from "react-icons/io5";
 import { PiMoonStars } from "react-icons/pi";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { FaSpinner } from "react-icons/fa";
+import { useStore } from "@/libs/store";
 
 type Theme = "light" | "dark" | null;
 
@@ -11,12 +12,12 @@ interface ThemeToggle {
 }
 
 const ThemeToggle: React.FC<ThemeToggle> = ({ className }) => {
-  const [theme, setTheme] = useState<Theme>(null);
+  const { theme, setTheme } = useStore();
 
   useEffect(() => {
     const storedTheme = (localStorage.getItem("theme") as Theme) || "light";
     setTheme(storedTheme);
-  }, []);
+  }, [setTheme]);
 
   useEffect(() => {
     if (!theme) return;
@@ -26,7 +27,7 @@ const ThemeToggle: React.FC<ThemeToggle> = ({ className }) => {
 
   if (!theme) {
     return (
-      <button className={`${className} animate-spin`} aria-label="در حال لود تم">
+      <button className={`${className} animate-spin`}>
         <FaSpinner />
       </button>
     );

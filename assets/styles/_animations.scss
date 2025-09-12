@@ -1,17 +1,50 @@
 @layer components {
-    
-    @keyframes glow {
-        0%, 100% {
-            box-shadow: 0 0 5px 2px rgba(16, 185, 129, 0.3), 0 0 10px 5px rgba(16, 185, 129, 0.2);
-        }
-        50% {
-            box-shadow: 0 0 8px 4px rgba(16, 185, 129, 0.4), 0 0 15px 8px rgba(16, 185, 129, 0.3);
-        }
+  @keyframes glow {
+    0%,
+    100% {
+      box-shadow: 0 0 5px 2px rgba(16, 185, 129, 0.3),
+        0 0 10px 5px rgba(16, 185, 129, 0.2);
     }
-    
-    .open-to-work-animation {
-        animation: glow 1.5s infinite alternate;
-        transition: box-shadow 0.3s ease-in-out;
+    50% {
+      box-shadow: 0 0 8px 4px rgba(16, 185, 129, 0.4),
+        0 0 15px 8px rgba(16, 185, 129, 0.3);
     }
-    
+  }
+
+  .open-to-work-animation {
+    animation: glow 1.5s infinite alternate;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+    60% {
+      left: 100%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  .animate-shine {
+    animation: shine 1.5s ease-out infinite;
+  }
+
+  .slide-in-fwd-center {
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+  }
+
+  @keyframes slide-in-fwd-center {
+    0% {
+      transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
 }

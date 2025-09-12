@@ -1,6 +1,6 @@
 @layer components {
     .footer {
-        @apply bg-gray-100 dark:bg-gray-900;
+        @apply bg-gray-100 dark:bg-gray-900 dark:text-gray-300 text-gray-600;
     }
 
     .footer-container {

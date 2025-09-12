@@ -3,8 +3,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const AboutMe: React.FC = () => {
-
-  const t = useTranslations('about me');
+  const t = useTranslations("about me");
 
   const getLang = useTranslations();
 
@@ -14,7 +13,7 @@ const AboutMe: React.FC = () => {
     <section id="about" className="about">
       <div className="about-container">
         <div className="about-tag-container">
-          <p className="about-tag">{t('tag')}</p>
+          <p className="about-tag">{t("tag")}</p>
         </div>
         <div className="about-space">
           {/* Image */}
@@ -29,14 +28,19 @@ const AboutMe: React.FC = () => {
             </div>
           </div>
           {/* content */}
-          <span dir={dynamicDir}>
-            <h3 className="about-title">
-              {t('title')}
-            </h3>
-            <p className="about-caption">
-              {t('description')}
-            </p>
-          </span>
+          <div className="xl:w-[584px]">
+            <span dir={dynamicDir}>
+              <h3 className="about-title">{t("title")}</h3>
+
+              <div className="flex flex-col gap-6 leading-[155%]">
+                <h2 className="about-cahtion">{t("description-1")}</h2>
+                <p className="about-caption">{t("description-2")}</p>
+                <p className="about-caption">{t("description-3")}</p>
+                <p className="about-caption">{t("description-4")}</p>
+                <p className="about-caption">{t("description-5")} 🥊</p>
+              </div>
+            </span>
+          </div>
         </div>
       </div>
     </section>

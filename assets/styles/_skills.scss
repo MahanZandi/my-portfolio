@@ -4,7 +4,7 @@
     }
 
     .skills-container {
-        @apply container py-[64px] desktop:py-[96px] xl:px-0;
+        @apply container pt-[64px] desktop:pt-[96px] xl:px-0;
     }
 
     .skills-titles {
@@ -19,12 +19,13 @@
         @apply pt-[16px] pb-[24px] desktop:pb-[48px] text-subtitle text-center;
     }
 
+    // TODO سوییچ کردن از گرید به فلس و اضافه کردن flex warp
     .skills-content-container {
-        @apply grid grid-cols-3 gap-y-[16px] tablet:grid-cols-5 desktop:grid-cols-10;
+        @apply grid grid-cols-4 gap-y-[16px] lg:grid-cols-6 xl:grid-cols-11;
     }
 
     .skills-item {
-        @apply grid place-items-center;
+        @apply grid place-items-center relative z-10;
     }
 
     .skills-item-image {

@@ -6,26 +6,23 @@ import { TbBrandGithub } from "react-icons/tb";
 import { LiaTelegramPlane } from "react-icons/lia";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { MdCall } from "react-icons/md";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 
 const Header: React.FC = () => {
-  const t = useTranslations('header');
+  const t = useTranslations("header");
 
   const getLang = useTranslations();
 
   const dynamicDir = getLang("lang") === "fa" ? "rtl" : "ltr";
-    
+
   return (
     <div className="header">
       <div className="header-container">
         {/* Image */}
         <div className="header-image-container">
-          <Image
-            src={MahanImae}
-            alt="MahanImae"
-            className="header-image"
-            style={{ objectFit: "cover" }}
-          />
+          <div>
+            <Image src={MahanImae} alt="MahanImae" className="header-image" />
+          </div>
           <div className="header-shape"></div>
         </div>
         {/* content */}

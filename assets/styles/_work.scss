@@ -1,14 +1,14 @@
 @layer components {
     .work {
-        @apply container desktop:pb-[48px] pb-[24px];
+        @apply  desktop:mb-[48px] mb-[24px];
     }
 
     .work-container {
-        @apply flex justify-center desktop:flex-row flex-col-reverse shadow-md rounded-xl;
+        @apply flex justify-center flex-col-reverse shadow-md rounded-xl;
     }
 
     .work-content {
-        @apply dark:bg-gray-800 bg-white w-full desktop:px-[48px] desktop:pt-[48px] px-[16px] pt-[32px] pb-[32px] desktop:rounded-r-xl desktop:rounded-bl-none rounded-b-xl;
+        @apply dark:bg-gray-800 bg-white w-full desktop:px-[48px] desktop:pt-[48px] px-[16px] pt-[32px] pb-[32px] rounded-b-xl;
     }
 
     .work-title {
@@ -16,7 +16,7 @@
     }
 
     .work-techs-title {
-        @apply text-body1 text-gray-900 dark:text-gray-100 pt-[20px];
+        @apply text-body1 text-gray-900 dark:text-gray-100;
     }
 
     .work-features-title {
@@ -24,7 +24,7 @@
     }
 
     .work-features-space {
-        @apply py-1.5 flex gap-1 items-center;
+        @apply flex gap-1 ;
     }
 
     .work-icon {
@@ -36,7 +36,7 @@
     }
 
     .work-techs {
-        @apply grid py-[24px] desktop:grid-cols-4 grid-cols-2 gap-2;
+        @apply flex flex-wrap py-6 gap-2;
     }
 
     .work-links-flex {
@@ -48,7 +48,7 @@
     }
 
     .work-image-outline {
-        @apply dark:bg-gray-700 bg-gray-50 w-full desktop:rounded-l-xl desktop:rounded-tr-none rounded-t-xl;
+        @apply dark:bg-gray-700 bg-gray-50 w-full rounded-t-xl;
     }
 
     .work-image-space {

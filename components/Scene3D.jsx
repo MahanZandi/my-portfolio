@@ -10,7 +10,7 @@ import { useTranslations } from "next-intl";
 const Scene3D = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  const t = useTranslations('3dweb')
+  const t = useTranslations("3dweb");
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -21,36 +21,33 @@ const Scene3D = () => {
 
   return (
     <div className="scene3d">
-      <div className="scene3d-container">
-        <div className="scene3d-tag-container">
-          <span className="tags">3D web</span>
+        <div className="scene3d-container">
+          <div className="scene3d-tag-container">
+            <span className="tags">3D web</span>
+          </div>
+          <div className="scene3d-description">
+            <p>{t("description")}</p>
+          </div>
+          <Canvas
+            camera={{
+              position: [0, 0.8, isMobile ? 6.3 : 4.8],
+              fov: 75,
+              pointerEvents: "none",
+            }}
+          >
+            <ambientLight intensity={1.5} />
+            <pointLight position={[0, 7, 4]} intensity={100} distance={50} />
+            <Monitor3D isMobile={isMobile} />
+            <MouseKeybord3D isMobile={isMobile} />
+            <OrbitControls
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+            />
+          </Canvas>
         </div>
-        <div className="scene3d-description">
-          <p>
-            {t('description')}
-          </p>
-        </div>
-        <Canvas
-          camera={{
-            position: [0, 0.8, isMobile ? 6.3 : 4.8],
-            fov: 75,
-            pointerEvents: 'none',
-          }}
-          
-        >
-          <ambientLight intensity={1.5} />
-          <pointLight position={[0, 7, 4]} intensity={100} distance={50} />
-          <Monitor3D isMobile={isMobile} />
-          <MouseKeybord3D isMobile={isMobile} />
-          <OrbitControls
-            enableZoom={false}
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 2}
-          />
-        </Canvas>
-      </div>
       <div className="scene3d-bottom-text">
-        <p>{t('bottom-text')}</p>
+        <p>{t("bottom-text")}</p>
         <IoReloadOutline />
       </div>
     </div>

@@ -19,7 +19,7 @@
 
   "header": {
     "title": "Hi Im Mahan 👋",
-    "description": "I'm Mahan zandi, a front-end developer with over a year of experience in building modern and optimized user interfaces. Using technologies like React, Next.js, and TailwindCSS, I create fast, engaging, and user-friendly experiences. I'm always eager to learn and improve my skills to deliver the best possible experience for users.",
+    "description": "I’m Mahan Zandi, a Front-end Developer focused on building modern and optimized user interfaces. Using technologies like React, Next.js, and TailwindCSS, I create fast, engaging, and user-friendly experiences. I’m always eager to learn and improve my skills to deliver the best experience for users.",
     "address": "Iran, Golestan Province",
     "work": "Ready to work"
   },
@@ -27,7 +27,11 @@
   "about me": {
     "tag": "About me",
     "title": "If you want to learn more about me and my work, feel free to check out this section",
-    "description": "I'm Mahan Zandi, a Front-end Developer passionate about building modern, clean, and fully responsive user interfaces. Since I started coding, I've been deeply interested in creating professional user experiences using React.js, Next.js, TailwindCSS, and other modern technologies. My experience goes beyond learning and practicing — I've worked on real-world projects like the official website for Faravardeh Arya Factory (fdarya.com). Over the course of three months, I designed, developed, and deployed the entire project from scratch, focusing on Clean Code, SEO optimization, and responsive design to create a modern and effective website that helped boost the company's marketing and sales efforts. In addition to client projects, I’m building my personal portfolio website to showcase my work, skills, and professional journey. In every project, I aim to implement professional designs and deliver a polished, user-centered product — even when I’m not the designer myself. I'm constantly learning and growing. Whether it's reading official documentation, following YouTube tutorials, working on real projects, or solving problems through research, I stay updated with the latest frontend trends and technologies. 🎯 My goal is to become an active and valuable member of a professional team, whether on-site or remote. I genuinely enjoy creating, learning new things, overcoming challenges, and continuously improving my skills."
+    "description-1": "Hi! I’m Mahan Zandi, a Front-end Developer who sees the web as a huge playground full of possibilities. I’ve always been curious about how the websites we use every day are built, and that curiosity is what led me into programming.",
+    "description-2": "Most of my time goes into working with technologies like TypeScript, Next.js, React, and TailwindCSS. Every line of code I write feels like a new chance to learn, create, and improve myself.",
+    "description-3": "I’ve worked on a variety of projects, from company websites to service-based platforms. What excites me the most is building new experiences for users—the idea that something I create can actually be used and make a difference motivates me to keep going.",
+    "description-4": "My goal is to grow step by step in this journey, learning new skills along the way, and eventually becoming part of professional teams and larger projects.",
+    "description-5": "Outside of coding, I enjoy sports. It’s the perfect way for me to release energy and find balance."
   },
 
   "skills": {
@@ -49,6 +53,7 @@
     "works-arya-feature3": "Modern and professional design with an attractive and user-friendly look",
     "works-arya-feature4": "SEO optimization to increase website visibility",
     "works-arya-feature5": "Clean code structure to enhance performance and maintainability",
+    "works-arya-date": "2025 may",
 
     "works-portfolio-title": "Personal Portfolio Website",
     "works-portfolio-description": "The personal website of Mahan Zandi is a portfolio project designed to showcase my work and development experience. Built with modern and powerful technologies, the site delivers an excellent user experience with a visually appealing design. It features both light and dark themes, and supports English and Persian languages. This is also the first real-world project where I’ve used Next-Intl and Three.js, expanding my skills in internationalization and 3D web development.",
@@ -59,9 +64,24 @@
     "works-portfolio-feature5": "Website is available in two languages using Next Intl",
     "works-portfolio-feature6": "SEO optimization to increase website visibility",
     "works-portfolio-feature7": "Clean code structure to enhance performance and maintainability",
+    "works-portfolio-date": "2025 may",
+
+    "works-nobito-title": "Nobito Website | Online Appointment Booking",
+    "works-nobito-description": "Nobito is an online appointment booking platform in the medical services sector. In this project, I was responsible for front-end development, focusing on creating a fast, responsive, and user-friendly interface. During the development, I emphasized clean code, scalability, and modern design principles to deliver a smooth and consistent user experience across all devices.",
+    "works-nobito-feature1": "Modern and user-friendly design",
+    "works-nobito-feature2": "Clean code structure to improve performance and maintainability",
+    "works-nobito-feature3": "Engaging sections and sliders",
+    "works-nobito-feature4": "Modern and professional design with an attractive and user-friendly interface",
+    "works-nobito-feature5": "High loading speed and optimized performance",
+    "works-nobito-feature6": "Lightweight and efficient state management",
+    "works-nobito-feature7": "Includes over twenty pages such as main pages, doctor category pages, doctor profiles, user dashboard, articles page, and more",
+    "works-nobito-date": "2025 setptember",
 
     "feature-title": "Features :",
-    "works-techs-title": "Technologies Used :"
+    "works-techs-title": "Technologies Used :",
+    "progect-detail-link": "View more details",
+    "back": "Back",
+    "project-link": "Project Link"
   },
 
   "3dweb": {
@@ -74,6 +94,6 @@
   "contact": {
     "tag": "Get in Touch",
     "description": "If you're looking for a passionate and dedicated front-end developer, I would be excited to collaborate with you. For job opportunities, joint projects, or any other collaboration proposals, feel free to leave a message through the contact section. I look forward to hearing from you",
-    "social": ": You can also connect with me through these platforms"
+    "social": " You can also connect with me through these platforms :"
   }
 }

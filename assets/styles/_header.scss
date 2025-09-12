@@ -12,7 +12,7 @@
     }
 
     .header-image {
-        @apply absolute contrast-125 brightness-125 z-10 h-[280px] w-[240px] border-8 border-transparent border-r-gray-50 border-b-gray-50 border-l-gray-50 md:border-l-0 dark:border-r-gray-950 dark:border-b-gray-950 dark:border-l-gray-950 md:dark:border-l-0 max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px];
+        @apply absolute object-cover contrast-125 brightness-125 z-10 h-[280px] w-[240px] border-8 border-transparent border-r-gray-50 border-b-gray-50 border-l-gray-50 md:border-l-0 dark:border-r-gray-950 dark:border-b-gray-950 dark:border-l-gray-950 md:dark:border-l-0 max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px];
     }
 
     .header-shape {

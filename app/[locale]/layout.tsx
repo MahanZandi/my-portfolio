@@ -5,7 +5,10 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import NavBar from "@/components/NavBar";
 import ogImage from "@/public/images/ogImage.jpg";
+import ScrollProgress from "@/components/ScrollProgress";
 import { routing } from "@/i18n/routing";
+import SmoothCursor from "@/components/SmoothCursor";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "ماهان زندی | Mahan Zandi",
@@ -13,11 +16,13 @@ export const metadata: Metadata = {
     "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
   keywords:
     "ماهان الوارزندی, توسعه‌دهنده فرانت‌اند, برنامه‌نویس وب, React, Next.js, TailwindCSS, طراحی رابط کاربری, توسعه وب, برنامه‌نویسی فرانت‌اند, پورتفولیو, پروژه‌های وب, توسعه‌دهنده React, توسعه‌دهنده Next.js",
+  manifest: "/manifest.json",
   openGraph: {
     title: "ماهان زندی | Mahan Zandi",
     description:
       "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
     siteName: "ماهان زندی",
+
     type: "website",
     locale: "fa_IR",
     url: "https://www.mahanzandi.ir",
@@ -81,12 +86,17 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
+        <ScrollProgress />
         <NextIntlClientProvider>
           <div dir="rtl" className={dir}>
             <NavBar locale={locale} />
             <div>{children}</div>
           </div>
+          <Footer />
         </NextIntlClientProvider>
+        <div className="xl:block hidden">
+          <SmoothCursor />
+        </div>
       </body>
     </html>
   );

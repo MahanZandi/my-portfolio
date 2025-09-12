@@ -9,37 +9,49 @@ import Image from "next/image";
 import enflag from "@/public/images/en-flag.png";
 import faflag from "@/public/images/fa-flag.png";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 interface NavbarProps {
   locale: "en" | "fa";
 }
 
 const NavBar: React.FC<NavbarProps> = ({ locale }) => {
+  const t = useTranslations("navbar");
+
+  const navLinks = [
+    {
+      title: "about me",
+      link: "/#about",
+    },
+    {
+      title: "works",
+      link: "/#works",
+    },
+    {
+      title: "contact me",
+      link: "/#contact",
+    },
+  ];
+
   const [isOpen, setIsOpen] = useState(false);
 
-  const t = useTranslations('navbar')
+  const pathname = usePathname();
 
-  const fa = () => {
-    return (
-      <Link href="/en" className="nav-lang">
-        <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
-        <span>FA</span>
-      </Link>
-    );
-  };
+  const currentPath = pathname.replace(/^\/(fa|en)/, "");
 
-  const en = () => {
-    return (
-      <Link href="/fa" className="nav-lang">
-        <Image
-          src={enflag}
-          alt="آیکون پرچم انگلیس"
-          className="nav-lang-image"
-        />
-        <span>EN</span>
-      </Link>
-    );
-  };
+  const fa = () => (
+    <Link href={`/en${currentPath}`} scroll={false} className="nav-lang">
+      <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
+      <span>FA</span>
+    </Link>
+  );
+
+  const en = () => (
+    <Link href={`/fa${currentPath}`} scroll={false} className="nav-lang">
+      <Image src={enflag} alt="آیکون پرچم انگلیس" className="nav-lang-image" />
+      <span>EN</span>
+    </Link>
+  );
 
   const lang = locale === "fa" ? fa() : en();
 
@@ -54,7 +66,7 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
           <div className="nav-flex-space">
             <div className="nav-items-parents">
               <div className="nav-buttons-container">
-                <a href="/files/mahan-resume.pdf" target="_blank">
+                <a className="" href="/files/mahan-resume.pdf" target="_blank">
                   <Button className="button" text={t("cv button")} />
                 </a>
                 <ThemeToggle className="button-theme link" />
@@ -64,19 +76,15 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
                 <div className="nav-vertical-line"></div>
               </div>
               <div className="nav-items-container">
-                <Link href="#about" className="link">
-                  {t('about me')}
-                </Link>
-                <Link href="#works" className="link">
-                  {t('works')}
-                </Link>
-                <Link href="#contact" className="link">
-                  {t('contact me')}
-                </Link>
+                {navLinks?.map((item, index) => (
+                  <Link key={index} href={item.link} className="link">
+                    {t(item.title)}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
-          <Link href="#header" className="nav-logo">
+          <Link href="/#header" className="nav-logo">
             {"</ M>"}
           </Link>
         </div>
