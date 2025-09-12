@@ -7,6 +7,7 @@ import NavBar from "@/components/NavBar";
 import ScrollProgress from "@/components/ScrollProgress";
 import { routing } from "@/i18n/routing";
 import SmoothCursor from "@/components/SmoothCursor";
+import Head from "next/head";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -84,6 +85,11 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <Head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+      </Head>
       <body>
         <ScrollProgress />
         <NextIntlClientProvider>
