@@ -8,10 +8,10 @@ import { RiExternalLinkLine } from "react-icons/ri";
 import Image from "next/image";
 
 interface ProjectDetailProps {
-  params: {
+  params: Promise<{
     locale: string;
     projectSlug: string;
-  };
+  }>;
 }
 
 const ProjectDetail = async ({ params }: ProjectDetailProps) => {
