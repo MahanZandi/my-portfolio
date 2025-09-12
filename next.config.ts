@@ -4,34 +4,50 @@ import withPWAInit from "@ducanh2912/next-pwa";
 
 const withPWA = withPWAInit({
   dest: "public",
+  register: true,
+  disable: process.env.NODE_ENV === "development",
   workboxOptions: {
     skipWaiting: true,
     clientsClaim: true,
     exclude: [/middleware-manifest\.json$/],
     runtimeCaching: [
       {
-        // Cache static assets (JS, CSS, images, etc.)
-        urlPattern: /\.(?:js|css|png|jpg|jpeg|svg|gif|woff2|ico)$/,
+        // images: use cache first
+        urlPattern: /^https?:.*\.(?:png|jpg|jpeg|svg|gif|webp|avif)$/i,
         handler: "CacheFirst",
         options: {
-          cacheName: "static-assets",
-          expiration: {
-            maxEntries: 50,
-            maxAgeSeconds: 30 * 24 * 60 * 60, // Cache for 30 days
-          },
+          cacheName: "images-cache",
+          expiration: { maxEntries: 100, maxAgeSeconds: 60 * 60 * 24 * 30 }, // 30 days
+          cacheableResponse: { statuses: [0, 200] },
         },
       },
       {
-        // Cache dynamic pages like /[projectSlug]
-        urlPattern: ({ request, url }) =>
-          request.mode === "navigate" && url.pathname.match(/^\/[a-zA-Z0-9-]+$/),
-        handler: "CacheFirst",
+        // static resources: css/js - stale while revalidate
+        urlPattern: /^https?:.*\.(?:css|js)$/i,
+        handler: "StaleWhileRevalidate",
         options: {
-          cacheName: "dynamic-pages",
-          expiration: {
-            maxEntries: 20,
-            maxAgeSeconds: 7 * 24 * 60 * 60, // Cache for 7 days
-          },
+          cacheName: "static-resources",
+          expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 * 7 },
+        },
+      },
+      {
+        // Next.js API routes /api/** - network first with short timeout
+        urlPattern: /^https?:.*\/api\/.*$/i,
+        handler: "NetworkFirst",
+        options: {
+          cacheName: "next-api",
+          networkTimeoutSeconds: 3,
+          expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 },
+        },
+      },
+      {
+        // generic http requests - network first
+        urlPattern: /^https?:.*$/i,
+        handler: "NetworkFirst",
+        options: {
+          cacheName: "http-cache",
+          networkTimeoutSeconds: 3,
+          expiration: { maxEntries: 200 },
         },
       },
     ],

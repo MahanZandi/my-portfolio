@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: ProjectDetailProps) {
       description: t(project.description),
       type: "website",
       locale: "fa_IR",
+      manifest: "/manifest.json",
       url: `https://www.mahanzandi.ir/projects/${project.slug}`,
       images: [
         {
