@@ -44,11 +44,7 @@
     }
 
     .sidebar-theme-toggle-container {
-        @apply flex text-gray-600 dark:text-gray-400;
-    }
-
-    .sidebar-switch-theme-text {
-        @apply flex flex-1 pt-2;
+        @apply flex justify-between items-center text-gray-600 dark:text-gray-400 mt-2;
     }
 
     .sidebar-theme-toggle {
@@ -56,7 +52,7 @@
     }
 
     .sidebar-lang-container {
-        @apply flex justify-between text-gray-600 dark:text-gray-400;
+        @apply flex justify-between items-center text-gray-600 dark:text-gray-400;
     }
 
     .sidebar-lang-text {

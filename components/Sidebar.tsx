@@ -100,7 +100,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
         </div>
         <div className="sidebar-tools-container">
           <div className="sidebar-theme-toggle-container">
-            <p onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="sidebar-switch-theme-text">{t("change theme")}</p>
+            <p onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>{t("change theme")}</p>
             <ThemeToggle className="sidebar-theme-toggle" />
           </div>
           <div className="sidebar-lang-container">{lang}</div>
