@@ -2,7 +2,7 @@
   "name": "Mahan Zandi | ماهان زندی",
   "short_name": "Mahan Zandi",
   "description": "این وبسایت پورتفولیو ماهان زندی میباشد | This website for mahan zandi's portfloio",
-  "start_url": "/",
+  "start_url": "/?source=pwa",
   "display": "standalone",
   "background_color": "#ffffff",
   "orientation": "portrait-primary",

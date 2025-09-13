@@ -12,18 +12,21 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "ماهان زندی | Mahan Zandi",
-  applicationName: "ماهان زندی | Mahan Zandi",
+  applicationName: "Mahan Zandi",
+
   appleWebApp: {
     capable: true,
-    statusBarStyle: "default",
+    statusBarStyle: "default", 
     title: "ماهان زندی | Mahan Zandi",
-    // startUpImage: [],
   },
+
   description:
     "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
+
   keywords:
     "ماهان الوارزندی, توسعه‌دهنده فرانت‌اند, برنامه‌نویس وب, React, Next.js, TailwindCSS, طراحی رابط کاربری, توسعه وب, برنامه‌نویسی فرانت‌اند, پورتفولیو, پروژه‌های وب, توسعه‌دهنده React, توسعه‌دهنده Next.js",
   manifest: "/manifest.json",
+  themeColor: "#ffffff",
   openGraph: {
     title: "ماهان زندی | Mahan Zandi",
     description:
@@ -34,30 +37,24 @@ export const metadata: Metadata = {
     url: "https://www.mahanzandi.ir",
     images: [
       {
-        url: "/favicon.ico",
+        url: "/pwa-icon-big.png",
         width: 1200,
         height: 630,
         alt: "لوگوی وبسایت ماهان زندی",
-        type: "image/jpg",
+        type: "image/png",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "ماهان زندی | Mahan Zandi",
     description:
       "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
     site: "https://www.mahanzandi.ir",
-    images: [
-      {
-        url: "/favicon.ico",
-        width: 1200,
-        height: 630,
-        alt: "لوگوی وبسایت ماهان زندی",
-        type: "image/jpg",
-      },
-    ],
+    images: ["/pwa-icon-big.png"]
   },
+
   robots: {
     index: true,
     follow: true,
@@ -66,6 +63,9 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+
+  
+
   alternates: {
     canonical: "https://www.mahanzandi.ir",
   },
@@ -74,6 +74,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: "#ffffff",
 };
+
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
