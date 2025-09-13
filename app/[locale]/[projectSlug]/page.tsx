@@ -60,12 +60,10 @@ import { GoDotFill } from "react-icons/go";
 import { RiExternalLinkLine } from "react-icons/ri";
 import Image from "next/image";
 
-interface ProjectDetailProps {
-  params: Promise<{
-    locale: string;
-    projectSlug: string;
-  }>;
-}
+type ProjectDetailProps = {
+  params: { projectSlug: string; locale: string };
+};
+
 
 const ProjectDetail = async ({ params }: ProjectDetailProps) => {
   const { projectSlug, locale } = await params;

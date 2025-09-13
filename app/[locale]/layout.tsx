@@ -64,8 +64,6 @@ export const metadata: Metadata = {
     },
   },
 
-  
-
   alternates: {
     canonical: "https://www.mahanzandi.ir",
   },

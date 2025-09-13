@@ -5,11 +5,11 @@ import withPWAInit from "@ducanh2912/next-pwa";
 const withPWA = withPWAInit({
   dest: "public",
   register: true,
-  skipWaiting: true, // یا مدیریت دستی
+  skipWaiting: true,
   disable: process.env.NODE_ENV === "development",
   additionalManifestEntries: [
     { url: "/", revision: "1" },
-    { url: "/offline.html", revision: "1" }, // پیشنهاد
+    { url: "/offline.html", revision: "1" },
   ],
   runtimeCaching: [
     {
