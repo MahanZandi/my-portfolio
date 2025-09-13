@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "@/assets/fonts/vazir/Vazirmatn-font-face.css";
 import "@/assets/styles/globals.scss";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
@@ -12,6 +12,13 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "ماهان زندی | Mahan Zandi",
+  applicationName: "ماهان زندی | Mahan Zandi",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "ماهان زندی | Mahan Zandi",
+    // startUpImage: [],
+  },
   description:
     "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
   keywords:
@@ -22,7 +29,6 @@ export const metadata: Metadata = {
     description:
       "ماهان الوارزندی، توسعه‌دهنده فرانت‌اند با تجربه در React، Next.js و TailwindCSS؛ متخصص در ساخت رابط‌های کاربری سریع، مدرن و کاربرپسند.",
     siteName: "ماهان زندی",
-
     type: "website",
     locale: "fa_IR",
     url: "https://www.mahanzandi.ir",
@@ -63,6 +69,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.mahanzandi.ir",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
 };
 
 export function generateStaticParams() {
