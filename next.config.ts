@@ -52,7 +52,9 @@ const withPWA = withPWAInit({
 } as any);
 
 
-const nextConfig: NextConfig = {};
+const nextConfig: NextConfig = {
+  reactStrictMode: true
+};
 
 const withNextIntl = createNextIntlPlugin();
 
