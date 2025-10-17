@@ -3,12 +3,10 @@ import "@/assets/fonts/vazir/Vazirmatn-font-face.css";
 import "@/assets/styles/globals.scss";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import NavBar from "@/components/NavBar";
 import ScrollProgress from "@/components/ScrollProgress";
 import { routing } from "@/i18n/routing";
 import SmoothCursor from "@/components/SmoothCursor";
 import Head from "next/head";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "ماهان زندی | Mahan Zandi",
@@ -103,10 +101,8 @@ export default async function LocaleLayout({
         <ScrollProgress />
         <NextIntlClientProvider>
           <div dir="rtl" className={dir}>
-            <NavBar locale={locale} />
-            <div>{children}</div>
+            {children}
           </div>
-          <Footer />
         </NextIntlClientProvider>
         <div className="xl:block hidden">
           <SmoothCursor />

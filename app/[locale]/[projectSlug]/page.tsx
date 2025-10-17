@@ -1,7 +1,8 @@
 import { projects } from "@/data/projectsData";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 export async function generateMetadata({ params }: ProjectDetailProps) {
   const { projectSlug, locale } = await params;
   const t = await getTranslations({ locale, namespace: "progects" });
@@ -79,6 +80,7 @@ const ProjectDetail = async ({ params }: ProjectDetailProps) => {
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900 text-gray-600 dark:text-gray-300 transition-all">
+      <NavBar locale={locale as "fa" | "en"} />
       <div className="container md:pt-[164px] md:pb-[96px] pt-[132px] pb-[64px] px-[18px] md:w-[700px] lg:w-[800px] xl:w-[1000px]">
         <h1 className="text-h1">{t(project.title)}</h1>
         <div dir={dynamicDir} className="flex flex-col mt-8 gap-4">
@@ -133,6 +135,7 @@ const ProjectDetail = async ({ params }: ProjectDetailProps) => {
           <span>{t("back")}</span>
         </div>
       </Link>
+      <Footer />
     </div>
   );
 };

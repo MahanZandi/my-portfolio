@@ -54,7 +54,7 @@
     "works-arya-feature4": "SEO optimization to increase website visibility",
     "works-arya-feature5": "Clean code structure to enhance performance and maintainability",
     "works-arya-date": "2025 may",
-
+    
     "works-portfolio-title": "Personal Portfolio Website",
     "works-portfolio-description": "The personal website of Mahan Zandi is a portfolio project designed to showcase my work and development experience. Built with modern and powerful technologies, the site delivers an excellent user experience with a visually appealing design. It features both light and dark themes, and supports English and Persian languages. This is also the first real-world project where I’ve used Next-Intl and Three.js, expanding my skills in internationalization and 3D web development.",
     "works-portfolio-feature1": "Responsive design compatible with all devices",
@@ -97,5 +97,36 @@
     "social": " You can also connect with me through these platforms :"
   },
 
-  "install-web-app": "Install Web App"
+  "install-web-app": "Install Web App",
+
+  "admin": {
+    "loginTitle": "Admin Login",
+    "loginSubtitle": "Please sign in to access the admin panel",
+    "email": "Email",
+    "password": "Password",
+    "changeTheme": "Change Theme",
+    "changeLanguage": "Change Language",
+    "backToWebsite": "Back to Website",
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "login": "Login",
+    "adminPanel": "Admin Panel",
+    "loggingIn": "Logging in...",
+    "serverError": "Server connection error",
+    "credentials": "Login credentials:",
+    "emailExample": "Email: admin@example.com",
+    "passwordExample": "Password: admin123",
+    "dashboardTitle": "Admin Dashboard",
+    "welcome": "Welcome",
+    "logout": "Logout",
+    "loggingOut": "Logging out...",
+    "dashboardDescription": "Here you can manage your website content",
+    "projects": "Projects",
+    "projectsDescription": "Manage portfolio projects",
+    "view": "View",
+    "skills": "Skills",
+    "skillsDescription": "Manage skills and technologies",
+    "settings": "Settings",
+    "settingsDescription": "General website settings"
+  }
 }
