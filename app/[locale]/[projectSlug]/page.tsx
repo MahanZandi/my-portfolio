@@ -62,7 +62,7 @@ import { RiExternalLinkLine } from "react-icons/ri";
 import Image from "next/image";
 
 type ProjectDetailProps = {
-  params: { projectSlug: string; locale: string };
+  params: Promise<{ projectSlug: string; locale: string }>;
 };
 
 
