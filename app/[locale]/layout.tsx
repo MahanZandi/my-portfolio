@@ -7,6 +7,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import { routing } from "@/i18n/routing";
 import SmoothCursor from "@/components/SmoothCursor";
 import Head from "next/head";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "ماهان زندی | Mahan Zandi",
@@ -98,6 +99,18 @@ export default async function LocaleLayout({
         <link rel="apple-touch-icon" href="/favicon.ico" />
       </Head>
       <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-F40X5VZ4KM"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-F40X5VZ4KM');
+          `}
+        </Script>
         <ScrollProgress />
         <NextIntlClientProvider>
           <div dir="rtl" className={dir}>

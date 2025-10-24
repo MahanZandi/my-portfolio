@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import MahanImae from "@/public/images/mahanImage01.jpg";
 import Link from "next/link";
@@ -7,13 +9,20 @@ import { LiaTelegramPlane } from "react-icons/lia";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { MdCall } from "react-icons/md";
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
+import { settingsApi } from "@/lib/api";
 
 const Header: React.FC = () => {
   const t = useTranslations("header");
-
   const getLang = useTranslations();
-
   const dynamicDir = getLang("lang") === "fa" ? "rtl" : "ltr";
+  const locale = getLang("lang");
+  
+  const [settings, setSettings] = useState({ openToWork: true, headerText: { fa: '', en: '' } });
+
+  useEffect(() => {
+    settingsApi.get().then(setSettings).catch(() => {});
+  }, []);
 
   return (
     <div className="header">
@@ -27,7 +36,7 @@ const Header: React.FC = () => {
         </div>
         {/* content */}
         <div className="header-content" dir={dynamicDir}>
-          <h1 className="header-title">{t("title")}</h1>
+          <h1 className="header-title">{settings.headerText[locale as 'fa' | 'en'] || t("title")}</h1>
           <p className="header-discription">{t("description")}</p>
           <div className="header-adress-space">
             <div className="header-adress-container">
@@ -35,12 +44,14 @@ const Header: React.FC = () => {
               <p>{t("address")}</p>
             </div>
 
-            <div className="header-open-to-work ">
-              <div className="header-open-to-work-space">
-                <div className="header-open-to-work-icon" />
+            {settings.openToWork && (
+              <div className="header-open-to-work ">
+                <div className="header-open-to-work-space">
+                  <div className="header-open-to-work-icon" />
+                </div>
+                <p>{t("work")}</p>
               </div>
-              <p>{t("work")}</p>
-            </div>
+            )}
 
             <div className="header-social-icons">
               <Link href="tel:+98 939 552 6996" className="actions">

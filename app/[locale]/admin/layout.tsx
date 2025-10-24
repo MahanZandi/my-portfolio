@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import AdminNavBar from "@/components/AdminNavBar";
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -28,7 +27,6 @@ export default async function AdminLayout({
 
   return (
     <div className="min-h-screen page">
-      <AdminNavBar locale={locale as "fa" | "en"} />
       {children}
     </div>
   );
