@@ -1,13 +1,7 @@
 import { NextResponse } from 'next/server';
 
-interface AnalyticsRow {
-  dimensionValues?: Array<{ value?: string }>;
-  metricValues?: Array<{ value?: string }>;
-}
-
 export async function GET() {
   try {
-    // @ts-expect-error - Package is installed but TypeScript can't resolve it
     const { BetaAnalyticsDataClient } = await import('@google-analytics/data');
     
     const analyticsDataClient = new BetaAnalyticsDataClient({
@@ -27,7 +21,7 @@ export async function GET() {
       ],
     });
 
-    const chartData = response.rows?.map((row: AnalyticsRow) => ({
+    const chartData = response.rows?.map((row) => ({
       date: row.dimensionValues?.[0]?.value || '',
       visitors: parseInt(row.metricValues?.[0]?.value || '0'),
       pageViews: parseInt(row.metricValues?.[1]?.value || '0'),
