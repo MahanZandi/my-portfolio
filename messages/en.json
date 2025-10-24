@@ -21,7 +21,8 @@
     "title": "Hi Im Mahan 👋",
     "description": "I’m Mahan Zandi, a Front-end Developer focused on building modern and optimized user interfaces. Using technologies like React, Next.js, and TailwindCSS, I create fast, engaging, and user-friendly experiences. I’m always eager to learn and improve my skills to deliver the best experience for users.",
     "address": "Iran, Golestan Province",
-    "work": "Ready to work"
+    "work": "Ready to work",
+    "work-close": "Busy"
   },
 
   "about me": {

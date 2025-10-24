@@ -11,6 +11,7 @@ import { MdCall } from "react-icons/md";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { settingsApi } from "@/lib/api";
+import Loader from "./Loader";
 
 const Header: React.FC = () => {
   const t = useTranslations("header");
@@ -19,10 +20,18 @@ const Header: React.FC = () => {
   const locale = getLang("lang");
   
   const [settings, setSettings] = useState({ openToWork: true, headerText: { fa: '', en: '' } });
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    settingsApi.get().then(setSettings).catch(() => {});
+    settingsApi.get()
+      .then(setSettings)
+      .catch(() => {})
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <div className="header">
@@ -44,14 +53,12 @@ const Header: React.FC = () => {
               <p>{t("address")}</p>
             </div>
 
-            {settings.openToWork && (
-              <div className="header-open-to-work ">
-                <div className="header-open-to-work-space">
-                  <div className="header-open-to-work-icon" />
-                </div>
-                <p>{t("work")}</p>
+            <div className="header-open-to-work ">
+              <div className="header-open-to-work-space">
+                <div className="header-open-to-work-icon" />
               </div>
-            )}
+              <p>{settings.openToWork ? t("work") : t("work-close")}</p>
+            </div>
 
             <div className="header-social-icons">
               <Link href="tel:+98 939 552 6996" className="actions">

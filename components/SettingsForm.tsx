@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { settingsApi } from '@/lib/api';
+import * as Switch from '@radix-ui/react-switch';
 
 export default function SettingsForm() {
   const [openToWork, setOpenToWork] = useState(true);
@@ -38,18 +39,22 @@ export default function SettingsForm() {
       
       <div className="p-6 space-y-6">
         <div className="bg-gray-50 dark:bg-gray-900 p-4 rounded-xl border border-gray-200 dark:border-gray-700">
-          <label className="flex items-center gap-3 cursor-pointer">
-            <input
-              type="checkbox"
-              checked={openToWork}
-              onChange={(e) => setOpenToWork(e.target.checked)}
-              className="w-6 h-6 rounded-lg"
-            />
+          <div className="flex items-center justify-between">
             <div>
-              <span className="text-gray-900 dark:text-white font-semibold">آماده دریافت پروژه</span>
-              <p className="text-xs text-gray-500 dark:text-gray-400">نمایش وضعیت فعال در هدر</p>
+              <span className="text-gray-900 dark:text-white font-semibold block mb-1">
+                {openToWork ? 'آماده دریافت پروژه' : 'مشغول به کار'}
+              </span>
+              <p className="text-xs text-gray-500 dark:text-gray-400">نمایش وضعیت کاری در هدر</p>
             </div>
-          </label>
+            <Switch.Root
+              checked={openToWork}
+              onCheckedChange={setOpenToWork}
+              className="relative h-[25px] w-[42px] cursor-pointer rounded-full outline-none transition-colors duration-200 data-[state=checked]:bg-green-500 data-[state=unchecked]:bg-gray-400 dark:data-[state=unchecked]:bg-gray-600"
+              style={{ WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)' }}
+            >
+              <Switch.Thumb className="block size-[21px] translate-x-0.5 rounded-full bg-white shadow-lg transition-transform duration-100 will-change-transform data-[state=checked]:-translate-x-[19px]" />
+            </Switch.Root>
+          </div>
         </div>
 
         <div>
