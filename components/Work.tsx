@@ -33,6 +33,7 @@ const Work = ({ data }: WorkProps) => {
           height={600}
           alt={data.title}
           src={data.picture}
+          priority={data.firstSuggestion || data.secondSuggestion}
         />
       </Link>
 
