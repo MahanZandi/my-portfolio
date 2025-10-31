@@ -25,7 +25,6 @@ export const metadata: Metadata = {
   keywords:
     "ماهان الوارزندی, توسعه‌دهنده فرانت‌اند, برنامه‌نویس وب, React, Next.js, TailwindCSS, طراحی رابط کاربری, توسعه وب, برنامه‌نویسی فرانت‌اند, پورتفولیو, پروژه‌های وب, توسعه‌دهنده React, توسعه‌دهنده Next.js",
   manifest: "/manifest.json",
-  themeColor: "#ffffff",
   openGraph: {
     title: "ماهان زندی | Mahan Zandi",
     description:

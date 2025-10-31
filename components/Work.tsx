@@ -23,7 +23,7 @@ const Work = ({ data }: WorkProps) => {
           "sm:col-span-2 sm:row-span-2 sm:col-start-1 sm:row-start-1 lg:col-span-2 lg:row-span-2 lg:col-start-2 lg:row-start-1",
         data.secondSuggestion &&
           "sm:col-span-2 sm:row-span-2 sm:row-start-4 lg:col-span-2 lg:row-span-2 lg:row-start-3",
-        "relative overflow-hidden rounded-md group cursor-hover "
+        "relative overflow-hidden rounded-md group cursor-hover"
       )}
     >
       <Link className="block overflow-hidden rounded-t-md" href={data.slug}>
@@ -78,6 +78,7 @@ const Work = ({ data }: WorkProps) => {
           </Link>
         </div>
       </div>
+
     </div>
   );
 };

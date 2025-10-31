@@ -25,6 +25,15 @@ export default {
         tablet: "768px", // معادل md
         desktop: "1024px", // معادل lg
       },
+      animation: {
+        grid: "grid 15s linear infinite",
+      },
+      keyframes: {
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
     },
   },
   plugins: [],

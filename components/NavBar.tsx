@@ -11,6 +11,13 @@ import faflag from "@/public/images/fa-flag.png";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 interface NavbarProps {
   locale: "en" | "fa";
 }
@@ -21,15 +28,15 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
   const navLinks = [
     {
       title: "about me",
-      link: "/#about",
+      link: "#about",
     },
     {
       title: "works",
-      link: "/#works",
+      link: "#works",
     },
     {
       title: "contact me",
-      link: "/#contact",
+      link: "#contact",
     },
   ];
 
@@ -77,16 +84,20 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
               </div>
               <div className="nav-items-container">
                 {navLinks?.map((item, index) => (
-                  <Link key={index} href={item.link} className="link">
+                  <button
+                    key={index}
+                    onClick={() => scrollToSection(item.link.replace("#", ""))}
+                    className="link"
+                  >
                     {t(item.title)}
-                  </Link>
+                  </button>
                 ))}
               </div>
             </div>
           </div>
-          <Link href="/#header" className="nav-logo">
+          <button onClick={() => scrollToSection("header")} className="nav-logo">
             {"</ M>"}
-          </Link>
+          </button>
         </div>
       </nav>
 

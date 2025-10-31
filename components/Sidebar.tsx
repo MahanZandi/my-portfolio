@@ -10,6 +10,13 @@ import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useStore } from "@/libs/store";
 
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 interface SidebarProps {
   isOpen: boolean;
   setIsOpen: (value: boolean) => void;
@@ -79,21 +86,33 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
           <hr className="sidebar-top-hr"></hr>
         </div>
         <nav className="sidebar-items-container">
-          <span onClick={() => setIsOpen(false)}>
-            <Link className="link" href="#about">
-              {t("about me")}
-            </Link>
-          </span>
-          <span onClick={() => setIsOpen(false)}>
-            <Link className="link" href="#works">
-              {t("works")}
-            </Link>
-          </span>
-          <span onClick={() => setIsOpen(false)}>
-            <Link className="link" href="#contact">
-              {t("contact me")}
-            </Link>
-          </span>
+          <button
+            onClick={() => {
+              scrollToSection("about");
+              setIsOpen(false);
+            }}
+            className="link"
+          >
+            {t("about me")}
+          </button>
+          <button
+            onClick={() => {
+              scrollToSection("works");
+              setIsOpen(false);
+            }}
+            className="link"
+          >
+            {t("works")}
+          </button>
+          <button
+            onClick={() => {
+              scrollToSection("contact");
+              setIsOpen(false);
+            }}
+            className="link"
+          >
+            {t("contact me")}
+          </button>
         </nav>
         <div className="sidebar-button-hr-parents">
           <hr className="sidebar-button-hr"></hr>

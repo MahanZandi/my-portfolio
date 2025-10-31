@@ -6,8 +6,8 @@ const Works: React.FC = () => {
   const t = useTranslations("works");
 
   return (
-    <div id="works" className="works">
-      <div className="works-container">
+    <div id="works" className="works relative">
+      <div className="works-container relative z-10">
         <span className="works-tags-container">
           <p className="tags">{t("tag")}</p>
         </span>
@@ -15,7 +15,7 @@ const Works: React.FC = () => {
           <p>{t("description")}</p>
         </span>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3  container pb-[64px] xl:pb-[96px] gap-y-6 gap-x-10">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 container pb-[64px] xl:pb-[96px] gap-y-6 gap-x-10 relative z-10">
         {projects.map((data: ProjectsType) => (
           <Work key={data.id} data={data} />
         ))}
