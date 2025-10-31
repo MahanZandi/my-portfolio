@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import { TerminalLine } from "@/components/ui/Terminal";
+import Terminal from "@/components/ui/Terminal";
 
 const App = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const { locale } = await params;
@@ -20,6 +22,14 @@ const App = async ({ params }: { params: Promise<{ locale: string }> }) => {
       <Header />
       <AboutMe />
       <Skills />
+      <div dir="ltr" className="container flex gap-6">
+        {/* TODO create a section in place && create theme system */}
+      {/* <Terminal>
+        <TerminalLine text="> Front-End Developer specializing in modern web technologies" delay={0} />
+        <TerminalLine text="> Building high-performance applications with React, Next.js & TypeScript" delay={1500} />
+        <TerminalLine text="> Crafting seamless user experiences with clean, scalable code" delay={3000} />
+      </Terminal> */}
+      </div>
       <Works />
       <div className="scene3d">
         <Scene3D />
