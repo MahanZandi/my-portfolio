@@ -1,14 +1,13 @@
 "use client";
 import Link from "next/link";
 import { RxCross2 } from "react-icons/rx";
-import ThemeToggle from "./ThemeTogle";
+import ThemeSelectSmall from "./ThemeSelectSmall";
 import Button from "./Button";
 import Image from "next/image";
 import enflag from "@/public/images/en-flag.png";
 import faflag from "@/public/images/fa-flag.png";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import { useStore } from "@/libs/store";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -30,13 +29,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
 
   const currentPath = pathname.replace(/^\/(fa|en)/, "");
 
-  const { theme, setTheme } = useStore();
-
   const fa = () => (
     <>
-      <Link href={`/en${currentPath}`} scroll={false}>
-        <p className="sidebar-lang-text">{t("change language")}</p>
-      </Link>
       <Link href={`/en${currentPath}`} scroll={false} className="nav-lang">
         <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
         <span>FA</span>
@@ -46,9 +40,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
 
   const en = () => (
     <>
-      <Link href={`/fa${currentPath}`} scroll={false}>
-        <p className="sidebar-lang-text">{t("change language")}</p>
-      </Link>
       <Link href={`/fa${currentPath}`} scroll={false} className="nav-lang">
         <Image
           src={enflag}
@@ -69,7 +60,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
       )}
 
       <div
-        className={`sidebar ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`sidebar ${isOpen ? "translate-x-0" : "translate-x-full"} flex flex-col`}
       >
         <div className="sidebar-top">
           <button
@@ -117,17 +108,14 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
         <div className="sidebar-button-hr-parents">
           <hr className="sidebar-button-hr"></hr>
         </div>
-        <div className="sidebar-tools-container">
-          <div className="sidebar-theme-toggle-container">
-            <p onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>{t("change theme")}</p>
-            <ThemeToggle className="sidebar-theme-toggle" />
-          </div>
-          <div className="sidebar-lang-container">{lang}</div>
-          <div onClick={() => setIsOpen(false)}>
+          <div className="px-[16px]" onClick={() => setIsOpen(false)}>
             <a href="/files/mahan-resume.pdf" target="_blank">
               <Button className="button-sidebar" text={t("cv button")} />
             </a>
           </div>
+        <div className="sidebar-tools-container mt-auto mb-4">
+          <ThemeSelectSmall/>
+          <div className="sidebar-lang-container">{lang}</div>
         </div>
       </div>
     </div>

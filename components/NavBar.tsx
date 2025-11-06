@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Button from "./Button";
-import ThemeToggle from "./ThemeTogle";
+import ThemeSelect from "./ThemeSelect";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
@@ -76,7 +76,7 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
                 <a className="" href="/files/mahan-resume.pdf" target="_blank">
                   <Button className="button" text={t("cv button")} />
                 </a>
-                <ThemeToggle className="button-theme link" />
+                <ThemeSelect />
               </div>
               <div>{lang}</div>
               <div className="nav-vertical-line-container">

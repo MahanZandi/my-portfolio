@@ -1,10 +1,10 @@
 @layer components {
     .sidebar-overlay {
-        @apply fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-40;
+        @apply fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-[9998];
     }
 
     .sidebar {
-        @apply fixed top-0 right-0 h-full w-[320px] dark:bg-gray-950 bg-white dark:text-white  z-50 transition-transform duration-300;
+        @apply fixed top-0 right-0 h-full w-[250px] dark:bg-gray-950 bg-white dark:text-white z-[9999] transition-transform duration-300;
     }
 
     .sidebar-top {
@@ -40,7 +40,7 @@
     }
 
     .sidebar-tools-container {
-        @apply flex flex-col gap-y-[16px] px-[16px];
+        @apply flex gap-4 px-4 mt-4;
     }
 
     .sidebar-theme-toggle-container {

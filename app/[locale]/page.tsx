@@ -23,11 +23,14 @@ const App = async ({ params }: { params: Promise<{ locale: string }> }) => {
       <AboutMe />
       <Skills />
       <div dir="ltr" className="container flex gap-6">
-        {/* TODO create a section in place && create theme system */}
-      {/* <Terminal>
+        {/* TODO create a section in place */}
+      {/* <Terminal className="max-w-[800px] mx-auto">
         <TerminalLine text="> Front-End Developer specializing in modern web technologies" delay={0} />
         <TerminalLine text="> Building high-performance applications with React, Next.js & TypeScript" delay={1500} />
         <TerminalLine text="> Crafting seamless user experiences with clean, scalable code" delay={3000} />
+        <TerminalLine text="> Passionate about responsive design and modern UI/UX principles" delay={4500} />
+        <TerminalLine text="> Experienced in state management, API integration & performance optimization" delay={6000} />
+        <TerminalLine text="> Always learning and exploring new technologies to deliver better solutions" delay={7500} />
       </Terminal> */}
       </div>
       <Works />

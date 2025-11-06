@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import ScrollProgress from "@/components/ScrollProgress";
 import { routing } from "@/i18n/routing";
 import SmoothCursor from "@/components/SmoothCursor";
+import ThemeProvider from "@/components/ThemeProvider";
 import Head from "next/head";
 import Script from "next/script";
 
@@ -102,20 +103,15 @@ export default async function LocaleLayout({
           src="https://www.googletagmanager.com/gtag/js?id=G-F40X5VZ4KM"
           strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-F40X5VZ4KM');
-          `}
-        </Script>
-        <ScrollProgress />
-        <NextIntlClientProvider>
-          <div dir="rtl" className={dir}>
-            {children}
-          </div>
-        </NextIntlClientProvider>
+  
+        <ThemeProvider>
+          <ScrollProgress />
+          <NextIntlClientProvider>
+            <div dir="rtl" className={dir}>
+              {children}
+            </div>
+          </NextIntlClientProvider>
+        </ThemeProvider>
         <div className="xl:block hidden">
           <SmoothCursor />
         </div>
