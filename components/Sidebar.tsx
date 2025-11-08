@@ -7,7 +7,8 @@ import Image from "next/image";
 import enflag from "@/public/images/en-flag.png";
 import faflag from "@/public/images/fa-flag.png";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
+import { useLocaleStore } from "@/store/useLocaleStore";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -24,31 +25,35 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
   const t = useTranslations("sidebar");
+  const router = useRouter();
+  const { setLocale } = useLocaleStore();
 
   const pathname = usePathname();
 
   const currentPath = pathname.replace(/^\/(fa|en)/, "");
 
+  const handleLocaleChange = (newLocale: 'en' | 'fa') => {
+    setLocale(newLocale);
+    router.push(`/${newLocale}${currentPath}`);
+    setIsOpen(false);
+  };
+
   const fa = () => (
-    <>
-      <Link href={`/en${currentPath}`} scroll={false} className="nav-lang">
-        <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
-        <span>FA</span>
-      </Link>
-    </>
+    <button onClick={() => handleLocaleChange('en')} className="nav-lang">
+      <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
+      <span>FA</span>
+    </button>
   );
 
   const en = () => (
-    <>
-      <Link href={`/fa${currentPath}`} scroll={false} className="nav-lang">
-        <Image
-          src={enflag}
-          alt="آیکون پرچم انگلیس"
-          className="nav-lang-image"
-        />
-        <span>EN</span>
-      </Link>
-    </>
+    <button onClick={() => handleLocaleChange('fa')} className="nav-lang">
+      <Image
+        src={enflag}
+        alt="آیکون پرچم انگلیس"
+        className="nav-lang-image"
+      />
+      <span>EN</span>
+    </button>
   );
 
   const lang = locale === "fa" ? fa() : en();

@@ -29,7 +29,7 @@
     }
 
     .skills-item-image {
-        @apply size-[64px] hover:scale-110 transition-transform duration-200;
+        @apply size-[64px] group-hover:scale-110 transition-transform duration-200;
     }
 
     .skills-item-text {

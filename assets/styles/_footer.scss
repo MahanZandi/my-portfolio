@@ -4,6 +4,6 @@
     }
 
     .footer-container {
-        @apply container text-body3 flex justify-center items-center py-[24px] text-center;
+        @apply container text-body3 flex justify-center items-center py-[24px] text-center relative z-10;
     }
 }

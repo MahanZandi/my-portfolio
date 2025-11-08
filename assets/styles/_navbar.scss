@@ -16,11 +16,15 @@
   }
 
   .nav-items-parents {
-    @apply hidden md:flex gap-6;
+    @apply hidden md:flex gap-6 items-center;
   }
 
   .nav-buttons-container {
-    @apply flex gap-[18px];
+    @apply flex gap-[18px] items-center;
+  }
+  
+  .nav-buttons-container > * {
+    @apply h-[40px] rounded-lg;
   }
 
   .nav-vertical-line {
@@ -40,7 +44,7 @@
   }
 
   .nav-lang {
-    @apply dark:bg-gray-800 bg-gray-200 dark:text-white p-2 rounded-xl flex justify-center items-center gap-2;
+    @apply dark:bg-gray-800 bg-gray-200 dark:text-white px-3 h-[40px] rounded-lg flex justify-center items-center gap-2;
   }
 
   .nav-lang-image {

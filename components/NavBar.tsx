@@ -3,13 +3,14 @@ import { useState } from "react";
 import Button from "./Button";
 import ThemeSelect from "./ThemeSelect";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Link from "next/link";
 import Sidebar from "./Sidebar";
 import Image from "next/image";
 import enflag from "@/public/images/en-flag.png";
 import faflag from "@/public/images/fa-flag.png";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
+import { useLocaleStore } from "@/store/useLocaleStore";
+import Link from "next/link";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -24,6 +25,8 @@ interface NavbarProps {
 
 const NavBar: React.FC<NavbarProps> = ({ locale }) => {
   const t = useTranslations("navbar");
+  const router = useRouter();
+  const { setLocale } = useLocaleStore();
 
   const navLinks = [
     {
@@ -46,18 +49,23 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
 
   const currentPath = pathname.replace(/^\/(fa|en)/, "");
 
+  const handleLocaleChange = (newLocale: 'en' | 'fa') => {
+    setLocale(newLocale);
+    router.push(`/${newLocale}${currentPath}`);
+  };
+
   const fa = () => (
-    <Link href={`/en${currentPath}`} scroll={false} className="nav-lang">
+    <button onClick={() => handleLocaleChange('en')} className="nav-lang">
       <Image src={faflag} alt="آیکون پرچم ایران" className="nav-lang-image" />
       <span>FA</span>
-    </Link>
+    </button>
   );
 
   const en = () => (
-    <Link href={`/fa${currentPath}`} scroll={false} className="nav-lang">
+    <button onClick={() => handleLocaleChange('fa')} className="nav-lang">
       <Image src={enflag} alt="آیکون پرچم انگلیس" className="nav-lang-image" />
       <span>EN</span>
-    </Link>
+    </button>
   );
 
   const lang = locale === "fa" ? fa() : en();
@@ -95,9 +103,9 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
               </div>
             </div>
           </div>
-          <button onClick={() => scrollToSection("header")} className="nav-logo">
+          <Link href="/" className="nav-logo">
             {"</ M>"}
-          </button>
+          </Link>
         </div>
       </nav>
 
