@@ -71,7 +71,7 @@ const Work = ({ data }: WorkProps) => {
         <div className="flex justify-between items-end">
           <div className="dark:text-gray-400 text-gray-500">{t(data.date)}</div>
           <Link href={data.slug}>
-            <button className="relative flex items-center gap-2 justify-center h-[36px] px-4 dark:bg-gray-800 dark:text-gray-300 text-gray-600 rounded-lg outline-none overflow-hidden transition-all duration-300 ease-in-out before:content-[''] before:absolute before:w-[100px] before:h-full before:bg-gradient-to-r before:from-transparent before:via-white/80 before:to-transparent before:top-0 before:-left-[100px] before:opacity-60 hover:before:animate-shine">
+            <button className="work-shine-button">
               <span>{t("progect-detail-link")}</span>
               <RiExternalLinkLine size={24} />
             </button>

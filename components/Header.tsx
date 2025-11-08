@@ -20,16 +20,16 @@ const Header: React.FC = () => {
 
   const morphingTexts = getLang("lang") === "fa" 
     ? [
-        "من ماهان زندی ام توسعه دهنده فرانت اند",
+        "ماهان زندی - توسعه دهنده فرانت اند",
         "سازنده وبسایت های مدرن و جذاب",
         "متخصص React و Next.js",
         "خالق تجربه های کاربری منحصر به فرد"
       ]
     : [
-        "I'm Mahan Zandi, Programer",
-        "Building Pixel-Perfect Websites",
+        "Mahan Zandi - Front-End Developer",
+        "Building Modern & Attractive Websites",
         "React & Next.js Specialist",
-        "Crafting Unique Experiences"
+        "Crafting Unique User Experiences"
       ];
 
   return (

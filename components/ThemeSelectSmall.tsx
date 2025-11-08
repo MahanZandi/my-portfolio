@@ -22,16 +22,16 @@ export default function ThemeSelectSmall() {
   if (!mounted) return null;
 
   return (
-    <div className="flex justify-between items-center">
-      <div className="flex gap-1 bg-gray-100 dark:bg-gray-800 rounded-lg p-1">
+    <div className="sidebar-theme-select-container">
+      <div className="sidebar-theme-select-wrapper">
         {themes.map(({ value, icon: Icon }) => (
           <button
             key={value}
             onClick={() => setTheme(value)}
-            className={`p-2 rounded-md transition-colors ${
+            className={`sidebar-theme-select-button ${
               theme === value
-                ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100'
-                : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'
+                ? 'sidebar-theme-select-button-active'
+                : 'sidebar-theme-select-button-inactive'
             }`}
           >
             <Icon className="text-lg" />

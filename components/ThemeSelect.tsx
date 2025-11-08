@@ -21,7 +21,7 @@ export default function ThemeSelect() {
 
   if (!mounted) {
     return (
-      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+      <div className="nav-theme-select">
         <FiMonitor />
         <span>System</span>
       </div>
@@ -30,7 +30,7 @@ export default function ThemeSelect() {
 
   return (
     <Select.Root value={theme} onValueChange={setTheme}>
-      <Select.Trigger className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+      <Select.Trigger className="nav-theme-select">
         {themes.find(t => t.value === theme)?.icon && (
           <span className="text-lg">{themes.find(t => t.value === theme)!.icon({})}</span>
         )}

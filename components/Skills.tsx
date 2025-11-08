@@ -20,7 +20,7 @@ const Skills: React.FC = () => {
             <div className="skills-content-container">
               {skillsData?.map((item, index) => (
                 <div key={index} className="skills-item group">
-                  <Link href={item.link} className="grid place-items-center">
+                  <Link href={item.link} className="skills-item-link">
                     <Image
                       className="skills-item-image"
                       src={item.image}
@@ -34,11 +34,11 @@ const Skills: React.FC = () => {
               ))}
             </div>
         </div>
-        <div className="flex justify-center -mt-[250px] md:-mt-[150px]">
+        <div className="skills-code-image-container">
           <Image
             width={768}
             height={384}
-            className="opacity-15 h-[300px] w-auto"
+            className="skills-code-image"
             alt="code image"
             src="/images/code-image.webp"
           />

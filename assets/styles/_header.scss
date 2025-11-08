@@ -8,7 +8,7 @@
     }
 
     .header-image-container {
-        @apply flex relative h-[300px] w-[280px] md:h-[360px] md:w-[320px];
+        @apply flex shrink-0 relative h-[300px] w-[280px] md:h-[360px] md:w-[320px];
     }
 
     .header-image {
@@ -24,7 +24,7 @@
     }
 
     .header-title {
-        @apply text-gray-900 dark:text-gray-100 text-h1;
+        @apply text-gray-900 dark:text-gray-100 text-h1 max-w-[750px];
     }
 
     .header-discription {

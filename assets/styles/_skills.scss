@@ -35,4 +35,16 @@
     .skills-item-text {
         @apply pt-2 text-body1;
     }
+
+    .skills-item-link {
+        @apply grid place-items-center;
+    }
+
+    .skills-code-image-container {
+        @apply flex justify-center -mt-[250px] md:-mt-[150px];
+    }
+
+    .skills-code-image {
+        @apply opacity-15 h-[300px] w-auto;
+    }
 }
