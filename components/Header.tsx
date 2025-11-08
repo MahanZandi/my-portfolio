@@ -8,7 +8,7 @@ import { LiaTelegramPlane } from "react-icons/lia";
 import { PiLinkedinLogoBold } from "react-icons/pi";
 import { MdCall } from "react-icons/md";
 import { useTranslations } from "next-intl";
-import { MorphingText } from "@/components/ui/morphing-text";
+import { MorphingText } from "@/components/ui/MorphingText";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({ weight: "700", subsets: ["latin"] });

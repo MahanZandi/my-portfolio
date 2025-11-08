@@ -3943,12 +3943,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"camera-controls@npm:^3.1.0":
-  version: 3.1.1
-  resolution: "camera-controls@npm:3.1.1"
+"camera-controls@npm:2.9.0":
+  version: 2.9.0
+  resolution: "camera-controls@npm:2.9.0"
   peerDependencies:
     three: ">=0.126.1"
-  checksum: 10c0/e53c12cc4f85dd701cfbef88dfceab675ae63b6ff8f7de53a05e964256fe9d065eba128f181eea53b4ac01d009337b60bd5711a66eda1562fa95105a55fce7f1
+  checksum: 10c0/a772881a7a290615f144dac35e9fae78db14472e96eeb6cdf8d328a40f76bf007e64fb4ed093b1256e5b3bb9b9da2a94b97f623bbbd5cbd9485e6e75dc84af75
   languageName: node
   linkType: hard
 
