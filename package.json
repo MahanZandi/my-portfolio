@@ -55,7 +55,6 @@
     "node": ">=20.x"
   },
   "resolutions": {
-    "camera-controls": "2.9.0",
-    "odbc": "npm:noop3@^3.0.0"
+    "camera-controls": "2.9.0"
   }
 }
