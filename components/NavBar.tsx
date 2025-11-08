@@ -9,6 +9,7 @@ import enflag from "@/public/images/en-flag.png";
 import faflag from "@/public/images/fa-flag.png";
 import { useTranslations } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
+import { useEffect } from "react";
 import { useLocaleStore } from "@/store/useLocaleStore";
 import Link from "next/link";
 
@@ -27,6 +28,13 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
   const t = useTranslations("navbar");
   const router = useRouter();
   const { setLocale } = useLocaleStore();
+  const pathname = usePathname();
+  const currentPath = pathname.replace(/^\/(fa|en)/, "");
+  const otherLocale = locale === 'fa' ? 'en' : 'fa';
+
+  useEffect(() => {
+    router.prefetch(`/${otherLocale}${currentPath}`);
+  }, [router, otherLocale, currentPath]);
 
   const navLinks = [
     {
@@ -45,13 +53,9 @@ const NavBar: React.FC<NavbarProps> = ({ locale }) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const pathname = usePathname();
-
-  const currentPath = pathname.replace(/^\/(fa|en)/, "");
-
   const handleLocaleChange = (newLocale: 'en' | 'fa') => {
     setLocale(newLocale);
-    router.push(`/${newLocale}${currentPath}`);
+    router.replace(`/${newLocale}${currentPath}`, { scroll: false });
   };
 
   const fa = () => (

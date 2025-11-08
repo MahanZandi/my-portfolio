@@ -34,7 +34,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen, locale }) => {
 
   const handleLocaleChange = (newLocale: 'en' | 'fa') => {
     setLocale(newLocale);
-    router.push(`/${newLocale}${currentPath}`);
+    router.replace(`/${newLocale}${currentPath}`, { scroll: false });
     setIsOpen(false);
   };
 

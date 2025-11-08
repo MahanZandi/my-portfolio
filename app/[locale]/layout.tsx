@@ -7,7 +7,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import { routing } from "@/i18n/routing";
 import SmoothCursor from "@/components/SmoothCursor";
 import ThemeProvider from "@/components/ThemeProvider";
-import LocaleSync from "@/components/LocaleSync";
+
 import Head from "next/head";
 import Script from "next/script";
 
@@ -106,7 +106,6 @@ export default async function LocaleLayout({
         />
   
         <ThemeProvider>
-          <LocaleSync currentLocale={locale as 'en' | 'fa'} />
           <ScrollProgress />
           <NextIntlClientProvider>
             <div dir="rtl" className={dir}>
