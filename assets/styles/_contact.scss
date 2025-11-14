@@ -1,6 +1,6 @@
 @layer components {
     .contact {
-        @apply container py-[64px] xl:py-[96px] text-gray-600 dark:text-gray-300 transition-all relative z-10;
+        @apply container pb-[64px] xl:py-[96px] text-gray-600 dark:text-gray-300 transition-all relative z-10;
     }
 
     .contact-tags-container {
